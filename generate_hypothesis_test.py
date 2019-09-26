@@ -1,5 +1,7 @@
 import json
 import pandas as pd
+import seaborn as sns
+import matplotlib.pyplot as plt
 from pandas.io.json import json_normalize
 from scipy.stats import ttest_ind
 
@@ -133,4 +135,9 @@ if pval <0.05:
 else:
   print("we accept null hypothesis")
 
+sns.set_style("whitegrid")
+win_graph= sns.boxplot(x=winners["totalchutes"]).set_title('Vencedores')
+plt.plot()
+lose_graph= sns.boxplot(x=losers["totalchutes"]).set_title('Perdedores')
+plt.plot()
 #export_csv = df.to_csv (r'C:/Users/filip/PycharmProjects/learn-pandas/english-premier-league-match-data/season16-17/season_match_stats_clear.csv', index = None, header=True) #Don't forget to add '.csv' at the end of the path
