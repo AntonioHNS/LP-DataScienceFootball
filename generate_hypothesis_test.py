@@ -139,7 +139,7 @@ else:
 
 sns.set_style("whitegrid")
 win_graph= sns.boxplot(x=winners["totalchutes"]).set_title('Vencedores')
-plt.plot()
+plt.show()
 lose_graph= sns.boxplot(x=losers["totalchutes"]).set_title('Perdedores')
-plt.plot()
+plt.show()
 #export_csv = df.to_csv (r'C:/Users/filip/PycharmProjects/learn-pandas/english-premier-league-match-data/season16-17/season_match_stats_clear.csv', index = None, header=True) #Don't forget to add '.csv' at the end of the path
