@@ -5,14 +5,19 @@ import matplotlib.pyplot as plt
 from pandas.io.json import json_normalize
 from scipy.stats import ttest_rel
 
-#Region Atributos
+#Variáveis para mudar
+_ano = "16-17"
+_anoTexto = "2016/2017"
+_namedado = "Passes Certos"
+_varname = "possession_percentage"
+#Varáveis Fixas
 path_base = "C:/Users/filip/PycharmProjects/learn-pandas/english-premier-league-match-data/"
-arquivo = open(path_base + "season17-18/" + "season_match_stats.json")
+arquivo = open(path_base + "season" + _ano + "/" + "season_match_stats.json")
 data = json.load(arquivo)
 json_normalize(data)
 
-tableStats = pd.read_json(path_base + "season17-18/" + "season_stats.json", "index")
-tableMatchStats = pd.read_json(path_base + "season17-18/" + "season_match_stats.json", "index")
+tableStats = pd.read_json(path_base + "season" + _ano + "/" + "season_stats.json", "index")
+tableMatchStats = pd.read_json(path_base + "season" + _ano + "/" + "season_match_stats.json", "index")
 
 newTable = tableMatchStats["full_time_score"].str.split(" : ", n=1, expand=True)
 
@@ -47,7 +52,7 @@ def ReturnLosers(id_partida, id_home_team, id_away_team):
         linha.append("lose")
         linha.append(float(tableStats.loc[int(id_partida)][id_home_team]["team_details"]["team_rating"]))
         try:
-            linha.append(float(tableStats.loc[int(id_partida)][id_home_team]["aggregate_stats"]["possession_percentage"])/100)
+            linha.append(float(tableStats.loc[int(id_partida)][id_home_team]["aggregate_stats"][_varname]))
         except:
             linha.append(0)
 
@@ -61,7 +66,7 @@ def ReturnLosers(id_partida, id_home_team, id_away_team):
         linha.append("lose")
         linha.append(float(tableStats.loc[int(id_partida)][id_away_team]["team_details"]["team_rating"]))
         try:
-            linha.append(float(tableStats.loc[int(id_partida)][id_away_team]["aggregate_stats"]["possession_percentage"])/100)
+            linha.append(float(tableStats.loc[int(id_partida)][id_away_team]["aggregate_stats"][_varname]))
         except:
             linha.append(0)
         return linha
@@ -84,7 +89,7 @@ def ReturnWinners(id_partida, id_home_team, id_away_team):
         linha.append("win")
         linha.append(float(tableStats.loc[int(id_partida)][id_home_team]["team_details"]["team_rating"]))
         try:
-            linha.append(float(tableStats.loc[int(id_partida)][id_home_team]["aggregate_stats"]["possession_percentage"])/100)
+            linha.append(float(tableStats.loc[int(id_partida)][id_home_team]["aggregate_stats"][_varname]))
         except:
             linha.append(0)
 
@@ -99,7 +104,7 @@ def ReturnWinners(id_partida, id_home_team, id_away_team):
         linha.append("win")
         linha.append(float(tableStats.loc[int(id_partida)][id_away_team]["team_details"]["team_rating"]))
         try:
-            linha.append(float(tableStats.loc[int(id_partida)][id_away_team]["aggregate_stats"]["possession_percentage"])/100)
+            linha.append(float(tableStats.loc[int(id_partida)][id_away_team]["aggregate_stats"][_varname]))
         except:
             linha.append(0)
         return linha
@@ -118,15 +123,15 @@ loseClear   = list(filter(None,  lose))
 print(len(winClear))
 print(len(loseClear))
 
-winners     = pd.DataFrame(winClear, columns=['idpartida', 'idclube', 'nomeclube', 'estadio', 'datajogo', 'resultado', 'notaclube', 'Porcentagem de Posse de Bola'])
-losers      = pd.DataFrame(loseClear, columns=['idpartida', 'idclube', 'nomeclube', 'estadio', 'datajogo', 'resultado', 'notaclube', 'Porcentagem de Posse de Bola'])
+winners     = pd.DataFrame(winClear, columns=['idpartida', 'idclube', 'nomeclube', 'estadio', 'datajogo', 'resultado', 'notaclube', _namedado])
+losers      = pd.DataFrame(loseClear, columns=['idpartida', 'idclube', 'nomeclube', 'estadio', 'datajogo', 'resultado', 'notaclube', _namedado])
 
 print("-------------")
-print(winners["Porcentagem de Posse de Bola"])
+print(winners[_namedado])
 print("-------------")
-print(losers["Porcentagem de Posse de Bola"])
+print(losers[_namedado])
 
-ttest,pval = ttest_rel(winners["Porcentagem de Posse de Bola"],losers["Porcentagem de Posse de Bola"])
+ttest,pval = ttest_rel(winners[_namedado],losers[_namedado])
 
 print("p-value",pval)
 
@@ -137,11 +142,11 @@ else:
 
 sns.set(style="whitegrid")
 
-ax = sns.boxplot(x=winners["Porcentagem de Posse de Bola"])
-ax.set_title("Vencedores das Partidas - 2016/2017")
+ax = sns.boxplot(x=winners[_namedado])
+ax.set_title("Vencedores das Partidas - " + _anoTexto)
 plt.show()
 
-ax1 = sns.boxplot(x=losers["Porcentagem de Posse de Bola"])
-ax1.set_title("Perdedores das Partidas - 2016/2017")
+ax1 = sns.boxplot(x=losers[_namedado])
+ax1.set_title("Perdedores das Partidas - " + _anoTexto)
 plt.show()
 #export_csv = df.to_csv (r'C:/Users/filip/PycharmProjects/learn-pandas/english-premier-league-match-data/season16-17/season_match_stats_clear.csv', index = None, header=True) #Don't forget to add '.csv' at the end of the path
