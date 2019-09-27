@@ -1,12 +1,13 @@
+# coding: utf-8
 import json
 import pandas as pd
 import seaborn as sns
 import matplotlib.pyplot as plt
 from pandas.io.json import json_normalize
-from scipy.stats import ttest_ind
+from scipy.stats import ttest_rel
 
 #Region Atributos
-path_base = "C:/Users/filip/PycharmProjects/learn-pandas/english-premier-league-match-data/"
+path_base = "../LP-files/Datasets/Dataset-Premier-League/"
 arquivo = open(path_base + "season16-17/" + "season_match_stats.json")
 data = json.load(arquivo)
 json_normalize(data)
@@ -126,9 +127,10 @@ print(winners["totalchutes"])
 print("-------------")
 print(losers["totalchutes"])
 
-ttest,pval = ttest_ind(winners["totalchutes"],losers["totalchutes"])
+ttest,pval = ttest_rel(winners["totalchutes"],losers["totalchutes"])
 
 print("p-value",pval)
+
 
 if pval <0.05:
   print("we reject null hypothesis")
