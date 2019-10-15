@@ -105,6 +105,6 @@ urlPlayers = list(map(GetUrlPlayer, urlClubes))
 dados, col = GetStatsPlayers(players)
 
 stats = pd.DataFrame(dados, columns=col)
-export_csv = stats.to_csv (r'C:/Users/filip/PycharmProjects/learn-pandas/player_match_stats_clear.csv', index = None, header=True)
+export_csv = stats.to_csv (r'C:/Users/soare/Desktop/Data/player_match_stats_clear.csv', index = None, header=True)
 fim = time.time()
 print(fim)
