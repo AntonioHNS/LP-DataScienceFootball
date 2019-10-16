@@ -7,11 +7,22 @@ Created on Tue Oct 15 15:26:49 2019
 import pandas as pd
 import webcrawlerteam as wb
 
-idtime = [9, 24]
-anos = [2019, 2018]
-for ano in anos:
-    print(ano)
-    specificURL = "https://fbref.com/en/comps/" + str(idtime[1]) + "/schedule/" + str(ano) + "-Fixtures"
+idCampeonato = [9, 24]
+nomeCampeonato = ["PremierLeague", "SerieA"]
+
+anosBrasileirao = ["/schedule/2019-Fixtures", "/1760/schedule/2018-Fixtures", "/1559/schedule/2017-Fixtures"]
+anosPremier = ["/schedule/-Fixtures", "/1889/schedule/2018-2019-Fixtures", "/1631/schedule/2017-2018-Fixtures", "/1526/schedule/2016-2017-Fixtures"]
+nomesDocumentosTemporadaAnual = ["2019-Match-SerieA.csv", "2018-Match-SerieA.csv", "2017-Match-SerieA.csv"]
+nomesDocumentosTemporadaPeriodial = ["2019-2020-Match-"+ nomeCampeonato[0] + ".csv", "2018-2019-Match-" + nomeCampeonato[0] + ".csv", "2017-2018-Match-" + nomeCampeonato[0] + ".csv", "2016-2017-Match-" + nomeCampeonato[0] + ".csv"]
+
+for indice in range(len(anosPremier)):
+    roundCamp = anosPremier[indice]//10
+    if roundCamp == 0:
+        print("Round:" + str(1))
+    else:
+        print("Round:" + str(roundCamp))
+    print("Match: " + str(anosPremier[indice]))
+    specificURL = "https://fbref.com/en/comps/" + str(idCampeonato[0]) + anosPremier[indice]
     
     urlsMatch = wb.getUrlMatches(specificURL)
     #urlsMatch = [urlsMatch[0]]
@@ -149,7 +160,7 @@ for ano in anos:
             "redCards" : redCards}
     dataMatch = pd.DataFrame(data)
     print(dataMatch.head(5))
-    file_name = str(ano) + '-Match-SerieA.csv'
+    file_name = nomesDocumentosTemporadaPeriodial[indice]
     dataMatch.to_csv(file_name, sep='\t', encoding='utf-8')
 
 
