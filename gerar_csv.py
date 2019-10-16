@@ -7,20 +7,22 @@ Created on Tue Oct 15 15:26:49 2019
 import pandas as pd
 import webcrawlerteam as wb
 
-idCampeonato = [9, 24]
-nomeCampeonato = ["PremierLeague", "SerieA"]
+idCampeonato = [9, 24, 62]
+nomeCampeonato = ["PremierLeague", "SerieA", "ChineseLeague"]
 #ano2019 = "/schedule/2019-Fixtures"
 
 #anosBrasileirao = ["/schedule/2019-Fixtures", "/1760/schedule/2018-Fixtures", "/1559/schedule/2017-Fixtures"]
 anosBrasileirao = ["/1495/schedule/2016-Serie-A-Fixtures"]
+anosChineseLeague = ["/schedule/Super-League-Fixtures"]
 anosPremier = ["/schedule/-Fixtures", "/1889/schedule/2018-2019-Fixtures", "/1631/schedule/2017-2018-Fixtures", "/1526/schedule/2016-2017-Fixtures"]
 #nomesDocumentosTemporadaAnual = ["2019-Match-SerieA.csv", "2018-Match-SerieA.csv", "2017-Match-SerieA.csv"]
-nomesDocumentosTemporadaAnual = ["2016-Match-SerieA.csv"]
-nomesDocumentosTemporadaPeriodial = ["2019-2020-Match-"+ nomeCampeonato[1] + ".csv", "2018-2019-Match-" + nomeCampeonato[0] + ".csv", "2017-2018-Match-" + nomeCampeonato[0] + ".csv", "2016-2017-Match-" + nomeCampeonato[0] + ".csv"]
+nomesDocumentosCsl = ["2019-Match-" + nomeCampeonato[2] + ".csv"]
+nomesDocumentosBrasilSerieA = ["2016-Match-SerieA.csv"]
+nomesDocumentosPremier = ["2019-2020-Match-"+ nomeCampeonato[1] + ".csv", "2018-2019-Match-" + nomeCampeonato[0] + ".csv", "2017-2018-Match-" + nomeCampeonato[0] + ".csv", "2016-2017-Match-" + nomeCampeonato[0] + ".csv"]
 
-for indice in range(len(anosBrasileirao)):
+for indice in range(len(anosChineseLeague)):
     
-    specificURL = "https://fbref.com/en/comps/" + str(idCampeonato[1]) + anosBrasileirao[indice]
+    specificURL = "https://fbref.com/en/comps/" + str(idCampeonato[2]) + anosChineseLeague[indice]
     
     urlsMatch = wb.getUrlMatches(specificURL)
     #urlsMatch = [urlsMatch[0]]
@@ -163,7 +165,7 @@ for indice in range(len(anosBrasileirao)):
             "redCards" : redCards}
     dataMatch = pd.DataFrame(data)
     print(dataMatch.head(5))
-    file_name = nomesDocumentosTemporadaAnual[indice]
+    file_name = nomesDocumentosCsl[indice]
     dataMatch.to_csv(file_name, sep='\t', encoding='utf-8')
 
 
