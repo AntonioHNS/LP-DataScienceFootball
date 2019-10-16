@@ -5,11 +5,11 @@ from matplotlib.ticker import MaxNLocator
 from mpl_toolkits.axes_grid1 import host_subplot
 
 path_base = "C:/Users/filip/PycharmProjects/learn-pandas/"
-campeonato = "2019-Match-SerieA"
+campeonato = "MatchSerieA"
 
-#Se basear por este gráfico para a geração dos demais
+
 def CalcularMediaGolsPorAno(ano):
-    data = pd.read_csv(path_base + str(ano) + campeonato + ".csv", encoding="UTF-8", sep='\t')
+    data = pd.read_csv(path_base + ano + campeonato + ".csv", encoding="UTF-8", sep='\t')
     average = data.groupby('MatchId')['score'].sum().mean()
     return average
 
@@ -125,3 +125,5 @@ print(medias_gols_por_ano)
 #fig.tight_layout()
 
 #plt.show()
+
+

@@ -8,8 +8,8 @@ from scipy.stats import ttest_rel
 #Variáveis para mudar
 _ano = "16-17"
 _anoTexto = "2016/2017"
-_namedado = "Passes Certos"
-_varname = "possession_percentage"
+_namedado = "Chutes por Partida"
+_varname = "total_scoring_att"
 #Varáveis Fixas
 path_base = "C:/Users/filip/PycharmProjects/learn-pandas/english-premier-league-match-data/"
 arquivo = open(path_base + "season" + _ano + "/" + "season_match_stats.json")
@@ -142,11 +142,17 @@ else:
 
 sns.set(style="whitegrid")
 
-ax = sns.boxplot(x=winners[_namedado])
-ax.set_title("Vencedores das Partidas - " + _anoTexto)
-plt.show()
+#ax = sns.boxplot(x=winners[_namedado])
+#ax.set_title("Vencedores das Partidas - " + _anoTexto)
+#plt.plot()
 
-ax1 = sns.boxplot(x=losers[_namedado])
-ax1.set_title("Perdedores das Partidas - " + _anoTexto)
+#ax1 = sns.boxplot(x="Dados", y="Chutes", data=[winners[_namedado], losers[_namedado]])
+#ax1.set_title("Perdedores das Partidas - " + _anoTexto)
+d = {'Vencedores': winners[_namedado], 'Perdedores': losers[_namedado]}
+df = pd.DataFrame(data=d)
+print(df.head(5))
+ax1 = sns.boxplot(data=df)
+ax1.set_title("Total de Chutes nas Partidas - " + _anoTexto)
+plt.plot()
 plt.show()
 #export_csv = df.to_csv (r'C:/Users/filip/PycharmProjects/learn-pandas/english-premier-league-match-data/season16-17/season_match_stats_clear.csv', index = None, header=True) #Don't forget to add '.csv' at the end of the path

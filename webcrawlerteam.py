@@ -14,7 +14,6 @@ specificURL = baseURL + "/en/comps/" + str(
     idcampeonato[1]) + "/schedule/-Fixtures"
 classTable = "min_width sortable stats_table now_sortable sliding_cols"
 
-
 class Team:
     def __init__(self, teamId, name):
         self.teamId = teamId
@@ -138,6 +137,23 @@ def getUrlMatches(url):
 
 
 def tratarStats(stats, homeTeamId, awayTeamId):
+    homePossession = None
+    awayPossession = None
+    homeCorrectPassing = None
+    homeTotalPassing = None
+    awayCorrectPassing = None
+    awayTotalPassing = None
+    homeShotsOnTarget = None
+    homeTotalShots = None
+    awayShotsOnTarget = None
+    awayTotalShots = None
+    homeSave = None
+    awaySave = None
+    homeYellowCard = None
+    homeRedCard = None
+    awayYellowCard = None
+    awayRedCard = None
+
     table = stats.findAll("tr")
     for i in range(len(table)):
         row = table[i]
@@ -169,15 +185,15 @@ def tratarStats(stats, homeTeamId, awayTeamId):
         elif "Cards" in row.contents[0]:
             content = table[i + 1]
             data = content.findAll("div", {"class": "cards"})
-            HomeYellowCard = str(len(data[0].findAll("span", {"class": "yellow_card"})) + len(data[0].findAll("span", {"class": "yellow_red_card"})))
-            HomeRedCard = str(len(data[0].findAll("span", {"class": "red_card"})) + len(data[0].findAll("span", {"class": "yellow_red_card"})))
-            AwayYellowCard = str(len(data[1].findAll("span", {"class": "yellow_card"})) + len(data[1].findAll("span", {"class": "yellow_red_card"})))
-            AwayRedCard = str(len(data[1].findAll("span", {"class": "red_card"})) + len(data[1].findAll("span", {"class": "yellow_red_card"})))
+            homeYellowCard = str(len(data[0].findAll("span", {"class": "yellow_card"})) + len(data[0].findAll("span", {"class": "yellow_red_card"})))
+            homeRedCard = str(len(data[0].findAll("span", {"class": "red_card"})) + len(data[0].findAll("span", {"class": "yellow_red_card"})))
+            awayYellowCard = str(len(data[1].findAll("span", {"class": "yellow_card"})) + len(data[1].findAll("span", {"class": "yellow_red_card"})))
+            awayRedCard = str(len(data[1].findAll("span", {"class": "red_card"})) + len(data[1].findAll("span", {"class": "yellow_red_card"})))
     
     home = TeamStats(homeTeamId ,homePossession, homeTotalPassing, homeCorrectPassing, homeTotalShots,
-                    homeShotsOnTarget, homeSave,HomeYellowCard, HomeRedCard)
+                    homeShotsOnTarget, homeSave,homeYellowCard, homeRedCard)
     away = TeamStats(awayTeamId , awayPossession, awayTotalPassing, awayCorrectPassing, awayTotalShots, 
-                    awayShotsOnTarget,awaySave, AwayYellowCard, AwayRedCard)
+                    awayShotsOnTarget,awaySave, awayYellowCard, awayRedCard)
     return home, away
 
 def getInfo(content):
@@ -188,6 +204,30 @@ def getInfo(content):
     return homeInfo, awayInfo
 
 def tratarStatsExtra(stats, homeTeamId, awayTeamId):
+    homefouls = None
+    homecorners = None
+    homecrosses = None
+    hometouches = None
+    hometackles = None
+    homeinterceptions = None
+    homeaerialsWon = None
+    homeclearances = None
+    homeoffsides = None
+    homegoalKicks = None
+    homethrowIns = None
+    homelongBalls = None
+    awayfouls = None
+    awaycorners = None
+    awaycrosses = None
+    awaytouches = None
+    awaytackles = None
+    awayinterceptions = None
+    awayaerialsWon = None
+    awayclearances = None
+    awayoffsides = None
+    awaygoalKicks = None
+    awaythrowIns = None
+    awaylongBalls = None
     items = stats.findAll("div")
     
     for i in range(len(items)):
@@ -309,10 +349,3 @@ def getInfoMatches(match):
             "awayStats": awayTeamStats
         }
         return obj
-
-
-urlsMatch = getUrlMatches(specificURL)
-urlsMatch = [urlsMatch[0]]
-
-infoPartidas = list(map(getInfoMatches, urlsMatch))
-print(infoPartidas[0]["homeStats"])
