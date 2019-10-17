@@ -348,4 +348,6 @@ def getInfoMatches(match):
             "homeStats": homeTeamStats,
             "awayStats": awayTeamStats
         }
+        print("o jogo " + match["link"])
+
         return obj
