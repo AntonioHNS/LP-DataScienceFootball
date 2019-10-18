@@ -4,7 +4,8 @@ import pandas as pd
 from matplotlib.ticker import MaxNLocator
 from mpl_toolkits.axes_grid1 import host_subplot
 
-path_base = "/Users/ulyssesbarros/Desktop/"
+#path_base = "/Users/ulyssesbarros/Desktop/"
+path_base = "../dataset-brasileirao/"
 campeonato = "-Match-SerieA"
 
 
@@ -14,13 +15,17 @@ def CalcularMediaGolsPorAno(ano):
     return average
 
 
-def CalcularMediaGolsPorLocalAno(ano):
+def CalcularMediaGolsMandanteAno(ano):
     table = pd.read_csv(path_base + str(ano) + campeonato + ".csv", encoding="UTF-8", sep='\t')    
     data = table.loc[table['venue'] == 'home']
     average = data.groupby('MatchId')['score'].sum().mean()
+    return average
+
+def CalcularMediaGolsVisitanteAno(ano):
+    table = pd.read_csv(path_base + str(ano) + campeonato + ".csv", encoding="UTF-8", sep='\t')  
     data2 = table.loc[table['venue'] == 'away']
     average2 = data2.groupby('MatchId')['score'].sum().mean()
-    return average, average2
+    return average2
 
 #SELECT COUNT(*) FROM T WHERE A + B = 0
 def CalcularPartidasSemGol(ano):
@@ -33,19 +38,20 @@ def CalcularPartidasComGol(ano):
     data = table.loc[table['score'] >= 1] 
     average2 = len(data.groupby('MatchId'))
     return average2
-years = [2017]
+years = [2019, 2018, 2017]
 #years = [""]
 
 medias_gols_por_ano = list(map(CalcularMediaGolsPorAno, years))
 print(medias_gols_por_ano)
-medias_gols_mandante_visitante_por_ano = list(map(CalcularMediaGolsPorLocalAno, years))
-print(medias_gols_mandante_visitante_por_ano[0][0])
+medias_gols_mandante_por_ano = list(map(CalcularMediaGolsMandanteAno, years))
+media_gols_visitante_por_ano = list(map(CalcularMediaGolsVisitanteAno, years))
+print(medias_gols_mandante_por_ano)
 qt_partidas_sem_gol = list(map(CalcularPartidasSemGol, years))
 print(qt_partidas_sem_gol)
 qt_partidas_com_gol = list(map(CalcularPartidasComGol, years))
 print(qt_partidas_com_gol)
 # Gráfico 1 - Média de gols por jogo anual
-data = {'Ano': years, 'Média': medias_gols_por_ano[0]}
+data = {'Ano': years, 'Média': medias_gols_por_ano}
 tabela_final = pd.DataFrame(data=data)
 
 print(tabela_final.head(4))
@@ -55,22 +61,13 @@ plt.show()
 
 # Gráfico 2 - Comparativo entre a Média de gols em casa e fora anualmente
 
-data1 = {'Ano': years, 'Média Mandante': medias_gols_mandante_visitante_por_ano[0][0], "Média Visitante": medias_gols_mandante_visitante_por_ano[0][1]}
-tabela_final1 = pd.DataFrame(data=data1)
-
-ax1 = tabela_final1.plot(x='Ano', y='Média Mandante', kind='line', color='orange')
-ax2 = tabela_final1.plot(x='Ano', y='Média Visitante', kind='line', color='g')
-ax1.locator_params(integer=True)
-ax2.locator_params(integer=True)
-plt.show()
-
 graf2 = host_subplot(111)
 
 graf2.set_xlabel("Ano")
 graf2.set_ylabel("Média de Gols por Partida")
 
-p1, = graf2.plot(years, medias_gols_mandante_visitante_por_ano[0][0], color='orange', label="Média Mandante")
-p2, = graf2.plot(years, medias_gols_mandante_visitante_por_ano[0][1], color='g', label="Média Visitante")
+p1, = graf2.plot(years, medias_gols_mandante_por_ano, color='orange', label="Média Mandante")
+p2, = graf2.plot(years, media_gols_visitante_por_ano, color='g', label="Média Visitante")
 
 leg = plt.legend()
 

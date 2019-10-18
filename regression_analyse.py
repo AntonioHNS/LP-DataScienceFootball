@@ -1,60 +1,49 @@
-from statsmodels.tsa.arima_model import ARIMA
+from pmdarima import auto_arima
+from tbats import TBATS, BATS
 import pandas as pd
 import math
+import matplotlib.pyplot as plt
 
 #Variables
 path_base = "C:/Users/filip/PycharmProjects/learn-pandas/"
-campeonato = "-Match-PremierLeague"
-ano = "2018-2019"
-top = 28
-floor = 10
-rounds = 38
-column = "correctPassing"
+#champ = "-Match-PremierLeague"
+champ = "-Match-SerieA"
+#years = ["2016-2017", "2017-2018", "2018-2019", "2019-2020"]
+years = ["2017", "2018", "2019"]
+column = "fouls"
+
+#Team
+idTeam = "822bd0ba"
 nameTeam = "Liverpool"
 
+def CreateDataFrame(year):
+    df = pd.read_csv(path_base + year + champ + ".csv", encoding="UTF-8", sep='\t')
+    df["year"] = [year for x in range(df.shape[0])]
+    return df
 
-dataFrame = pd.read_csv(path_base + ano + campeonato + ".csv", encoding="UTF-8", sep='\t')
+#dataFrame1, dataFrame2, dataFrame3, dataFrame4 = list(map(CreateDataFrame, years))
+dataFrame1, dataFrame2, dataFrame3 = list(map(CreateDataFrame, years))
 
-data            = dataFrame.loc[dataFrame.nameTeam == nameTeam]
-print(data.teamId)
-dataPrev        = list(data.tail(10)[column].values)
-tdata           = list(data.head(top)[column].values)
-indexsToPredict = list(data.tail(floor).matchWeek.values)
+#dataFrameTotal = pd.concat([dataFrame1, dataFrame2, dataFrame3])
+dataFrameTotal = pd.concat([dataFrame1, dataFrame2])
 
-#Functions
-def Predict(indice):
-    trainingData = data.head(indice)
-    trainingList = list(trainingData[column].values)
-    model = ARIMA(trainingList, order=(1, 1, 1))
-    model_fit = model.fit(disp=False)
-    # make prediction
-    predict_value = model_fit.predict(len(trainingList), len(trainingList), typ='levels')
-    value = math.ceil(predict_value)
-    return value
+data            = dataFrameTotal.loc[dataFrameTotal.teamId == idTeam]
+#dataLastYear    = dataFrame4.loc[dataFrame4.teamId == idTeam]
+dataLastYear    = dataFrame3.loc[dataFrame3.teamId == idTeam]
 
-def RetornarPredict(indice_predicts):
-    return list(map(Predict, indice_predicts))
+trainData       = data[column].values
+testData        = dataLastYear[column].values
+matches         = len(testData)
 
-def RetornarAutoPredict(total, trainingList):
-    if(len(trainingList) == total):
-        return trainingList[28:]
-    else:
-        model = ARIMA(trainingList, order=(1, 1, 1))
-        model_fit = model.fit(disp=False)
-        # make prediction
-        predictValue = model_fit.predict(len(trainingList), len(trainingList), typ='levels')
-        value = math.ceil(predictValue)
-        trainingList.append(value)
-        print(len(trainingList))
-        return RetornarAutoPredict(total, trainingList)
-
-#Predicts
-predicts1 = RetornarPredict(indexsToPredict)
-predicts2 = RetornarAutoPredict(rounds, tdata)
-
-print("Predict Values")
-print(predicts1)
-print("Auto Predict Values")
-print(predicts2)
-print("Origin Values")
-print(dataPrev)
+#ARIMA Algorithm
+arimaModel     = auto_arima(trainData, seasonal=True, m=3)
+arimaForecast  = arimaModel.predict(n_periods=matches)
+#arimaForecast  = list(map(math.floor, arimaForecast))
+print("Arima")
+print(arimaForecast)
+print("Correto")
+print(testData)
+dataPlot = {"Real": testData, "Arima": arimaForecast}
+t = pd.DataFrame(data=dataPlot)
+t.plot()
+plt.show()
