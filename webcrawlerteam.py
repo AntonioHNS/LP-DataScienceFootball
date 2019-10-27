@@ -12,7 +12,7 @@ baseURL = "https://fbref.com"
 idcampeonato = [9, 24]
 specificURL = baseURL + "/en/comps/" + str(
     idcampeonato[1]) + "/schedule/-Fixtures"
-classTable = "min_width sortable stats_table now_sortable sliding_cols"
+#classTable = "min_width sortable stats_table now_sortable sliding_cols"
 
 class Team:
     def __init__(self, teamId, name):
@@ -24,7 +24,6 @@ class Team:
         dado += "TeamId: " + self.teamId + "\n"
         dado += "Name: " + self.name + "\n"
         return dado
-
 
 class TeamExtraStats:
     def __init__(self, teamId, fouls, corners, crosses, touches, tackles,
@@ -60,7 +59,6 @@ class TeamExtraStats:
         dado += "LongBalls: " + self.longBalls + "\n"
         return dado
 
-
 class TeamStats:
     def __init__(self, teamId, possession, totalPassing, correctPassing,totalShot,shotsOnTarget,
                  saves, yellowCards, redCards):
@@ -87,7 +85,6 @@ class TeamStats:
         dado += "RedCards		: " + self.redCards + "\n"
         return dado
 
-
 class Match:
     def __init__(self, matchId, matchweek, hometeamId, awayTeamId,
                  homeTeamScore, awayTeamScore, stadium, attendance):
@@ -112,7 +109,6 @@ class Match:
         dado += "Attendance :" + self.attendance + "\n"
         return dado
 
-
 def getUrlMatches(url):
     urlPartidas = []
     partidaIds = []
@@ -134,7 +130,6 @@ def getUrlMatches(url):
                         "link": baseURL + link
                     })
     return urlPartidas
-
 
 def tratarStats(stats, homeTeamId, awayTeamId):
     homePossession = None
@@ -278,7 +273,6 @@ def tratarStatsExtra(stats, homeTeamId, awayTeamId):
                           awaygoalKicks, awaythrowIns, awaylongBalls)
     return home, away
 
-
 def getMatchInfo(scorebox):
     homeTeamId = None
     homeTeamName = None
@@ -322,32 +316,36 @@ def getMatchInfo(scorebox):
                   awayTeamScore, stadium, attendance)
     return {"home": homeTeam, "away": awayTeam, "match": match}
 
-
 def getInfoMatches(match):
-    matchId = match["link"][29:37]
-    code = requests.get(match["link"])
-    if code.status_code == 200:
-        plain = code.text
-        soup = BeautifulSoup(plain, "html.parser")
-        score = soup.find("div", {"class": "scorebox"})
-        score = getMatchInfo(score)
-        score["match"].matchId = matchId
-        stats = soup.find("div", {"id": "team_stats"})
-        statsExtra = soup.find("div", {"id": "team_stats_extra"})
-        homeTeamExtra, awayTeamExtra = tratarStatsExtra(
-            statsExtra, score["match"].homeTeamId, score["match"].awayTeamId)
-        homeTeamStats, awayTeamStats = tratarStats(stats,
-                                                   score["match"].homeTeamId,
-                                                   score["match"].awayTeamId)
-        obj = {
-            "match": score["match"],
-            "homeTeam": score["home"],
-            "awayTeam": score["away"],
-            "awayStatsExtra": awayTeamExtra,
-            "homeStatsExtra": homeTeamExtra,
-            "homeStats": homeTeamStats,
-            "awayStats": awayTeamStats
-        }
-        print("o jogo " + match["link"])
+    try:
+        matchId = match["link"][29:37]
+        code = requests.get(match["link"])
+        if code.status_code == 200:
+            plain = code.text
+            soup = BeautifulSoup(plain, "html.parser")
+            score = soup.find("div", {"class": "scorebox"})
+            score = getMatchInfo(score)
+            score["match"].matchId = matchId
+            stats = soup.find("div", {"id": "team_stats"})
+            statsExtra = soup.find("div", {"id": "team_stats_extra"})
+            homeTeamExtra, awayTeamExtra = tratarStatsExtra(
+                statsExtra, score["match"].homeTeamId, score["match"].awayTeamId)
+            homeTeamStats, awayTeamStats = tratarStats(stats,
+                                                    score["match"].homeTeamId,
+                                                    score["match"].awayTeamId)
+            obj = {
+                "match": score["match"],
+                "homeTeam": score["home"],
+                "awayTeam": score["away"],
+                "awayStatsExtra": awayTeamExtra,
+                "homeStatsExtra": homeTeamExtra,
+                "homeStats": homeTeamStats,
+                "awayStats": awayTeamStats
+            }
+            print("o jogo " + match["link"])
 
-        return obj
+            return obj
+    except:
+        return None
+        
+    
