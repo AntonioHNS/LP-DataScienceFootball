@@ -1,21 +1,23 @@
 import pandas as pd
 import numpy as np
 
-from lib_functions import generateGameTable
+from lib.functions import GenerateGameTable
 
-jogos = generateGameTable()
+jogos = GenerateGameTable()
 teams = list(jogos.homeTeamId.unique())
+qtMatches = len(list(jogos.MatchId.unique()))
 qtTeams = len(teams)
 
-championshipTables = []    
-attChampionshipTable = pd.DataFrame() #Tabela Atualizada constantemente
-attChampionshipTable["teamId"] = teams
-__temp = [0] * qtTeams
-attChampionshipTable["points"] = __temp
-attChampionshipTable["wins"] = [0] * qtTeams
-attChampionshipTable["goalsBalance"] = [0] * qtTeams
-attChampionshipTable["goals"] = [0] * qtTeams
-def calculaPontos(matches, c, table):
+championshipTables                      = []    
+attChampionshipTable                    = pd.DataFrame() #Tabela Atualizada constantemente
+attChampionshipTable["teamId"]          = teams
+attChampionshipTable["points"]          = [0] * qtTeams
+attChampionshipTable["wins"]            = [0] * qtTeams
+attChampionshipTable["goalsBalance"]    = [0] * qtTeams
+attChampionshipTable["goals"]           = [0] * qtTeams
+attChampionshipTable["status"]          = ["home"] * qtTeams
+
+def CalcularPontos(matches, c, table):
     t = table
     if c == len(matches): return t
     else:
@@ -34,13 +36,18 @@ def calculaPontos(matches, c, table):
 
         resultHomeBalance   =  home["goalsBalance"] + (homeScore - awayScore)
         resultHomeGoals     =  home["goals"] + homeScore
+        resultHomeStatus    = "home"
         resultAwayBalance   =  away["goalsBalance"] + (awayScore - homeScore)
         resultAwayGoals     =  away["goals"] + awayScore
+        resultAwayStatus    = "away"
         
         t.goalsBalance      = np.where(conditionHome, resultHomeBalance, t.goalsBalance)
         t.goals             = np.where(conditionHome, resultHomeGoals, t.goals)
+        t.status            = np.where(conditionHome, resultHomeStatus, t.status)
+
         t.goalsBalance      = np.where(conditionAway, resultAwayBalance, t.goalsBalance)
         t.goals             = np.where(conditionAway, resultAwayGoals, t.goals)
+        t.status            = np.where(conditionAway, resultAwayStatus, t.status)
         if winner == 1:            
             resultHomePoints    =  home["points"] + 3
             resultHomeWins      =  home["wins"] + 1
@@ -57,24 +64,38 @@ def calculaPontos(matches, c, table):
             t.points = np.where(conditionAway, result1, t.points)
             t.wins = np.where(conditionAway, result2, t.wins)
         c += 1
-        return calculaPontos(matches, c, t)
+        return CalcularPontos(matches, c, t)
 
-matchWeeks = list(jogos.matchWeek.unique())
-finalTable = pd.DataFrame()
-matchWeekTables = []
-for i in range(len(matchWeeks)):
+def GerarTabela(matchWeek):
     positionTable = pd.DataFrame()
-    if(i == 0):
+    if(matchWeek == 1):
         positionTable["teamId"] = teams
         positionTable["position"] = [1] * qtTeams
+        temp = pd.DataFrame()
+        temp["teamId"]          = teams
+        temp["points"]          = [0] * qtTeams
+        temp["wins"]            = [0] * qtTeams
+        temp["goalsBalance"]    = [0] * qtTeams
+        temp["goals"]           = [0] * qtTeams
+        return {
+            "matchWeek": matchWeek, 
+            "table": temp.sort_values(by=["points", "wins", "goalsBalance", "goals"], 
+            ascending=False)}
     else:
-        tempTable = pd.DataFrame()
-        mWeek = matchWeeks[i-1]
-        print(mWeek)
+        mWeek = matchWeek - 1
         mWeekTable = jogos[jogos["matchWeek"] == mWeek]
         matches = list(mWeekTable.MatchId.unique())
-        finalTable = calculaPontos(matches, 0, attChampionshipTable)
-        matchWeekTables.append({"matchWeek": i + 1, "table": finalTable.sort_values(by=["points", "wins", "goalsBalance", "goals"], ascending=False)})
-print("----------------------------------------------------")
-print(matchWeekTables[36]["table"])
-print("----------------------------------------------------")
+        finalTable = CalcularPontos(matches, 0, attChampionshipTable)
+        finalTable = finalTable.sort_values(by=["points", "wins", "goalsBalance", "goals"], ascending=False)
+        return {
+            "matchWeek": matchWeek, 
+            "matches": matches,
+            "table": finalTable}
+
+jogos["homePosition"] = [1] * qtMatches
+jogos["awayPosition"] = [1] * qtMatches
+matchWeeks = list(jogos.matchWeek.unique())
+finalTable = pd.DataFrame()
+matchWeekTables = list(map(GerarTabela, matchWeeks))
+print(matchWeekTables[5]["table"]["status"])
+print(jogos)

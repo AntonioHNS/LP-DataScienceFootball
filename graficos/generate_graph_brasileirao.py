@@ -11,20 +11,20 @@ campeonato = "-Match-SerieA"
 
 def CalcularMediaGolsPorAno(ano):
     data = pd.read_csv(path_base + str(ano) + campeonato + ".csv", encoding="UTF-8", sep='\t')
-    average = data.groupby('MatchId')['score'].sum().mean()    
+    average = data.groupby('MatchId')['score'].mean()    
     return average
 
 
 def CalcularMediaGolsMandanteAno(ano):
     table = pd.read_csv(path_base + str(ano) + campeonato + ".csv", encoding="UTF-8", sep='\t')    
     data = table.loc[table['venue'] == 'home']
-    average = data.groupby('MatchId')['score'].sum().mean()
+    average = data.groupby('MatchId')['score'].mean()
     return average
 
 def CalcularMediaGolsVisitanteAno(ano):
     table = pd.read_csv(path_base + str(ano) + campeonato + ".csv", encoding="UTF-8", sep='\t')  
     data2 = table.loc[table['venue'] == 'away']
-    average2 = data2.groupby('MatchId')['score'].sum().mean()
+    average2 = data2.groupby('MatchId')['score'].mean()
     return average2
 
 #SELECT COUNT(*) FROM T WHERE A + B = 0
@@ -55,8 +55,22 @@ data = {'Ano': years, 'Média': medias_gols_por_ano}
 tabela_final = pd.DataFrame(data=data)
 
 print(tabela_final.head(4))
-ax = tabela_final.plot(x='Ano', y='Média', kind='line')
-ax.locator_params(integer=True)
+graf1 = host_subplot(111)
+
+graf1.set_xlabel("Ano")
+graf1.set_ylabel("Média de Gols por Partida")
+
+p, = graf1.plot(years, medias_gols_por_ano, color='orange', label="Média")
+
+leg1 = plt.legend()
+
+graf1.xaxis.get_label().set_color('r')
+graf1.xaxis.set_major_locator(MaxNLocator(integer=True))
+
+graf1.yaxis.get_label().set_color('c')
+
+leg1.texts[0].set_color(p.get_color())
+#plt.grid(b=True, which='major', color='#666666', linestyle='-')
 plt.show()
 
 # Gráfico 2 - Comparativo entre a Média de gols em casa e fora anualmente
@@ -78,7 +92,7 @@ graf2.yaxis.get_label().set_color('c')
 
 leg.texts[0].set_color(p1.get_color())
 leg.texts[1].set_color(p2.get_color())
-
+plt.grid(b=True, which='major', color='#666666', linestyle='-')
 plt.show()
 
 # Gráfico 3

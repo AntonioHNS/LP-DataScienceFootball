@@ -1,7 +1,7 @@
 import pandas as pd
 import numpy as np
 
-def generateGameTable():
+def GenerateGameTable():
     path_base = "dataset-brasileirao/"
     data = pd.read_csv(path_base + "2018" + "-Match-SerieA" + ".csv", encoding="UTF-8", sep='\t')
     mandante = data.loc[(data['venue'] == 'home')]
