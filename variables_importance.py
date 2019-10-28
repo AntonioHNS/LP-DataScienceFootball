@@ -14,14 +14,22 @@ import numpy as np
 jogos = GenerateGameTable()
 jogos = jogos.drop(columns="awayScore")
 jogos = jogos.drop(columns="homeScore")
+jogos = pd.DataFrame(jogos,columns=['matchWeek','homeTotalShots','awayTotalShots','awayCorrectPassing','homeCorrectPassing','winner'])
 print("----------------------")
-print(jogos.groupby("matchWeek").values)
-print("----------------------")
-print(jogos["awayMatchWeek"])
-#03ff5eeb - Id de time para teste
+jogos['isTrain'] = np.random.uniform(0,1,len(jogos)) <= .75
+treino,teste = jogos[jogos['isTrain']==True], jogos[jogos['isTrain']==False]
 
-teams = list(jogos.homeTeamId.unique())
-qtTeams = len(teams)
+print('qtd treino: ' + str(len(treino)))
+print('qtd teste: ' + str(len(teste)))
 
-championshipTables = []    
-attChampionshipTable = pd.DataFrame()
+columns = jogos.columns[:5]
+
+resultados = pd.factorize(treino['winner'])[0]
+
+classificador = RandomForestClassifier(n_jobs=2,random_state = 0)
+classificador.fit(train,resultados)
+
+classificador.predict(test)
+
+#continuar amanhã
+

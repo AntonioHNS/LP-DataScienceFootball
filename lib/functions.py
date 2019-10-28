@@ -1,9 +1,21 @@
 import pandas as pd
 import numpy as np
+import os
+
+
+def getCSV(ano):
+    path_base = "dataset-brasileirao/"
+    data = pd.read_csv(path_base +str(ano)+"-Match-SerieA.csv",encoding = 'UTF-8', sep = '\t')
+    print(data['interceptions'])
+    data['year'] = int(ano)
+    return data
 
 def GenerateGameTable():
-    path_base = "dataset-brasileirao/"
-    data = pd.read_csv(path_base + "2018" + "-Match-SerieA" + ".csv", encoding="UTF-8", sep='\t')
+    listaAnos = ['2016','2017','2018','2019']
+    listaCSV = list(map(getCSV,listaAnos))
+    data = pd.concat(listaCSV)
+    
+    
     mandante = data.loc[(data['venue'] == 'home')]
     mandantes = pd.DataFrame()
     mandantes['MatchId'] = mandante['MatchId']
@@ -32,6 +44,7 @@ def GenerateGameTable():
     mandantes['homeSaves'] = mandante['saves']
     mandantes['homeYellowCards'] = mandante['yellowCards']
     mandantes['homeRedCards'] = mandante['redCards']
+    mandantes['year'] = mandante['year']
 
     visitante = data.loc[(data['venue'] == 'away')]
     visitantes = pd.DataFrame()
@@ -61,11 +74,16 @@ def GenerateGameTable():
     visitantes['awaySaves'] = visitante['saves']
     visitantes['awayYellowCards'] = visitante['yellowCards']
     visitantes['awayRedCards'] = visitante['redCards']
-
     jogos = pd.merge(mandantes,visitantes,left_on='MatchId',right_on='MatchId')
     # -1: Vencedor Away Team
     # 0: Empate
     # 1: Vencedor Home Team
     jogos['winner'] = np.select([jogos.homeScore < jogos.awayScore, jogos.homeScore > jogos.awayScore], [-1, 1], 0)
-    
     return jogos
+
+
+
+
+    
+    
+    

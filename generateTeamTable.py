@@ -5,12 +5,11 @@ import pandas as pd
 import statsmodels.api as sm
 import statsmodels.formula.api as smf
 import numpy as np
+from lib.functions import getCSV
 
-
-data2017 = pd.read_csv("./dataset-brasileirao/2017-Match-SerieA.csv",encoding = 'UTF-8', sep = '\t')
-data2018 = pd.read_csv("./dataset-brasileirao/2018-Match-SerieA.csv",encoding = 'UTF-8', sep = '\t')
-data2019 = pd.read_csv("./dataset-brasileirao/2019-Match-SerieA.csv",encoding = 'UTF-8', sep = '\t')
-data = pd.concat([data2017,data2018,data2019])
+listaAnos = [2016,2017,2018,2019]
+listaCSV = list(map(getCSV,listaAnos))
+data = pd.concat(listaCSV)
 data = data.loc[(data["venue"] == 'home')]
 data = pd.DataFrame(data,columns = ['teamId','nameTeam','stadium'])
 data.rename(columns = {'teamId':'hash'},inplace = True)
