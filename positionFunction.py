@@ -8,8 +8,12 @@ teams = list(jogos.homeTeamId.unique())
 qtMatches = len(list(jogos.MatchId.unique()))
 qtTeams = len(teams)
 
+jogos["homePosition"] = [1] * qtMatches
+jogos["awayPosition"] = [1] * qtMatches
+
 championshipTables                      = []    
 attChampionshipTable                    = pd.DataFrame() #Tabela Atualizada constantemente
+finalTable                              = pd.DataFrame()
 attChampionshipTable["teamId"]          = teams
 attChampionshipTable["points"]          = [0] * qtTeams
 attChampionshipTable["wins"]            = [0] * qtTeams
@@ -87,15 +91,36 @@ def GerarTabela(matchWeek):
         matches = list(mWeekTable.MatchId.unique())
         finalTable = CalcularPontos(matches, 0, attChampionshipTable)
         finalTable = finalTable.sort_values(by=["points", "wins", "goalsBalance", "goals"], ascending=False)
+        AddPosition(finalTable, matchWeek)
         return {
             "matchWeek": matchWeek, 
             "matches": matches,
             "table": finalTable}
 
-jogos["homePosition"] = [1] * qtMatches
-jogos["awayPosition"] = [1] * qtMatches
-matchWeeks = list(jogos.matchWeek.unique())
-finalTable = pd.DataFrame()
-matchWeekTables = list(map(GerarTabela, matchWeeks))
-print(matchWeekTables[5]["table"]["status"])
-print(jogos)
+def ModifyPosition(match, table):
+    objMatch = jogos[jogos["MatchId"] == match]
+    index = objMatch.index[0]
+    homeTeam = objMatch.homeTeamId.values[0]
+    awayTeam = objMatch.awayTeamId.values[0]
+
+    positionHomeTeam = table.loc[table.teamId == homeTeam].index[0] + 1
+    positionAwayTeam = table.loc[table.teamId == awayTeam].index[0] + 1
+
+    jogos.loc[index, "homePosition"] = int(positionHomeTeam)
+    jogos.loc[index, "awayPosition"] = int(positionAwayTeam)
+    return jogos
+
+def AddPosition(table, mround):
+    table = table.reset_index(drop=True)
+    matches = list(jogos[jogos["matchWeek"] == mround].MatchId.unique())
+    tables = [table] * len(matches)
+    genericList = list(map(ModifyPosition, matches, tables))
+
+def ReturnTableMatchWithPosition():
+    matchWeeks = list(jogos.matchWeek.unique())
+    matchWeekTables = list(map(GerarTabela, matchWeeks))
+    return jogos
+    
+# print(ReturnTableMatchWithPosition())
+# print(jogos[jogos["matchWeek"] == 38])
+# #print(matchWeekTables[37]["table"])
