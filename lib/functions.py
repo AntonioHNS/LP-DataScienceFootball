@@ -11,7 +11,7 @@ def getCSV(ano):
     return data
 
 def GenerateGameTable():
-    listaAnos = ['2016','2017','2018','2019']
+    listaAnos = ['2018']
     listaCSV = list(map(getCSV,listaAnos))
     data = pd.concat(listaCSV)
     
@@ -81,8 +81,8 @@ def GenerateGameTable():
     jogos['winner'] = np.select([jogos.homeScore < jogos.awayScore, jogos.homeScore > jogos.awayScore], [-1, 1], 0)
     return jogos
 
-
-
+x = GenerateGameTable();
+print(x)
 
     
     
