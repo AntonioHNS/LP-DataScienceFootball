@@ -7,30 +7,11 @@ Created on Tue Oct 15 15:26:49 2019
 import pandas as pd
 import webcrawlerteam as wb
 
-idCampeonato = [11,12]
-nomeCampeonato = ["PremierLeague", "SerieA", "ChineseLeague"]
-#ano2019 = "/schedule/2019-Fixtures"
+idCampeonato = [24]
 
-#anosBrasileirao = ["/schedule/2019-Fixtures", "/1760/schedule/2018-Fixtures", "/1559/schedule/2017-Fixtures"]
-#anosBrasileirao = ["/1495/schedule/2016-Serie-A-Fixtures"]
-#anosChineseLeague = [
-#                    "/1497/schedule/2016-Super-League-Stats","/897/schedule/2015-Super-League-Stats", "/700/schedule/2014-Super-League-Stats"]
-#anosPremier = ["/schedule/-Fixtures", "/1889/schedule/2018-2019-Fixtures", "/1631/schedule/2017-2018-Fixtures", "/1526/schedule/2016-2017-Fixtures"]
-#nomesDocumentosTemporadaAnual = ["2019-Match-SerieA.csv", "2018-Match-SerieA.csv", "2017-Match-SerieA.csv"]
-#nomesDocumentosCsl = [
-#                    "2016-Match-" + nomeCampeonato[2] + ".csv",
-#                    "2015-Match-" + nomeCampeonato[2] + ".csv", "2014-Match-" + nomeCampeonato[2] + ".csv"]
-#nomesDocumentosBrasilSerieA = ["2016-Match-SerieA.csv"]
-#nomesDocumentosPremier = ["2019-2020-Match-"+ nomeCampeonato[1] + ".csv", "2018-2019-Match-" + nomeCampeonato[0] + ".csv", "2017-2018-Match-" + nomeCampeonato[0] + ".csv", "2016-2017-Match-" + nomeCampeonato[0] + ".csv"]
+nomesDocumentos = ["2016-Match-serieA.csv"]
 
-#anos = ["/schedule/La-Liga-Fixtures","/1886/schedule/2018-2019-La-Liga-Fixtures", "/1652/schedule/2017-2018-La-Liga-Fixtures",
-#        "/1547/schedule/2016-2017-La-Liga-Fixtures", "/1488/schedule/2015-2016-La-Liga-Fixtures", "/755/schedule/2014-2015-La-Liga-Fixtures"]
-#nomesDocumentos = ["2014-2015-Match-La-Liga.csv","2015-2016-Match-La-Liga.csv","2016-2017-Match-La-Liga.csv","2018-2019-Match-La-Liga.csv"]
-
-nomesDocumentos = ["2019-2020-Match-serieA.csv","2018-2019-Match-serieA.csv", "2017-2018-Match-serieA.csv", "2016-2017-Match-serieA.csv","2015-2016-Match-serieA.csv", "2014-2015-Match-serieA.csv"]
-
-anos = ["/schedule/Serie-A-Fixtures","/1896/schedule/2018-2019-Serie-A-Fixtures", "/1640/schedule/2017-2018-Serie-A-Fixtures",
-        "/1535/schedule/2016-2017-Serie-A-Fixtures", "/1476/schedule/2015-2016-Serie-A-Fixtures", "/742/schedule/2014-2015-Serie-A-Fixtures"]
+anos = ["/1495/schedule/2016-Serie-A-Fixtures"]
 
 for indice in range(len(anos)):
     
@@ -39,39 +20,41 @@ for indice in range(len(anos)):
     urlsMatch = wb.getUrlMatches(specificURL)
     #urlsMatch = [urlsMatch[0]]
     
-    
+     
     infoPartidas = list(map(wb.getInfoMatches, urlsMatch))
     
-    matchId = []
-    teamId = []
-    nameTeam = []
-    matchWeek = []
-    score = []
-    venue = [] #local
-    stadium = []
-    attendance = [] #publico
-    fouls = []
-    corners = []
-    crosses = []
-    touches = []
-    tackles = []
-    interceptions = []
-    aerialsWon = []
-    clearances = []
-    offsides = []
+    matchId=[] 
+    teamId =[]
+    nameTeam =[]
+    matchWeek =[] 
+    score =[]
+    venue =[]
+    stadium =[]
+    attendance =[] 
+    fouls =[]
+    corners =[]
+    crosses =[]
+    touches =[]
+    tackles =[]
+    interceptions =[] 
+    aerialsWon =[]
+    clearances =[]
+    offsides =[]
     goalsKicks = []
-    throwIns = []
-    longBalls = []
-    possession = []
-    totalPassing = []
-    correctPassing = []
-    totalShots = []
-    shotsOnTarget = []
-    saves = []
-    yellowCards = []
+    throwIns =[]
+    longBalls =[]
+    possession =[]
+    totalPassing =[]
+    correctPassing =[]
+    totalShots =[]
+    shotsOnTarget =[]
+    saves =[]
+    yellowCards =[]
     redCards = []
+
     for i in range(len(infoPartidas)):
-        
+        if infoPartidas[i] == None:
+            continue
         p = infoPartidas[i]
         roundCamp = i//10
         if roundCamp == 0:
@@ -177,17 +160,6 @@ for indice in range(len(anos)):
             "yellowCards" : yellowCards,
             "redCards" : redCards}
     dataMatch = pd.DataFrame(data)
-    print("jogo " + str(indice) + " finalizado")
     print(dataMatch.head(5))
     file_name = nomesDocumentos[indice]
     dataMatch.to_csv(file_name, sep='\t', encoding='utf-8')
-
-
-
-#obj = {"match":score["match"],
-#               "homeTeam":score["home"],
-#               "awayTeam":score["away"],
-#               "awayStatsExtra": awayTeamExtra,
-#               "homeStatsExtra": homeTeamExtra,
-#               "homeStats":"",
-#               "awayStats
