@@ -6,7 +6,6 @@ import os
 def getCSV(ano):
     path_base = "dataset-brasileirao/"
     data = pd.read_csv(path_base +str(ano)+"-Match-SerieA.csv",encoding = 'UTF-8', sep = '\t')
-    print(data['interceptions'])
     data['year'] = int(ano)
     return data
 
@@ -20,10 +19,10 @@ def GenerateGameTable():
     mandantes = pd.DataFrame()
     mandantes['MatchId'] = mandante['MatchId']
     mandantes["matchWeek"] = mandante["matchWeek"]
-    mandantes['homeTeamId'] = mandante['teamId']
+    mandantes['homeTeamId'] = mandante['teamId'].apply(int, base = 16)
     mandantes['homeScore'] = mandante['score']
     mandantes['homeShotsOnTarget'] = mandante['shotsOnTarget']
-    mandantes['homeAttendance'] =  mandante['attendance']
+    mandantes['homeAttendance'] =  mandante['attendance'].str.replace(',','.').astype(float)
     mandantes['homeFouls'] =  mandante['fouls']
     mandantes['homeCorners'] = mandante['corners']
     mandantes['homeCrosses'] = mandante['crosses']
@@ -36,7 +35,7 @@ def GenerateGameTable():
     mandantes['homeGoalsKicks'] = mandante['goalsKicks']
     mandantes['homeThrowIns'] = mandante['throwIns']
     mandantes['homeLongBalls'] = mandante['longBalls']
-    mandantes['homePossession'] = mandante['possession']
+    mandantes['homePossession'] = mandante['possession'].str.replace('%','').astype(float)
     mandantes['homeTotalPassing'] = mandante['totalPassing']
     mandantes['homeCorrectPassing'] = mandante['correctPassing']
     mandantes['homeTotalShots'] = mandante['totalShots']
@@ -50,10 +49,10 @@ def GenerateGameTable():
     visitantes = pd.DataFrame()
     visitantes['MatchId'] = visitante['MatchId']
     visitantes["awayMatchWeek"] = visitante["matchWeek"]
-    visitantes['awayTeamId'] = visitante['teamId']
+    visitantes['awayTeamId'] = visitante['teamId'].apply(int,base = 16)
     visitantes['awayScore'] = visitante['score']
     visitantes['awayShotsOnTarget'] = visitante['shotsOnTarget']
-    visitantes['awayAttendance'] =  visitante['attendance']
+    visitantes['awayAttendance'] =  visitante['attendance'].str.replace(',','.').astype(float)
     visitantes['awayFouls'] =  visitante['fouls']
     visitantes['awayCorners'] = visitante['corners']
     visitantes['awayCrosses'] = visitante['crosses']
@@ -66,7 +65,7 @@ def GenerateGameTable():
     visitantes['awayGoalsKicks'] = visitante['goalsKicks']
     visitantes['awayThrowIns'] = visitante['throwIns']
     visitantes['awayLongBalls'] = visitante['longBalls']
-    visitantes['awayPossession'] = visitante['possession']
+    visitantes['awayPossession'] = visitante['possession'].str.replace('%','').astype(float)
     visitantes['awayTotalPassing'] = visitante['totalPassing']
     visitantes['awayCorrectPassing'] = visitante['correctPassing']
     visitantes['awayTotalShots'] = visitante['totalShots']
@@ -81,8 +80,7 @@ def GenerateGameTable():
     jogos['winner'] = np.select([jogos.homeScore < jogos.awayScore, jogos.homeScore > jogos.awayScore], [-1, 1], 0)
     return jogos
 
-x = GenerateGameTable();
-print(x)
+
 
     
     
