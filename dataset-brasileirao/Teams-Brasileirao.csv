@@ -1,28 +1,30 @@
 hash	clube_id	nome	estadio
 03ff5eeb	1	Cruzeiro	Estádio Governador Magalhães Pinto, Belo Horizonte
 05aff519	2	CSA	Estádio Rei Pelé, Maceió
-157b7fee	3	Bahia	Itaipava Arena Fonte Nova, Salvador
-1f68d780	4	América (MG)	Estádio Raimundo Sampaio, Belo Horizonte
-2091c619	5	Atlético Paranaense	Estádio Joaquim Américo Guimarães, Curitiba
-2f335e17	6	Ceará	Estádio Castelão, Fortaleza, CE
-32d508ca	7	Atlético Goianiense	Estádio do Governo do Estado de Goiás, Goiás
-33f95fe0	8	Vitória	Estádio Manoel Barradas, Salvador
-422bb734	9	Atlético Mineiro	Estádio Raimundo Sampaio, Belo Horizonte
-5f232eb1	10	São Paulo	Estádio do Morumbi, São Paulo, SP
-639950ae	11	Flamengo	Estadio Jornalista Mário Filho, Rio de Janeiro, RJ
-6f7e1f03	12	Internacional	Estádio José Pinheiro Borba, Porto Alegre
-712c528f	13	Santos	Estádio Urbano Caldeira, Santos
-78c617cc	14	Goiás	Estádio de Hailé Pinheiro, Goiás
-83f55dbe	15	Vasco da Gama	Estádio Club de Regatas Vasco da Gama, Rio de Janeiro, RJ
-84d9701c	16	Fluminense	Estadio Jornalista Mário Filho, Rio de Janeiro, RJ
-a9d0ab0e	17	Fortaleza	Estádio Castelão, Fortaleza, CE
-ab17f2e9	18	Paraná	Estádio Durival de Brito e Silva, Curitiba
-abdce579	19	Palmeiras	Allianz Parque, São Paulo, SP
-b162ebe7	20	Ponte Preta	Estádio Moisés Lucarelli, Campinas
-baa296ad	21	Chapecoense	Arena Condá, Chapecó
-bf4acd28	22	Corinthians	Arena Corinthians, São Paulo, SP
-d5ae3703	23	Grêmio	Arena do Grêmio, Porto Alegre
-d680d257	24	Coritiba	Estádio Major Antônio Couto Pereira, Curitiba
-d9fdd9d9	25	Botafogo (RJ)	Estádio Nilton Santos, Rio de Janeiro, RJ
-ece66b78	26	Sport Recife	Estádio Adelmar da Costa Carvalho, Recife
-f205258a	27	Avaí	Estádio Aderbal Ramos da Silva, Florianópolis
+0ce4436d	3	Figueirense	Estádio Orlando Scarpelli, Florianópolis
+157b7fee	4	Bahia	Itaipava Arena Fonte Nova, Salvador
+1f68d780	5	América (MG)	Estádio Raimundo Sampaio, Belo Horizonte
+2091c619	6	Atlético Paranaense	Estádio Joaquim Américo Guimarães, Curitiba
+2f335e17	7	Ceará	Estádio Castelão, Fortaleza, CE
+32d508ca	8	Atlético Goianiense	Estádio do Governo do Estado de Goiás, Goiás
+33f95fe0	9	Vitória	Estádio Manoel Barradas, Salvador
+422bb734	10	Atlético Mineiro	Estádio Raimundo Sampaio, Belo Horizonte
+5f232eb1	11	São Paulo	Estádio do Morumbi, São Paulo, SP
+639950ae	12	Flamengo	Estádio General Sílvio Raulino de Oliveira, Volta Redonda (RJ)
+6f7e1f03	13	Internacional	Estádio José Pinheiro Borba, Porto Alegre
+712c528f	14	Santos	Estádio Urbano Caldeira, Santos
+78c617cc	15	Goiás	Estádio de Hailé Pinheiro, Goiás
+83f55dbe	16	Vasco da Gama	Estádio Club de Regatas Vasco da Gama, Rio de Janeiro, RJ
+84d9701c	17	Fluminense	Estádio General Sílvio Raulino de Oliveira, Volta Redonda (RJ)
+a9d0ab0e	18	Fortaleza	Estádio Castelão, Fortaleza, CE
+ab17f2e9	19	Paraná	Estádio Durival de Brito e Silva, Curitiba
+abdce579	20	Palmeiras	Allianz Parque, São Paulo, SP
+ad0c1246	21	Santa Cruz	Estádio Jóse do Rego Maciel, Recife
+b162ebe7	22	Ponte Preta	Estádio Moisés Lucarelli, Campinas
+baa296ad	23	Chapecoense	Arena Condá, Chapecó
+bf4acd28	24	Corinthians	Arena Corinthians, São Paulo, SP
+d5ae3703	25	Grêmio	Arena do Grêmio, Porto Alegre
+d680d257	26	Coritiba	Estádio Major Antônio Couto Pereira, Curitiba
+d9fdd9d9	27	Botafogo (RJ)	Estádio General Sílvio Raulino de Oliveira, Volta Redonda (RJ)
+ece66b78	28	Sport Recife	Estádio Adelmar da Costa Carvalho, Recife
+f205258a	29	Avaí	Estádio Aderbal Ramos da Silva, Florianópolis
