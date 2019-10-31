@@ -2,6 +2,8 @@ import pandas as pd
 import numpy as np
 import os
 
+from sklearn.model_selection import train_test_split
+
 
 def getCSV(ano):
     path_base = "dataset-brasileirao/"
@@ -17,8 +19,8 @@ def getCSV(ano):
 #     jogos.awayTeamId      = np.where(conditionHome, result, jogos.teamId)
 
 def GenerateGameTable():
-    # listaAnos = ["2016", "2017", "2018", "2019"]
-    listaAnos = ["2018"]
+    listaAnos = ["2016", "2017", "2018"]
+    #listaAnos = ["2018"]
     listaCSV = list(map(getCSV,listaAnos))
     data = pd.concat(listaCSV)
     # times = pd.read_csv(path_base+"Teams-Brasileirao.csv",encoding = 'UTF-8',sep="/t")
@@ -90,6 +92,24 @@ def GenerateGameTable():
     jogos['winner'] = np.select([jogos.homeScore < jogos.awayScore, jogos.homeScore > jogos.awayScore], [-1, 1], 0)
     return jogos
 
+def GetTrainTest():
+    jogos = GenerateGameTable()
+    empatesDf = jogos.loc[jogos['winner'] == 0]
+    derrotaDf = jogos.loc[jogos['winner'] == -1]
+    vitoriaDf = jogos.loc[jogos['winner'] == 1]
+
+    empatesDf = empatesDf.head(261)
+    derrotaDf = derrotaDf.head(261)
+    vitoriaDf = vitoriaDf.head(261)
+
+    jogos = pd.concat([empatesDf, derrotaDf, vitoriaDf], sort="True")
+
+    #jogos['winner'] = np.select([jogos.winner == 1,jogos.winner == -1],['vitoria mandante','vitoria visitante'],'empate')
+    data = jogos.drop(columns=["awayScore","homeScore",'MatchId', "year", "winner", "awayAttendance"])#, "homeTeamId", "awayTeamId"])
+    data = data.values
+    result = jogos["winner"]
+
+    return train_test_split(data, result, test_size = 0.20)
 
 
     
