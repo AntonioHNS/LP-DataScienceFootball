@@ -31,3 +31,11 @@ def GetImportanceList():
     classificador.fit(attribute_train,result_train)
     forecast = classificador.predict(attribute_test)
     return list( zip( columnsArray, list( map( returnPercentage, classificador.feature_importances_ ) ) ) )
+
+listaImportancia = GetImportanceList()
+importancia = list(list(zip(*listaImportancia))[1])
+stats = list(list(zip(*listaImportancia))[0])
+print(stats)
+teste = pd.DataFrame({'importancia': importancia, 'stats': stats })
+teste.plot.barh(x="stats", y= "importancia")
+plt.show()
