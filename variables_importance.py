@@ -78,6 +78,9 @@ print(erros)
 
 '''lISTA DE COLUNAS E IMPORTANCIAS RESPECTIVAMENTE'''
 
-listaImportancia = list(zip(treino[colunas],classificador.feature_importances_))
+def returnPercentage(value):
+    return value*100
+    
+listaImportancia = list(zip(treino[colunas],list(map(returnPercentage, classificador.feature_importances_))))
 
 
