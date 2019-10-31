@@ -5,21 +5,30 @@ import os
 
 def getCSV(ano):
     path_base = "dataset-brasileirao/"
-    data = pd.read_csv(path_base +str(ano)+"-Match-SerieA.csv",encoding = 'UTF-8', sep = '\t')
+    data = pd.read_csv(path_base +str(ano)+"-Match-SerieA.csv",encoding = 'UTF-8', sep = ',')
     data['year'] = int(ano)
     return data
 
+# def a(teamId, hashId):
+#     conditionHome = jogos.homeTeamId == hashId
+#     conditionAway = jogos.awayTeamId == hashId
+#     result = teamId
+#     jogos.homeTeamId      = np.where(conditionHome, result, jogos.teamId)
+#     jogos.awayTeamId      = np.where(conditionHome, result, jogos.teamId)
+
 def GenerateGameTable():
-    listaAnos = ['2018']
+    # listaAnos = ["2016", "2017", "2018", "2019"]
+    listaAnos = ["2018"]
     listaCSV = list(map(getCSV,listaAnos))
     data = pd.concat(listaCSV)
-    
+    # times = pd.read_csv(path_base+"Teams-Brasileirao.csv",encoding = 'UTF-8',sep="/t")
+    # data = pd.merge(data,times,right_on='MatchId',left_on='hash')    
     
     mandante = data.loc[(data['venue'] == 'home')]
     mandantes = pd.DataFrame()
     mandantes['MatchId'] = mandante['MatchId']
     mandantes["matchWeek"] = mandante["matchWeek"]
-    mandantes['homeTeamId'] = mandante['teamId'].apply(int, base = 16)
+    mandantes['homeTeamId'] = mandante['teamId'].apply(int,base = 16)
     mandantes['homeScore'] = mandante['score']
     mandantes['homeShotsOnTarget'] = mandante['shotsOnTarget']
     mandantes['homeAttendance'] =  mandante['attendance'].str.replace(',','.').astype(float)
@@ -74,6 +83,7 @@ def GenerateGameTable():
     visitantes['awayYellowCards'] = visitante['yellowCards']
     visitantes['awayRedCards'] = visitante['redCards']
     jogos = pd.merge(mandantes,visitantes,left_on='MatchId',right_on='MatchId')
+
     # -1: Vencedor Away Team
     # 0: Empate
     # 1: Vencedor Home Team

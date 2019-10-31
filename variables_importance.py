@@ -15,7 +15,7 @@ import numpy as np
 '''TRATAMENTO DO DATAFRAME'''
 
 jogos = GenerateGameTable()
-jogos = jogos.drop(columns=["awayScore","homeScore",'MatchId'])
+jogos = jogos.drop(columns=["awayScore","homeScore",'MatchId', "awayAttendance"])
 jogos['winner'] = np.select([jogos.winner == 1,jogos.winner == -1],['vitoria mandante','vitoria visitante'],'empate')
 
 
@@ -53,27 +53,27 @@ previsao = classificador.predict(teste[colunas])
 UM FOR COMPARANDO O QUE FOI PREVISTO E O QUE REALMENTE ACONTECEU
 CONTANDO ERROS E ACERTOS'''
 
-results = []
-for i in previsao:
-    if i == 0:
-        results.append("vitoria visitante")
-    elif i == 1:
-        results.append("empate")
-    elif i == 2:
-        results.append("vitoria mandante")
+# results = []
+# for i in previsao:
+#     if i == 0:
+#         results.append("vitoria visitante")
+#     elif i == 1:
+#         results.append("empate")
+#     elif i == 2:
+#         results.append("vitoria mandante")
 
-count = 0
-acertos = 0
-erros = 0
-for i in teste.iterrows():
-    if i[1]['winner'] == results[count]:
-        acertos = acertos+1
-    else:
-        erros = erros+1
-    count = count+1
+# count = 0
+# acertos = 0
+# erros = 0
+# for i in teste.iterrows():
+#     if i[1]['winner'] == results[count]:
+#         acertos = acertos+1
+#     else:
+#         erros = erros+1
+#     count = count+1
 
-print(acertos)
-print(erros)
+# print(acertos)
+# print(erros)
 
 
 '''lISTA DE COLUNAS E IMPORTANCIAS RESPECTIVAMENTE'''
@@ -83,4 +83,6 @@ def returnPercentage(value):
     
 listaImportancia = list(zip(treino[colunas],list(map(returnPercentage, classificador.feature_importances_))))
 
+for i in listaImportancia:
+    print(i)
 
