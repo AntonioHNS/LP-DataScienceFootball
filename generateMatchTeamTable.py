@@ -6,20 +6,20 @@ import statsmodels.api as sm
 import statsmodels.formula.api as smf
 import numpy as np
 
+from lib.functions import *
+
 
 times = pd.read_csv("./dataset-brasileirao/Teams-Brasileirao.csv",encoding = 'UTF-8', sep = '\t')
-data2017 = pd.read_csv("./dataset-brasileirao/2017-Match-SerieA.csv",encoding = 'UTF-8', sep = '\t')
-data2017['ano'] = 2017
-data2018 = pd.read_csv("./dataset-brasileirao/2018-Match-SerieA.csv",encoding = 'UTF-8', sep = '\t')
-data2018['ano'] = 2018
-data2019 = pd.read_csv("./dataset-brasileirao/2019-Match-SerieA.csv",encoding = 'UTF-8', sep = '\t')
-data2019['ano'] = 2019
-data = pd.concat([data2017,data2018,data2019])
+listaAnos = [2016,2017,2018,2019]
+listaCSV = list(map(getCSV,listaAnos))
+data = pd.concat(listaCSV)
 data = data.merge(times,left_on = 'teamId',right_on = 'hash' )
 
 
+
+
 partidas = pd.DataFrame()
-partidas['partida_id'] = data['MatchId']
+partidas['partida_id'] = data['MatchId'].apply(int, base=16)
 partidas['clube_id'] = data['clube_id']
 partidas['faltas'] = data['fouls']
 partidas['escanteios'] = data['corners']
@@ -42,7 +42,7 @@ partidas['defesas'] = data['saves']
 partidas['cartoesAmarelos'] = data['yellowCards']
 partidas['cartoesVermelhos'] = data['redCards']
 
-
+partidas.to_csv("MatchTeam-Brasileirao.csv", sep='\t', encoding='utf-8')
 
 
 

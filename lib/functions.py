@@ -1,17 +1,28 @@
 import pandas as pd
 import numpy as np
+import os
+
+
+def getCSV(ano):
+    path_base = "dataset-brasileirao/"
+    data = pd.read_csv(path_base +str(ano)+"-Match-SerieA.csv",encoding = 'UTF-8', sep = '\t')
+    data['year'] = int(ano)
+    return data
 
 def GenerateGameTable():
-    path_base = "dataset-brasileirao/"
-    data = pd.read_csv(path_base + "2018" + "-Match-SerieA" + ".csv", encoding="UTF-8", sep='\t')
+    listaAnos = ['2018']
+    listaCSV = list(map(getCSV,listaAnos))
+    data = pd.concat(listaCSV)
+    
+    
     mandante = data.loc[(data['venue'] == 'home')]
     mandantes = pd.DataFrame()
     mandantes['MatchId'] = mandante['MatchId']
     mandantes["matchWeek"] = mandante["matchWeek"]
-    mandantes['homeTeamId'] = mandante['teamId']
+    mandantes['homeTeamId'] = mandante['teamId'].apply(int, base = 16)
     mandantes['homeScore'] = mandante['score']
     mandantes['homeShotsOnTarget'] = mandante['shotsOnTarget']
-    mandantes['homeAttendance'] =  mandante['attendance']
+    mandantes['homeAttendance'] =  mandante['attendance'].str.replace(',','.').astype(float)
     mandantes['homeFouls'] =  mandante['fouls']
     mandantes['homeCorners'] = mandante['corners']
     mandantes['homeCrosses'] = mandante['crosses']
@@ -24,7 +35,7 @@ def GenerateGameTable():
     mandantes['homeGoalsKicks'] = mandante['goalsKicks']
     mandantes['homeThrowIns'] = mandante['throwIns']
     mandantes['homeLongBalls'] = mandante['longBalls']
-    mandantes['homePossession'] = mandante['possession']
+    mandantes['homePossession'] = mandante['possession'].str.replace('%','').astype(float)
     mandantes['homeTotalPassing'] = mandante['totalPassing']
     mandantes['homeCorrectPassing'] = mandante['correctPassing']
     mandantes['homeTotalShots'] = mandante['totalShots']
@@ -32,15 +43,16 @@ def GenerateGameTable():
     mandantes['homeSaves'] = mandante['saves']
     mandantes['homeYellowCards'] = mandante['yellowCards']
     mandantes['homeRedCards'] = mandante['redCards']
+    mandantes['year'] = mandante['year']
 
     visitante = data.loc[(data['venue'] == 'away')]
     visitantes = pd.DataFrame()
     visitantes['MatchId'] = visitante['MatchId']
     visitantes["awayMatchWeek"] = visitante["matchWeek"]
-    visitantes['awayTeamId'] = visitante['teamId']
+    visitantes['awayTeamId'] = visitante['teamId'].apply(int,base = 16)
     visitantes['awayScore'] = visitante['score']
     visitantes['awayShotsOnTarget'] = visitante['shotsOnTarget']
-    visitantes['awayAttendance'] =  visitante['attendance']
+    visitantes['awayAttendance'] =  visitante['attendance'].str.replace(',','.').astype(float)
     visitantes['awayFouls'] =  visitante['fouls']
     visitantes['awayCorners'] = visitante['corners']
     visitantes['awayCrosses'] = visitante['crosses']
@@ -53,7 +65,7 @@ def GenerateGameTable():
     visitantes['awayGoalsKicks'] = visitante['goalsKicks']
     visitantes['awayThrowIns'] = visitante['throwIns']
     visitantes['awayLongBalls'] = visitante['longBalls']
-    visitantes['awayPossession'] = visitante['possession']
+    visitantes['awayPossession'] = visitante['possession'].str.replace('%','').astype(float)
     visitantes['awayTotalPassing'] = visitante['totalPassing']
     visitantes['awayCorrectPassing'] = visitante['correctPassing']
     visitantes['awayTotalShots'] = visitante['totalShots']
@@ -61,11 +73,15 @@ def GenerateGameTable():
     visitantes['awaySaves'] = visitante['saves']
     visitantes['awayYellowCards'] = visitante['yellowCards']
     visitantes['awayRedCards'] = visitante['redCards']
-
     jogos = pd.merge(mandantes,visitantes,left_on='MatchId',right_on='MatchId')
     # -1: Vencedor Away Team
     # 0: Empate
     # 1: Vencedor Home Team
     jogos['winner'] = np.select([jogos.homeScore < jogos.awayScore, jogos.homeScore > jogos.awayScore], [-1, 1], 0)
-    
     return jogos
+
+
+
+    
+    
+    
