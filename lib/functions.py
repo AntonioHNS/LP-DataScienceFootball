@@ -105,11 +105,11 @@ def GetTrainTest():
     jogos = pd.concat([empatesDf, derrotaDf, vitoriaDf], sort="True")
 
     #jogos['winner'] = np.select([jogos.winner == 1,jogos.winner == -1],['vitoria mandante','vitoria visitante'],'empate')
-    data = jogos.drop(columns=["awayScore","homeScore",'MatchId', "year", "winner", "awayAttendance"])#, "homeTeamId", "awayTeamId"])
-    data = data.values
+    data = jogos.drop(columns=["awayScore","homeScore",'MatchId', "year", "winner", "awayAttendance", "awayMatchWeek", "matchWeek"])#, "homeTeamId", "awayTeamId"])
+    colunas = data.columns
     result = jogos["winner"]
 
-    return train_test_split(data, result, test_size = 0.20)
+    return train_test_split(data, result, test_size = 0.20), data[colunas]
 
 
     
