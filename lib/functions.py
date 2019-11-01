@@ -3,6 +3,8 @@ import numpy as np
 import os
 
 from sklearn.model_selection import train_test_split
+from sklearn.preprocessing import StandardScaler
+from sklearn.metrics import classification_report, confusion_matrix, accuracy_score
 
 
 def getCSV(ano):
@@ -89,14 +91,14 @@ def GenerateGameTable():
     # -1: Vencedor Away Team
     # 0: Empate
     # 1: Vencedor Home Team
-    jogos['winner'] = np.select([jogos.homeScore < jogos.awayScore, jogos.homeScore > jogos.awayScore], [-1, 1], 0)
+    jogos['winner'] = np.select([jogos.homeScore < jogos.awayScore, jogos.homeScore > jogos.awayScore], [0, 1], 2)
     return jogos
 
 def GetTrainTest():
     jogos = GenerateGameTable()
-    empatesDf = jogos.loc[jogos['winner'] == 0]
-    derrotaDf = jogos.loc[jogos['winner'] == -1]
-    vitoriaDf = jogos.loc[jogos['winner'] == 1]
+    empatesDf = jogos.loc[jogos['winner'] == 1]
+    derrotaDf = jogos.loc[jogos['winner'] == 0]
+    vitoriaDf = jogos.loc[jogos['winner'] == 2]
 
     empatesDf = empatesDf.head(261)
     derrotaDf = derrotaDf.head(261)
@@ -105,11 +107,26 @@ def GetTrainTest():
     jogos = pd.concat([empatesDf, derrotaDf, vitoriaDf], sort="True")
 
     #jogos['winner'] = np.select([jogos.winner == 1,jogos.winner == -1],['vitoria mandante','vitoria visitante'],'empate')
-    data = jogos.drop(columns=["awayScore","homeScore",'MatchId', "year", "winner", "awayAttendance", "awayMatchWeek", "matchWeek"])#, "homeTeamId", "awayTeamId"])
+    data = jogos.drop(columns=["awayScore","homeScore",'MatchId', "year", "winner", "awayAttendance", "awayMatchWeek", "matchWeek", "homeTeamId", "awayTeamId"])
+
     colunas = data.columns
+    
     result = jogos["winner"]
 
     return train_test_split(data, result, test_size = 0.20), data[colunas]
+
+    
+def getMeanMedianAccuracyPredict(init, exit, score, clf, att_train, att_test, r_train, r_test):
+    if init == exit:
+        median = np.median(score)
+        mean = np.mean(score)
+        return mean, median
+    clf.fit(att_train, r_train)
+    forecast = clf.predict(att_test)
+    score.append(accuracy_score(r_test, forecast))
+    init += 1
+    return getMeanMedianAccuracyPredict(init, exit, score, clf, att_train, att_test, r_train, r_test)
+
 
 
     

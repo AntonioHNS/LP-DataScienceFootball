@@ -5,7 +5,7 @@ from lib.functions import GetTrainTest
 trainTest, columnsArray = GetTrainTest()
 attribute_train, attribute_test, result_train, result_test = trainTest[0], trainTest[1], trainTest[2], trainTest[3]
 
-svclassifier = SVC(kernel="sigmoid")
+svclassifier = SVC(kernel="rdb", degree=10)
 svclassifier.fit(attribute_train, result_train)
 forecast = svclassifier.predict(attribute_test)
 
