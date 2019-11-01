@@ -127,8 +127,10 @@ def getMeanMedianAccuracyPredict(init, exit, score, clf, att_train, att_test, r_
     init += 1
     return getMeanMedianAccuracyPredict(init, exit, score, clf, att_train, att_test, r_train, r_test)
 
+def returnPercentage(value):
+    return value*100
 
-def GetImportanceList(forecast):
+def GetImportanceList(forecast, classificador):
     trainTest, columnsArray = GetTrainTest()
     attribute_train, attribute_test, result_train, result_test = trainTest[0], trainTest[1], trainTest[2], trainTest[3]
     listaImportancia = list( zip( columnsArray, list( map( returnPercentage, classificador.feature_importances_ ) ) ) )
@@ -136,7 +138,7 @@ def GetImportanceList(forecast):
     stats = list(list(zip(*listaImportancia))[0])
     print(stats)
     df = pd.DataFrame({'importancia': importancia, 'stats': stats })
-    return df, listaImportancia
+    return df, importancia
 
 
 # teste.plot.barh(x="stats", y= "importancia")
