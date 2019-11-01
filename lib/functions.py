@@ -91,7 +91,7 @@ def GenerateGameTable():
     # -1: Vencedor Away Team
     # 0: Empate
     # 1: Vencedor Home Team
-    jogos['winner'] = np.select([jogos.homeScore < jogos.awayScore, jogos.homeScore > jogos.awayScore], [0, 1], 2)
+    jogos['winner'] = np.select([jogos.homeScore < jogos.awayScore, jogos.homeScore > jogos.awayScore], [0, 2], 1)
     return jogos
 
 def GetTrainTest():
@@ -128,7 +128,19 @@ def getMeanMedianAccuracyPredict(init, exit, score, clf, att_train, att_test, r_
     return getMeanMedianAccuracyPredict(init, exit, score, clf, att_train, att_test, r_train, r_test)
 
 
+def GetImportanceList(forecast):
+    trainTest, columnsArray = GetTrainTest()
+    attribute_train, attribute_test, result_train, result_test = trainTest[0], trainTest[1], trainTest[2], trainTest[3]
+    listaImportancia = list( zip( columnsArray, list( map( returnPercentage, classificador.feature_importances_ ) ) ) )
+    importancia = list(list(zip(*listaImportancia))[1])
+    stats = list(list(zip(*listaImportancia))[0])
+    print(stats)
+    df = pd.DataFrame({'importancia': importancia, 'stats': stats })
+    return df, listaImportancia
 
+
+# teste.plot.barh(x="stats", y= "importancia")
+# plt.show()
     
     
     
