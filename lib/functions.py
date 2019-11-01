@@ -89,14 +89,14 @@ def GenerateGameTable():
     # -1: Vencedor Away Team
     # 0: Empate
     # 1: Vencedor Home Team
-    jogos['winner'] = np.select([jogos.homeScore < jogos.awayScore, jogos.homeScore > jogos.awayScore], [-1, 1], 0)
+    jogos['winner'] = np.select([jogos.homeScore < jogos.awayScore, jogos.homeScore > jogos.awayScore], [0, 2], 1)
     return jogos
 
 def GetTrainTest():
     jogos = GenerateGameTable()
-    empatesDf = jogos.loc[jogos['winner'] == 0]
-    derrotaDf = jogos.loc[jogos['winner'] == -1]
-    vitoriaDf = jogos.loc[jogos['winner'] == 1]
+    empatesDf = jogos.loc[jogos['winner'] == 1]
+    derrotaDf = jogos.loc[jogos['winner'] == 0]
+    vitoriaDf = jogos.loc[jogos['winner'] == 2]
 
     empatesDf = empatesDf.head(261)
     derrotaDf = derrotaDf.head(261)
@@ -111,7 +111,19 @@ def GetTrainTest():
 
     return train_test_split(data, result, test_size = 0.20), data[colunas]
 
+def GetImportanceList(forecast):
+    trainTest, columnsArray = GetTrainTest()
+    attribute_train, attribute_test, result_train, result_test = trainTest[0], trainTest[1], trainTest[2], trainTest[3]
+    listaImportancia = list( zip( columnsArray, list( map( returnPercentage, classificador.feature_importances_ ) ) ) )
+    importancia = list(list(zip(*listaImportancia))[1])
+    stats = list(list(zip(*listaImportancia))[0])
+    print(stats)
+    df = pd.DataFrame({'importancia': importancia, 'stats': stats })
+    return df, listaImportancia
 
+
+# teste.plot.barh(x="stats", y= "importancia")
+# plt.show()
     
     
     
