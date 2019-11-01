@@ -4,9 +4,8 @@ from lib.functions import GetTrainTest, getMeanMedianAccuracyPredict, GetImporta
 
 import numpy as np
 
-trainTest, columnsArray = GetTrainTest()
+attribute_train, attribute_test, result_train, result_test, columnsArray = GetTrainTest()
 
-attribute_train, attribute_test, result_train, result_test = trainTest[0], trainTest[1], trainTest[2], trainTest[3]
 clf = RandomForestClassifier(n_jobs=2, random_state = 0)
 
 mean, median = getMeanMedianAccuracyPredict(0, 500, [], clf, attribute_train, attribute_test, result_train, result_test)

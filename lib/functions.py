@@ -107,20 +107,25 @@ def GetTrainTest():
     jogos = pd.concat([empatesDf, derrotaDf, vitoriaDf], sort="True")
 
     #jogos['winner'] = np.select([jogos.winner == 1,jogos.winner == -1],['vitoria mandante','vitoria visitante'],'empate')
-    data = jogos.drop(columns=["awayScore","homeScore",'MatchId', "year", "winner", "awayAttendance", "awayMatchWeek", "matchWeek", "homeTeamId", "awayTeamId"])
+    data = jogos.drop(columns=["awayScore","homeScore",'MatchId', "year", "winner", "awayAttendance", "awayMatchWeek","awayTeamId", "homeTeamId"])
 
     colunas = data.columns
     
-    result = jogos["winner"]
+    data = data
 
-    return train_test_split(data, result, test_size = 0.20), data[colunas]
+    result = jogos["winner"]
+    X_train, X_test, y_train, y_test = train_test_split(data, result, test_size = 0.20)
+    sc = StandardScaler()
+    X_train = sc.fit_transform(X_train)
+    X_test = sc.fit_transform(X_test)
+    return X_train, X_test, y_train, y_test, data[colunas]
 
     
 def getMeanMedianAccuracyPredict(init, exit, score, clf, att_train, att_test, r_train, r_test):
     if init == exit:
         median = np.median(score)
         mean = np.mean(score)
-        return mean, median
+        return mean*100, median*100
     clf.fit(att_train, r_train)
     forecast = clf.predict(att_test)
     score.append(accuracy_score(r_test, forecast))

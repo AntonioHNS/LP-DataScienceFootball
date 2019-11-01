@@ -6,8 +6,7 @@ from sklearn.metrics import classification_report, confusion_matrix, accuracy_sc
 import numpy as np
 
 
-trainTest, columnsArray = GetTrainTest()
-attribute_train, attribute_test, result_train, result_test = trainTest[0], trainTest[1], trainTest[2], trainTest[3]
+attribute_train, attribute_test, result_train, result_test, columnsArray = GetTrainTest()
 
 clf = tree.DecisionTreeClassifier(random_state=0, max_depth=2, max_leaf_nodes=3)
 
