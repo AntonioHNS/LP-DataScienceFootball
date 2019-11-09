@@ -8,9 +8,17 @@ import numpy as np
 
 attribute_train, attribute_test, result_train, result_test, columnsArray = GetTrainTest()
 
-clf = tree.DecisionTreeClassifier(random_state=0, max_depth=2, max_leaf_nodes=3)
+clf = tree.DecisionTreeClassifier(random_state=0, max_depth=6, max_leaf_nodes=3, criterion="entropy", splitter="random")
 
-mean, median = getMeanMedianAccuracyPredict(0, 500, [], clf, attribute_train, attribute_test, result_train, result_test)
-print("Median Accuracy: " + str(median))
-print("Mean Accuracy: " + str(mean))
+clf.fit(attribute_train, result_train)
+forecast = clf.predict(attribute_test)
+
+confusionMatrix = confusion_matrix(result_test, forecast)
+classificationReport = classification_report(result_test, forecast)
+
+print(classificationReport)
+
+# mean, median = getMeanMedianAccuracyPredict(0, 500, [], clf, attribute_train, attribute_test, result_train, result_test)
+# print("Median Accuracy: " + str(median))
+# print("Mean Accuracy: " + str(mean))
 
