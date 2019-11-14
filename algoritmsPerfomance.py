@@ -57,12 +57,20 @@ means = [meanDummy, meanNaive, meanAdaBoost, meanGradient, meanDecisionTree, mea
 medians = [medianDummy, medianNaive, medianAdaBoost, medianGradient, medianDecisionTree, medianRandomForest, medianSvc, medianMultiLayer]
 algorithms = ["DummyClassifier", "Naive Bayes", "AdaBoost", "GradientBoosting", "Decision Tree", "Random Forest", "SVM", "Multilayer Perceptron"]
 
+print(means)
+
+print(medians)
+
 df = pd.DataFrame({'Médias': means, 'Medianas': medians}, index=algorithms)
 
 ax1 = df["Médias"].plot.bar(rot=0, subplots=True)
 
+plt.ylim(0, 80)
+
 plt.show()
 
 ax2 = df["Medianas"].plot.bar(rot=0, subplots=True)
+
+plt.ylim(0, 80)
 
 plt.show()
