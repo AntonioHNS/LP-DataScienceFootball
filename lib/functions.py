@@ -107,7 +107,18 @@ def GetTrainTest():
     jogos = pd.concat([empatesDf, derrotaDf, vitoriaDf], sort="True")
 
     #jogos['winner'] = np.select([jogos.winner == 1,jogos.winner == -1],['vitoria mandante','vitoria visitante'],'empate')
-    data = jogos.drop(columns=["awayScore","homeScore",'MatchId', "year", "winner", "awayAttendance", "awayMatchWeek","awayTeamId", "homeTeamId"])
+    
+    #Teste 1
+    # data = jogos.drop(columns=["awayScore","homeScore",'MatchId', "year", "winner", "awayAttendance", "awayMatchWeek"])
+
+    #Teste 2
+    # data = jogos.drop(columns=["awayScore","homeScore",'MatchId', "year", "winner", "awayAttendance", "awayMatchWeek", "awayRedCards", "homeRedCards"])
+
+    #Teste 3
+    # data = jogos.drop(columns=["awayScore","homeScore",'MatchId', "year", "winner", "awayAttendance", "awayMatchWeek", "awayRedCards", "homeRedCards", "homeYellowCards", "awayYellowCards", "homeOffsides", "awayOffsides", "homeCorners", "awayCorners"])
+
+    #Teste 4
+    data = jogos.drop(columns=["awayScore","homeScore",'MatchId', "year", "winner", "awayAttendance", "awayMatchWeek", "awayRedCards", "homeRedCards", "homeYellowCards", "awayYellowCards", "homeOffsides", "awayOffsides", "homeCorners", "awayCorners", "awayFouls", "awayTeamId", "awayTackles", "awayTotalShots", "homeGoalsKicks", "homeTotalShots", "homePossession"])
 
     colunas = data.columns
     
