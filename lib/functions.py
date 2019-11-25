@@ -109,7 +109,7 @@ def GetTrainTest():
     #jogos['winner'] = np.select([jogos.winner == 1,jogos.winner == -1],['vitoria mandante','vitoria visitante'],'empate')
     
     #Teste 1
-    # data = jogos.drop(columns=["awayScore","homeScore",'MatchId', "year", "winner", "awayAttendance", "awayMatchWeek"])
+    data = jogos.drop(columns=["awayScore","homeScore",'MatchId', "year", "winner", "awayAttendance", "awayMatchWeek"])
 
     #Teste 2
     # data = jogos.drop(columns=["awayScore","homeScore",'MatchId', "year", "winner", "awayAttendance", "awayMatchWeek", "awayRedCards", "homeRedCards"])
@@ -118,7 +118,7 @@ def GetTrainTest():
     # data = jogos.drop(columns=["awayScore","homeScore",'MatchId', "year", "winner", "awayAttendance", "awayMatchWeek", "awayRedCards", "homeRedCards", "homeYellowCards", "awayYellowCards", "homeOffsides", "awayOffsides", "homeCorners", "awayCorners"])
 
     #Teste 4
-    data = jogos.drop(columns=["awayScore","homeScore",'MatchId', "year", "winner", "awayAttendance", "awayMatchWeek", "awayRedCards", "homeRedCards", "homeYellowCards", "awayYellowCards", "homeOffsides", "awayOffsides", "homeCorners", "awayCorners", "awayFouls", "awayTeamId", "awayTackles", "awayTotalShots", "homeGoalsKicks", "homeTotalShots", "homePossession"])
+    # data = jogos.drop(columns=["awayScore","homeScore",'MatchId', "year", "winner", "awayAttendance", "awayMatchWeek", "awayRedCards", "homeRedCards", "homeYellowCards", "awayYellowCards", "homeOffsides", "awayOffsides", "homeCorners", "awayCorners", "awayFouls", "awayTeamId", "awayTackles", "awayTotalShots", "homeGoalsKicks", "homeTotalShots", "homePossession"])
 
     colunas = data.columns
     
@@ -130,7 +130,19 @@ def GetTrainTest():
     X_test = sc.fit_transform(X_test)
     return X_train, X_test, y_train, y_test, data[colunas]
 
+def getLastFiveRounds(dataSet, year, team):
+    table = dataSet[dataSet["year"] == year]
+    data = table.drop(columns=["awayScore","homeScore",'MatchId', "year", "winner", "awayAttendance", "awayMatchWeek"])
+    data = data.groupby("homeTeamId").mean()
+    return data
+
+def calc(lastRound):
+    if(lastRound == 0):
+        return 1
     
+    lastRound -= 1
+    return calc(lastRound)
+
 def getMeanMedianAccuracyPredict(init, exit, score, clf, att_train, att_test, r_train, r_test):
     if init == exit:
         median = np.median(score)
