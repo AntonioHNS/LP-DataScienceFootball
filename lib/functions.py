@@ -191,7 +191,7 @@ def getLastFiveRounds(dataSet, year, homeTeam, awayTeam, matchId, matchWeek):
     matches['awayYellowCards']    =  away['awayYellowCards']
     matches['awayRedCards']       =  away['awayRedCards']
     return matches
-
+    
 def calc(lastRound):
     if(lastRound == 0):
         return 1
