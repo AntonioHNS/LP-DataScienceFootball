@@ -11,7 +11,7 @@ import numpy as np
 import pandas as pd
 import matplotlib.pyplot as plt
 
-recursoes = 100
+recursoes = 150
 
 attribute_train, attribute_test, result_train, result_test, columnsArray = GetTrainTest()
 
@@ -61,16 +61,18 @@ print(means)
 
 print(medians)
 
-df = pd.DataFrame({'Médias': means, 'Medianas': medians}, index=algorithms)
+df = pd.DataFrame({'Medias': means, 'Medianas': medians}, index=algorithms)
 
-ax1 = df["Médias"].plot.bar(rot=0, subplots=True)
-
-plt.ylim(0, 80)
-
+ax1 = df["Medias"].plot.bar(rot=0, color=['gray', 'black', 'green', 'red', 'brown', 'purple', 'cyan', 'blue'])
+ax1.yaxis.label.set_color('blue')
+plt.ylim(0, 100)
+plt.ylabel("Acurácia Média")
+plt.title("Comparação dos Algoritmos em 150 testes")
 plt.show()
 
-ax2 = df["Medianas"].plot.bar(rot=0, subplots=True)
-
-plt.ylim(0, 80)
-
+ax2 = df["Medianas"].plot.bar(rot=0, color=['gray', 'black', 'green', 'red', 'brown', 'purple', 'cyan', 'blue'])
+ax2.yaxis.label.set_color('blue')
+plt.ylim(0, 100)
+plt.ylabel("Acurácia Mediana")
+plt.title("Comparação dos Algoritmos em 150 testes")
 plt.show()

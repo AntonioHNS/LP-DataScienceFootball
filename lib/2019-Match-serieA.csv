@@ -1,0 +1,677 @@
+	MatchId	teamId	nameTeam	matchWeek	score	venue	stadium	attendance	fouls	corners	crosses	touches	tackles	interceptions	aerialsWon	clearances	offsides	goalsKicks	throwIns	longBalls	possession	totalPassing	correctPassing	totalShots	shotsOnTarget	saves	yellowCards	redCards
+0	e1867e7b	5f232eb1	São Paulo	1	2	home	Estádio do Morumbi, São Paulo, SP	26,533	23	3	11	436	12	5	7	18	2	4	17	29	29%	269	204	7	4	2	0	0
+1	e1867e7b	d9fdd9d9	Botafogo (RJ)	1	0	away	Estádio do Morumbi, São Paulo, SP	26,533	7	2	10	862	18	5	7	13	1	6	13	49	71%	702	628	11	2	2	4	0
+2	92511070	422bb734	Atlético Mineiro	1	2	home	Estádio Raimundo Sampaio, Belo Horizonte	10,531	12	4	18	737	16	14	22	13	0	7	28	43	60%	549	474	11	3	1	0	0
+3	92511070	f205258a	Avaí	1	1	away	Estádio Raimundo Sampaio, Belo Horizonte	10,531	18	4	15	534	14	18	9	16	1	11	23	56	40%	362	286	6	1	1	1	0
+4	3b7c1663	baa296ad	Chapecoense	1	2	home	Arena Condá, Chapecó	8,231	15	3	12	600	18	15	19	24	0	14	32	64	43%	392	302	12	7	7	1	0
+5	3b7c1663	6f7e1f03	Internacional	1	0	away	Arena Condá, Chapecó	8,231	11	5	25	719	21	9	23	8	2	5	28	64	57%	511	414	20	7	7	1	0
+6	2b7cbdc9	639950ae	Flamengo	1	3	home	Estadio Jornalista Mário Filho, Rio de Janeiro, RJ	35,016	13	6	28	702	14	17	21	8	0	1	23	34	58%	526	450	17	5	1	4	0
+7	2b7cbdc9	03ff5eeb	Cruzeiro	1	1	away	Estadio Jornalista Mário Filho, Rio de Janeiro, RJ	35,016	17	2	5	552	11	15	19	27	1	5	11	39	42%	396	315	2	1	1	6	1
+8	24ae5ae7	d5ae3703	Grêmio	1	1	home	Arena do Grêmio, Porto Alegre	32,318	12	12	30	831	23	14	18	11	2	4	25	51	65%	607	503	26	11	5	3	0
+9	24ae5ae7	712c528f	Santos	1	2	away	Arena do Grêmio, Porto Alegre	32,318	18	2	10	560	12	21	11	39	1	10	24	46	36%	335	238	8	5	5	3	1
+10	0da2aca1	157b7fee	Bahia	1	3	home	Itaipava Arena Fonte Nova, Salvador, BA	29,294	17	4	22	551	21	12	34	20	1	4	24	41	43%	351	264	15	6	3	1	0
+11	0da2aca1	bf4acd28	Corinthians	1	2	away	Itaipava Arena Fonte Nova, Salvador, BA	29,294	5	4	10	668	18	11	23	21	0	10	23	69	57%	474	372	9	3	3	4	0
+12	853f8904	2091c619	Atlético Paranaense	1	4	home	Estádio Joaquim Américo Guimarães, Curitiba, PR	12,275	15	4	14	676	12	12	10	8	2	7	19	51	57%	510	447	20	11	5	1	0
+13	853f8904	83f55dbe	Vasco da Gama	1	1	away	Estádio Joaquim Américo Guimarães, Curitiba, PR	12,275	19	0	14	566	15	8	7	19	1	8	15	40	43%	389	333	14	5	5	1	0
+14	68e3e0d8	2f335e17	Ceará	1	4	home	Estádio Castelão, Fortaleza, CE	12,550	15	3	24	641	12	6	14	18	2	8	11	42	54%	497	434	16	8	1	0	0
+15	68e3e0d8	05aff519	CSA	1	0	away	Estádio Castelão, Fortaleza, CE	12,550	4	6	18	583	12	4	21	12	1	10	19	59	46%	416	340	6	1	1	0	1
+16	2c5a9086	84d9701c	Fluminense	1	0	home	Estadio Jornalista Mário Filho, Rio de Janeiro, RJ	17,420	14	5	28	781	11	3	15	9	1	7	20	29	72%	598	540	15	3	2	4	0
+17	2c5a9086	78c617cc	Goiás	1	1	away	Estadio Jornalista Mário Filho, Rio de Janeiro, RJ	17,420	9	5	16	399	16	9	14	26	0	7	13	50	29%	235	165	8	2	2	1	0
+18	e7c665b2	abdce579	Palmeiras	1	4	home	Allianz Parque, São Paulo, SP	26,701	12	6	23	580	27	13	16	14	3	5	17	54	53%	379	300	18	9	5	1	0
+19	e7c665b2	a9d0ab0e	Fortaleza	1	0	away	Allianz Parque, São Paulo, SP	26,701	16	1	10	525	6	7	13	28	1	13	18	34	47%	349	279	8	5	5	2	0
+20	fd884122	6f7e1f03	Internacional	2	2	home	Estádio José Pinheiro Borba, Porto Alegre	37,001	8	4	15	636	18	11	18	21	1	6	22	57	46%	431	351	17	7	5	3	0
+21	fd884122	639950ae	Flamengo	2	1	away	Estádio José Pinheiro Borba, Porto Alegre	37,001	9	5	14	690	25	13	19	16	3	8	13	50	54%	513	416	11	5	5	2	0
+22	87cdcb36	bf4acd28	Corinthians	2	1	home	Arena Corinthians, São Paulo, SP	30,442	14	7	20	624	27	7	23	13	1	10	24	54	52%	424	347	12	4	1	2	0
+23	87cdcb36	baa296ad	Chapecoense	2	0	away	Arena Corinthians, São Paulo, SP	30,442	10	2	11	596	22	10	31	24	1	9	26	53	48%	403	315	10	1	1	1	0
+24	7be3236f	05aff519	CSA	2	1	home	Estádio Rei Pelé, Maceió	15,735				1									0%	0	0	1	1	1	0	0
+25	7be3236f	abdce579	Palmeiras	2	1	away	Estádio Rei Pelé, Maceió	15,735				2									100%	1	1	1	1	1	0	0
+26	17afacc8	f205258a	Avaí	2	1	home	Estádio Aderbal Ramos da Silva, Florianópolis	12,181	15	11	25	590	23	18	25	17	0	7	21	47	44%	375	274	13	3	2	4	0
+27	17afacc8	d5ae3703	Grêmio	2	1	away	Estádio Aderbal Ramos da Silva, Florianópolis	12,181	17	4	14	698	24	15	17	18	0	10	16	65	56%	504	399	4	2	2	3	0
+28	0d2bc1dd	03ff5eeb	Cruzeiro	2	1	home	Estádio Governador Magalhães Pinto, Belo Horizonte	22,677	10	2	22	799	13	12	14	15	1	5	21	49	59%	614	541	11	4	4	1	0
+29	0d2bc1dd	2f335e17	Ceará	2	0	away	Estádio Governador Magalhães Pinto, Belo Horizonte	22,677	12	3	16	603	17	6	20	24	2	11	18	46	41%	426	348	14	4	4	0	0
+30	b9474904	a9d0ab0e	Fortaleza	2	2	home	Estádio Castelão, Fortaleza, CE	20,578	12	2	12	450	13	12	20	24	1	15	18	44	36%	291	234	18	5	4	3	0
+31	b9474904	2091c619	Atlético Paranaense	2	1	away	Estádio Castelão, Fortaleza, CE	20,578	19	7	25	665	6	6	12	12	0	7	8	34	64%	507	454	10	4	4	3	0
+32	baba4abd	83f55dbe	Vasco da Gama	2	1	home	Estádio Club de Regatas Vasco da Gama, Rio de Janeiro, RJ	6,745	12	8	33	678	18	9	16	14	0	6	21	32	51%	461	387	21	4	4	0	0
+33	baba4abd	422bb734	Atlético Mineiro	2	2	away	Estádio Club de Regatas Vasco da Gama, Rio de Janeiro, RJ	6,745	9	4	13	653	20	17	18	24	1	12	12	49	49%	466	385	14	4	4	0	0
+34	1dd0de1b	78c617cc	Goiás	2	1	home	Estádio de Hailé Pinheiro, Goiás	29,644	15	5	23	561	13	9	13	16	1	7	21	57	47%	380	315	13	2	5	3	0
+35	1dd0de1b	5f232eb1	São Paulo	2	2	away	Estádio de Hailé Pinheiro, Goiás	29,644	12	10	19	631	16	8	13	19	1	11	18	40	53%	433	376	14	5	5	2	1
+36	20fd2d7a	712c528f	Santos	2	2	home	Estádio Urbano Caldeira, Santos, SP	10,564	25	6	19	579	17	10	6	13	1	4	26	45	43%	377	308	22	10	4	3	0
+37	20fd2d7a	84d9701c	Fluminense	2	1	away	Estádio Urbano Caldeira, Santos, SP	10,564	14	1	9	717	14	8	12	18	3	13	14	34	57%	517	441	10	4	4	2	0
+38	306067fa	d9fdd9d9	Botafogo (RJ)	2	3	home	Estádio Nilton Santos, Rio de Janeiro, RJ	7,568	11	3	13	666	15	8	25	22	0	13	19	73	53%	482	389	9	5	4	3	0
+39	306067fa	157b7fee	Bahia	2	2	away	Estádio Nilton Santos, Rio de Janeiro, RJ	7,568	15	6	20	615	12	7	29	14	4	7	23	45	47%	421	334	19	4	4	0	0
+40	e49ae52a	abdce579	Palmeiras	3	1	home	Allianz Parque, São Paulo, SP	31,549	15	4	11	472	26	14	26	32	0	7	23	45	35%	255	186	13	5	2	2	0
+41	e49ae52a	6f7e1f03	Internacional	3	0	away	Allianz Parque, São Paulo, SP	31,549	18	5	26	684	23	11	18	6	0	6	28	51	65%	477	394	10	2	2	5	0
+42	0f782f06	83f55dbe	Vasco da Gama	3	1	home	Estádio Club de Regatas Vasco da Gama, Rio de Janeiro, RJ	25,779	21	8	26	500	14	11	9	9	0	8	20	47	47%	342	276	13	4	2	2	0
+43	0f782f06	bf4acd28	Corinthians	3	1	away	Estádio Club de Regatas Vasco da Gama, Rio de Janeiro, RJ	25,779	8	2	10	571	11	11	20	19	0	7	18	45	53%	411	347	11	2	2	1	0
+44	3a952f6a	2f335e17	Ceará	3	1	home	Estádio Castelão, Fortaleza, CE	16,815	12	6	27	598	12	10	11	13	1	8	18	38	47%	450	380	9	3	6	0	0
+45	3a952f6a	422bb734	Atlético Mineiro	3	2	away	Estádio Castelão, Fortaleza, CE	16,815	7	4	11	695	8	10	17	27	1	5	17	62	53%	531	463	15	6	6	1	0
+46	46c23c5b	baa296ad	Chapecoense	3	1	home	Arena Condá, Chapecó	6,433	16	8	35	572	14	9	15	12	1	12	11	68	51%	384	328	16	5	6	1	0
+47	46c23c5b	2091c619	Atlético Paranaense	3	1	away	Arena Condá, Chapecó	6,433	17	3	11	579	14	7	7	22	2	10	18	47	49%	399	341	17	6	6	3	0
+48	71f1cc29	d9fdd9d9	Botafogo (RJ)	3	1	home	Estádio Nilton Santos, Rio de Janeiro, RJ	13,749	10	7	20	711	25	5	19	20	0	7	15	51	57%	539	482	9	4	3	0	0
+49	71f1cc29	a9d0ab0e	Fortaleza	3	0	away	Estádio Nilton Santos, Rio de Janeiro, RJ	13,749	16	4	17	578	12	12	18	18	1	6	13	53	43%	406	357	14	3	3	2	0
+50	6263b729	5f232eb1	São Paulo	3	1	home	Estádio do Morumbi, São Paulo, SP	38,749	16	6	25	659	12	6	17	10	0	4	20	38	65%	456	399	22	11	1	1	0
+51	6263b729	639950ae	Flamengo	3	1	away	Estádio do Morumbi, São Paulo, SP	38,749	15	2	4	420	17	5	11	28	2	13	17	58	35%	259	185	9	1	1	7	0
+52	d69deb38	03ff5eeb	Cruzeiro	3	2	home	Estádio Governador Magalhães Pinto, Belo Horizonte	19,735	14	5	32	701	11	6	24	22	1	10	14	45	61%	519	453	20	6	4	1	0
+53	d69deb38	78c617cc	Goiás	3	1	away	Estádio Governador Magalhães Pinto, Belo Horizonte	19,735	10	4	18	538	12	17	14	35	1	13	9	56	39%	333	267	13	4	4	3	1
+54	aab6d2b6	05aff519	CSA	3	0	home	Estádio Rei Pelé, Maceió	10,313	11	2	13	436	22	9	15	27	1	11	12	64	29%	250	167	10	3	7	1	0
+55	aab6d2b6	712c528f	Santos	3	0	away	Estádio Rei Pelé, Maceió	10,313	13	12	23	798	10	3	17	8	1	6	17	53	71%	632	538	17	7	7	4	0
+56	6f24627c	157b7fee	Bahia	3	1	home	Itaipava Arena Fonte Nova, Salvador, BA	18,673	27	9	25	596	20	10	26	14	0	10	20	52	52%	394	294	20	11	1	1	0
+57	6f24627c	f205258a	Avaí	3	0	away	Itaipava Arena Fonte Nova, Salvador, BA	18,673	15	1	15	607	21	16	31	30	1	12	31	63	48%	367	281	9	1	1	2	0
+58	1c6d5b34	d5ae3703	Grêmio	3	4	home	Arena do Grêmio, Porto Alegre	8,390	8	8	14	742	23	13	13	25	1	5	17	49	52%	544	472	13	7	12	2	0
+59	1c6d5b34	84d9701c	Fluminense	3	5	away	Arena do Grêmio, Porto Alegre	8,390	10	8	23	672	22	8	13	12	0	7	13	32	48%	490	411	17	12	12	1	0
+60	4d5bebe7	84d9701c	Fluminense	4	0	home	Estadio Jornalista Mário Filho, Rio de Janeiro, RJ	24,600	16	8	30	688	11	6	6	7	4	8	18	25	63%	504	461	23	6	3	3	0
+61	4d5bebe7	d9fdd9d9	Botafogo (RJ)	4	1	away	Estadio Jornalista Mário Filho, Rio de Janeiro, RJ	24,600	12	3	7	468	20	3	12	31	4	14	10	46	37%	305	249	9	3	3	5	0
+62	94e6ee95	bf4acd28	Corinthians	4	0	home	Arena Corinthians, São Paulo, SP	36,360	13	3	11	665	21	9	19	14	0	7	17	55	48%	474	385	11	4	2	2	0
+63	94e6ee95	d5ae3703	Grêmio	4	0	away	Arena Corinthians, São Paulo, SP	36,360	19	2	13	699	24	12	19	15	1	8	14	62	52%	513	427	8	2	2	4	0
+64	2ebf54ca	78c617cc	Goiás	4	2	home	Estádio de Hailé Pinheiro, Goiás	9,493	20	2	15	499	14	10	8	41	2	7	25	58	38%	295	235	12	6	3	2	0
+65	2ebf54ca	2f335e17	Ceará	4	1	away	Estádio de Hailé Pinheiro, Goiás	9,493	12	7	30	676	13	5	23	17	2	7	29	58	63%	487	401	13	3	3	2	0
+66	e37794e4	639950ae	Flamengo	4	2	home	Estadio Jornalista Mário Filho, Rio de Janeiro, RJ	61,023	18	7	16	637	27	5	9	10	1	11	18	50	56%	464	399	19	7	7	2	0
+67	e37794e4	baa296ad	Chapecoense	4	1	away	Estadio Jornalista Mário Filho, Rio de Janeiro, RJ	61,023	9	4	14	582	12	10	16	21	1	7	11	29	44%	362	323	20	7	7	3	0
+68	1d454a7c	6f7e1f03	Internacional	4	3	home	Estádio José Pinheiro Borba, Porto Alegre	21,483	10	4	14	673	16	10	11	15	0	5	15	66	53%	505	425	16	5	6	0	0
+69	1d454a7c	03ff5eeb	Cruzeiro	4	1	away	Estádio José Pinheiro Borba, Porto Alegre	21,483	14	3	10	606	20	6	12	19	0	9	19	47	47%	442	364	14	6	6	0	1
+70	2f509a98	712c528f	Santos	4	3	home	Estádio Urbano Caldeira, Santos, SP	12,952	18	8	17	642	15	21	7	13	1	5	24	50	56%	435	344	23	8	5	2	0
+71	2f509a98	83f55dbe	Vasco da Gama	4	0	away	Estádio Urbano Caldeira, Santos, SP	12,952	11	5	18	546	15	14	15	18	5	16	18	54	45%	346	262	15	5	5	5	1
+72	47527f3c	422bb734	Atlético Mineiro	4	0	home	Estádio Raimundo Sampaio, Belo Horizonte	24,368				0									0%	0	0	0	0	2	1	0
+73	47527f3c	abdce579	Palmeiras	4	2	away	Estádio Raimundo Sampaio, Belo Horizonte	24,368				4									100%	2	2	2	2	2	3	0
+74	6f109958	2091c619	Atlético Paranaense	4	1	home	Estádio Joaquim Américo Guimarães, Curitiba, PR	10,510	13	8	17	731	9	14	12	26	3	6	19	69	63%	539	469	18	9	4	2	0
+75	6f109958	157b7fee	Bahia	4	0	away	Estádio Joaquim Américo Guimarães, Curitiba, PR	10,510	14	6	22	504	18	9	27	35	2	6	15	35	37%	309	246	13	4	4	3	0
+76	cde95e78	f205258a	Avaí	4	0	home	Estádio Aderbal Ramos da Silva, Florianópolis	4,852	14	6	35	759	3	14	20	7	4	7	23	60	60%	544	470	21	4	1	1	0
+77	cde95e78	05aff519	CSA	4	0	away	Estádio Aderbal Ramos da Silva, Florianópolis	4,852	18	0	9	561	25	12	17	30	0	9	15	66	40%	376	278	4	1	1	2	0
+78	5bfda5bf	a9d0ab0e	Fortaleza	4	0	home	Estádio Castelão, Fortaleza, CE	42,955	12	6	20	648	16	6	9	15	2	5	20	50	53%	478	419	12	3	2	2	0
+79	5bfda5bf	5f232eb1	São Paulo	4	1	away	Estádio Castelão, Fortaleza, CE	42,955	14	4	11	606	11	7	14	22	0	8	18	37	47%	430	377	8	2	2	2	0
+80	c04a37f5	84d9701c	Fluminense	5	4	home	Estadio Jornalista Mário Filho, Rio de Janeiro, RJ	11,437	20	10	22	690	7	12	24	9	0	1	21	39	54%	501	437	24	11	3	3	0
+81	c04a37f5	03ff5eeb	Cruzeiro	5	1	away	Estadio Jornalista Mário Filho, Rio de Janeiro, RJ	11,437	12	2	10	622	26	14	11	22	1	5	11	46	46%	442	356	4	3	3	2	0
+82	663c3959	abdce579	Palmeiras	5	4	home	Allianz Parque, São Paulo, SP	32,501	23	5	8	440	19	11	17	26	0	6	23	60	34%	245	168	17	8	4	2	0
+83	663c3959	712c528f	Santos	5	0	away	Allianz Parque, São Paulo, SP	32,501	19	5	17	667	14	7	16	11	1	4	25	40	66%	479	399	13	4	4	4	0
+84	9f995523	422bb734	Atlético Mineiro	5	2	home	Estádio Raimundo Sampaio, Belo Horizonte	13,616	11	2	10	470	12	9	11	33	0	12	27	44	34%	255	188	11	5	10	3	1
+85	9f995523	639950ae	Flamengo	5	1	away	Estádio Raimundo Sampaio, Belo Horizonte	13,616	8	18	34	693	24	6	17	12	0	7	24	51	66%	488	412	24	10	10	1	0
+86	e93b6190	5f232eb1	São Paulo	5	0	home	Estádio do Morumbi, São Paulo, SP	44,640	9	4	14	700	10	7	25	18	3	11	15	43	58%	512	445	11	3	2	1	1
+87	e93b6190	157b7fee	Bahia	5	0	away	Estádio do Morumbi, São Paulo, SP	44,640	19	6	16	540	23	8	19	15	1	8	18	42	42%	371	288	17	2	2	3	0
+88	87ddd1a7	baa296ad	Chapecoense	5	1	home	Arena Condá, Chapecó	6,765	16	9	36	625	11	8	21	16	0	6	19	60	53%	419	349	19	4	8	1	0
+89	87ddd1a7	a9d0ab0e	Fortaleza	5	3	away	Arena Condá, Chapecó	6,765	12	4	15	600	13	5	18	22	2	11	33	57	47%	395	306	12	8	8	1	0
+90	1bbf042c	78c617cc	Goiás	5	1	home	Estádio de Hailé Pinheiro, Goiás	16,347	18	9	30	412	17	8	20	19	7	4	16	42	32%	238	187	19	6	2	1	0
+91	1bbf042c	d9fdd9d9	Botafogo (RJ)	5	0	away	Estádio de Hailé Pinheiro, Goiás	16,347	14	3	10	731	5	4	22	25	0	15	14	58	68%	571	500	6	2	2	3	0
+92	d89c4142	2091c619	Atlético Paranaense	5	0	home	Estádio Joaquim Américo Guimarães, Curitiba, PR	18,284	16	11	38	788	20	10	16	11	3	3	23	43	62%	583	517	23	5	2	1	0
+93	d89c4142	bf4acd28	Corinthians	5	2	away	Estádio Joaquim Américo Guimarães, Curitiba, PR	18,284	12	3	15	554	11	7	23	34	1	14	17	62	38%	362	294	4	2	2	4	0
+94	df514c6d	6f7e1f03	Internacional	5	2	home	Estádio José Pinheiro Borba, Porto Alegre	24,220	11	4	23	771	9	9	16	19	4	5	17	59	63%	601	521	14	7	5	2	0
+95	df514c6d	05aff519	CSA	5	0	away	Estádio José Pinheiro Borba, Porto Alegre	24,220	9	3	16	507	11	8	12	18	2	7	16	43	37%	342	265	12	5	5	3	0
+96	01ad4c14	83f55dbe	Vasco da Gama	5	1	home	Estádio Club de Regatas Vasco da Gama, Rio de Janeiro, RJ	13,924	16	5	17	564	20	12	22	25	3	10	21	53	51%	368	279	11	2	6	1	0
+97	01ad4c14	f205258a	Avaí	5	1	away	Estádio Club de Regatas Vasco da Gama, Rio de Janeiro, RJ	13,924	14	10	26	571	18	14	15	15	3	7	30	50	50%	348	263	18	6	6	2	0
+98	08911f3d	2f335e17	Ceará	5	2	home	Estádio Castelão, Fortaleza, CE	17,506	14	2	9	458	33	8	18	27	2	9	13	55	36%	281	196	6	1	4	3	0
+99	08911f3d	d5ae3703	Grêmio	5	1	away	Estádio Castelão, Fortaleza, CE	17,506	16	7	18	726	13	7	17	12	1	4	25	52	64%	493	421	17	4	4	6	0
+100	0bf79aa8	d9fdd9d9	Botafogo (RJ)	6	0	home	Estádio Nilton Santos, Rio de Janeiro, RJ	33,143	13	0	14	622	7	6	18	31	0	15	16	37	62%	444	373	8	2	2	10	0
+101	0bf79aa8	abdce579	Palmeiras	6	1	away	Estádio Nilton Santos, Rio de Janeiro, RJ	33,143	19	8	20	434	20	2	21	19	6	5	19	46	38%	254	178	17	2	2	0	0
+102	23be305c	d5ae3703	Grêmio	6	1	home	Arena do Grêmio, Porto Alegre	13,714	10	13	28	773	10	10	11	26	0	3	18	47	57%	570	503	24	8	5	1	0
+103	23be305c	422bb734	Atlético Mineiro	6	0	away	Arena do Grêmio, Porto Alegre	13,714	14	4	13	627	16	9	20	21	0	13	27	44	43%	437	356	9	5	5	4	0
+104	00e3c114	712c528f	Santos	6	0	home	Estádio Urbano Caldeira, Santos, SP	12,756	19	7	18	709	18	10	9	11	0	8	24	38	62%	517	426	11	4	1	5	0
+105	00e3c114	6f7e1f03	Internacional	6	0	away	Estádio Urbano Caldeira, Santos, SP	12,756	19	4	11	535	19	16	18	28	3	4	22	56	38%	316	234	15	1	1	5	0
+106	0ce33849	639950ae	Flamengo	6	3	home	Estadio Jornalista Mário Filho, Rio de Janeiro, RJ	52,667	16	9	30	583	12	4	17	18	2	8	21	49	50%	392	300	11	4	5	4	0
+107	0ce33849	2091c619	Atlético Paranaense	6	2	away	Estadio Jornalista Mário Filho, Rio de Janeiro, RJ	52,667	21	2	12	603	6	10	29	33	0	9	20	60	50%	412	326	12	5	5	3	0
+108	b5254fef	a9d0ab0e	Fortaleza	6	1	home	Estádio Castelão, Fortaleza, CE	28,148	9	2	17	684	9	8	17	17	0	10	17	45	61%	539	479	12	3	2	1	0
+109	b5254fef	83f55dbe	Vasco da Gama	6	1	away	Estádio Castelão, Fortaleza, CE	28,148	12	5	16	468	8	5	10	23	0	10	11	38	39%	337	280	14	2	2	2	0
+110	9b41d18e	bf4acd28	Corinthians	6	1	home	Arena Corinthians, São Paulo, SP	39,378	16	3	14	520	25	9	25	30	1	10	30	50	41%	296	223	13	5	1	3	0
+111	9b41d18e	5f232eb1	São Paulo	6	0	away	Arena Corinthians, São Paulo, SP	39,378	14	4	16	633	15	5	25	6	3	8	32	46	60%	438	345	9	1	1	4	0
+112	aa451be2	157b7fee	Bahia	6	3	home	Itaipava Arena Fonte Nova, Salvador, BA	21,776	9	3	8	453	24	6	12	22	0	6	13	51	34%	303	229	10	5	4	2	0
+113	aa451be2	84d9701c	Fluminense	6	2	away	Itaipava Arena Fonte Nova, Salvador, BA	21,776	10	3	14	787	7	12	15	10	2	4	19	45	67%	603	545	11	4	4	4	1
+114	37e2f4f8	03ff5eeb	Cruzeiro	6	1	home	Estádio Governador Magalhães Pinto, Belo Horizonte	18,039	13	8	25	750	21	7	23	12	1	4	16	38	64%	559	474	18	3	5	1	0
+115	37e2f4f8	baa296ad	Chapecoense	6	2	away	Estádio Governador Magalhães Pinto, Belo Horizonte	18,039	11	2	10	495	10	10	22	26	0	12	20	64	36%	313	224	10	5	5	3	0
+116	1aae63cf	f205258a	Avaí	6	1	home	Estádio Aderbal Ramos da Silva, Florianópolis	5,543	21	3	14	634	25	24	16	16	2	8	29	72	51%	417	295	13	3	4	4	0
+117	1aae63cf	2f335e17	Ceará	6	2	away	Estádio Aderbal Ramos da Silva, Florianópolis	5,543	15	0	12	634	22	13	27	28	1	9	32	53	49%	399	289	9	4	4	3	0
+118	21bfacc2	05aff519	CSA	6	1	home	Estádio Rei Pelé, Maceió	9,128	19	3	14	533	20	17	24	33	1	11	16	50	44%	334	257	16	4	5	3	0
+119	21bfacc2	78c617cc	Goiás	6	0	away	Estádio Rei Pelé, Maceió	9,128	10	9	30	630	10	8	20	19	0	11	31	54	56%	412	328	15	5	5	1	0
+120	8deaf8a8	639950ae	Flamengo	7	2	home	Estadio Jornalista Mário Filho, Rio de Janeiro, RJ	37,658	16	8	19	831	18	9	11	13	2	6	13	23	65%	652	600	21	8	4	1	0
+121	8deaf8a8	a9d0ab0e	Fortaleza	7	0	away	Estadio Jornalista Mário Filho, Rio de Janeiro, RJ	37,658	6	2	15	533	20	8	8	27	1	9	22	50	35%	343	296	10	4	4	0	0
+122	9fd46eb5	157b7fee	Bahia	7	1	home	Itaipava Arena Fonte Nova, Salvador, BA	26,930	8	10	23	582	12	4	16	10	0	6	32	39	43%	394	328	14	4	2	1	0
+123	9fd46eb5	d5ae3703	Grêmio	7	0	away	Itaipava Arena Fonte Nova, Salvador, BA	26,930	10	4	15	708	23	6	18	17	5	8	13	45	57%	537	470	7	2	2	2	0
+124	344c3715	d9fdd9d9	Botafogo (RJ)	7	1	home	Estádio Nilton Santos, Rio de Janeiro, RJ	19,503	15	4	13	649	13	14	19	29	1	9	18	48	55%	469	398	8	1	2	2	0
+125	344c3715	83f55dbe	Vasco da Gama	7	0	away	Estádio Nilton Santos, Rio de Janeiro, RJ	19,503	16	9	29	547	18	13	12	10	1	10	20	35	45%	362	294	18	2	2	3	0
+126	003bce4c	2091c619	Atlético Paranaense	7	3	home	Estádio Joaquim Américo Guimarães, Curitiba, PR	11,709	20	6	24	636	14	15	18	14	1	7	15	42	56%	457	399	16	6	2	1	0
+127	003bce4c	84d9701c	Fluminense	7	0	away	Estádio Joaquim Américo Guimarães, Curitiba, PR	11,709	17	4	10	532	8	6	13	17	0	9	21	49	44%	372	295	9	2	2	3	1
+128	ba6b7fdd	5f232eb1	São Paulo	7	1	home	Estádio do Morumbi, São Paulo, SP	8,517	15	5	19	579	17	7	18	30	0	6	21	53	40%	369	284	13	4	4	2	1
+129	ba6b7fdd	03ff5eeb	Cruzeiro	7	1	away	Estádio do Morumbi, São Paulo, SP	8,517	12	9	17	752	25	9	18	18	4	6	14	53	60%	567	477	14	4	4	3	0
+130	bcd1afb6	2f335e17	Ceará	7	0	home	Estádio Castelão, Fortaleza, CE	50,809	14	2	13	497	19	8	12	17	0	10	18	60	39%	301	219	13	3	3	2	0
+131	bcd1afb6	712c528f	Santos	7	1	away	Estádio Castelão, Fortaleza, CE	50,809	22	0	13	667	24	9	19	23	2	8	21	65	61%	470	387	12	3	3	1	0
+132	9f5d1ffc	422bb734	Atlético Mineiro	7	4	home	Estádio Raimundo Sampaio, Belo Horizonte	14,116	2	11	23	931	9	10	23	11	2	7	19	60	71%	771	697	27	7	0	0	0
+133	9f5d1ffc	05aff519	CSA	7	0	away	Estádio Raimundo Sampaio, Belo Horizonte	14,116	11	2	17	455	11	11	14	25	0	20	12	53	29%	304	242	12	0	0	3	0
+134	2b93e469	6f7e1f03	Internacional	7	2	home	Estádio José Pinheiro Borba, Porto Alegre	19,789	11	5	16	880	19	12	28	29	3	4	20	64	63%	682	597	11	7	1	0	0
+135	2b93e469	f205258a	Avaí	7	0	away	Estádio José Pinheiro Borba, Porto Alegre	19,789	12	7	23	572	20	12	19	15	1	8	19	50	37%	382	298	14	1	1	0	0
+136	c62e02d9	baa296ad	Chapecoense	7	1	home	Arena Condá, Chapecó	10,615	14	3	23	607	14	7	19	15	1	7	23	42	54%	410	333	18	4	6	2	0
+137	c62e02d9	abdce579	Palmeiras	7	2	away	Arena Condá, Chapecó	10,615	21	5	10	537	21	8	17	24	1	11	26	53	46%	356	277	14	6	6	5	0
+138	7cc8d50e	83f55dbe	Vasco da Gama	8	2	home	Estádio Club de Regatas Vasco da Gama, Rio de Janeiro, RJ	11,046	13	0	9	480	22	7	25	36	0	8	16	49	31%	288	211	10	3	4	0	0
+139	7cc8d50e	6f7e1f03	Internacional	8	1	away	Estádio Club de Regatas Vasco da Gama, Rio de Janeiro, RJ	11,046	16	10	31	853	17	6	18	9	5	4	19	45	69%	635	562	19	4	4	2	0
+140	61211edd	abdce579	Palmeiras	8	1	home	Allianz Parque, São Paulo, SP	37,086	16	7	18	490	15	8	24	15	1	2	20	50	43%	304	237	21	3	3	2	0
+141	61211edd	2091c619	Atlético Paranaense	8	0	away	Allianz Parque, São Paulo, SP	37,086	29	7	14	558	13	2	11	15	1	14	15	43	57%	406	333	7	3	3	4	0
+142	3259f1b9	d5ae3703	Grêmio	8	1	home	Arena do Grêmio, Porto Alegre	3,761	7	10	34	827	19	8	22	15	3	2	25	49	65%	630	561	12	4	2	1	0
+143	3259f1b9	a9d0ab0e	Fortaleza	8	0	away	Arena do Grêmio, Porto Alegre	3,761	7	1	9	511	16	14	14	32	0	12	15	47	35%	343	268	5	2	2	4	1
+144	18e26beb	03ff5eeb	Cruzeiro	8	0	home	Estádio Governador Magalhães Pinto, Belo Horizonte	21,370	12	11	24	646	11	11	22	22	2	5	18	39	46%	448	375	25	7	1	1	0
+145	18e26beb	bf4acd28	Corinthians	8	0	away	Estádio Governador Magalhães Pinto, Belo Horizonte	21,370	13	5	22	725	11	11	21	27	1	10	22	64	54%	538	464	5	1	1	1	0
+146	946c1324	2f335e17	Ceará	8	0	home	Estádio Castelão, Fortaleza, CE	15,566	12	9	32	691	14	13	22	14	1	10	33	48	63%	477	391	22	5	1	2	0
+147	946c1324	157b7fee	Bahia	8	0	away	Estádio Castelão, Fortaleza, CE	15,566	10	1	7	489	16	10	30	33	3	15	25	59	37%	296	194	9	1	1	2	0
+148	5ba3aabe	f205258a	Avaí	8	0	home	Estádio Aderbal Ramos da Silva, Florianópolis	8,084	17	4	20	523	28	20	20	37	1	10	19	65	37%	302	197	11	1	3	5	0
+149	5ba3aabe	5f232eb1	São Paulo	8	0	away	Estádio Aderbal Ramos da Silva, Florianópolis	8,084	17	10	25	760	16	10	23	18	1	6	30	48	63%	513	415	12	3	3	2	0
+150	722fe4fb	84d9701c	Fluminense	8	0	home	Estadio Jornalista Mário Filho, Rio de Janeiro, RJ	42,726	14	5	19	798	14	9	8	14	1	8	18	47	64%	607	537	18	6	2	2	0
+151	722fe4fb	639950ae	Flamengo	8	0	away	Estadio Jornalista Mário Filho, Rio de Janeiro, RJ	42,726	17	2	15	533	17	11	18	25	0	10	20	39	36%	339	268	11	2	2	3	0
+152	83ffb9a2	712c528f	Santos	8	3	home	Estádio Urbano Caldeira, Santos, SP	5,794	12	4	19	729	15	11	13	18	0	5	16	40	58%	532	467	24	5	4	1	0
+153	83ffb9a2	422bb734	Atlético Mineiro	8	1	away	Estádio Urbano Caldeira, Santos, SP	5,794	14	5	10	541	11	4	15	12	1	13	23	50	42%	383	290	12	4	4	2	0
+154	eff129ca	05aff519	CSA	8	1	home	Estádio Rei Pelé, Maceió	11,602	20	8	26	488	7	10	17	17	3	8	12	46	40%	328	277	21	5	7	2	0
+155	eff129ca	d9fdd9d9	Botafogo (RJ)	8	2	away	Estádio Rei Pelé, Maceió	11,602	10	2	16	690	5	8	16	22	0	12	17	44	60%	520	463	13	7	7	1	0
+156	0a1dde7d	78c617cc	Goiás	8	3	home	Estádio de Hailé Pinheiro, Goiás	7,756	14	6	27	534	19	4	13	13	0	5	19	51	51%	353	285	17	7	2	2	0
+157	0a1dde7d	baa296ad	Chapecoense	8	1	away	Estádio de Hailé Pinheiro, Goiás	7,756	17	6	14	544	11	10	17	27	0	12	17	46	49%	350	286	12	2	2	0	1
+158	b9047c08	d9fdd9d9	Botafogo (RJ)	9	0	home	Estádio Nilton Santos, Rio de Janeiro, RJ	17,757	9	4	11	637	22	9	15	16	1	6	17	45	47%	463	407	7	3	5	1	0
+159	b9047c08	d5ae3703	Grêmio	9	1	away	Estádio Nilton Santos, Rio de Janeiro, RJ	17,757	11	7	18	695	15	11	8	13	4	4	16	41	53%	515	453	14	5	5	2	0
+160	8c2d890a	a9d0ab0e	Fortaleza	9	2	home	Estádio Castelão, Fortaleza, CE	17,099	10	6	27	513	7	12	15	20	1	8	10	41	46%	354	288	11	4	4	2	1
+161	8c2d890a	03ff5eeb	Cruzeiro	9	1	away	Estádio Castelão, Fortaleza, CE	17,099	15	5	19	586	12	9	14	14	2	6	18	31	54%	426	369	12	4	4	6	0
+162	7788a2a2	712c528f	Santos	9	1	home	Estádio Urbano Caldeira, Santos, SP	11,831	16	2	14	663	21	13	22	17	2	1	22	56	53%	461	369	19	4	0	4	0
+163	7788a2a2	bf4acd28	Corinthians	9	0	away	Estádio Urbano Caldeira, Santos, SP	11,831	13	3	12	640	25	13	19	31	1	10	31	60	47%	413	318	2	0	0	4	0
+164	59f6863a	05aff519	CSA	9	0	home	Estádio Rei Pelé, Maceió	37,673	13	3	9	449	12	8	18	40	1	20	14	50	34%	276	193	10	2	11	3	0
+165	59f6863a	639950ae	Flamengo	9	2	away	Estádio Rei Pelé, Maceió	37,673	10	12	33	712	10	12	29	11	2	3	17	27	66%	515	439	24	11	11	1	0
+166	9a5c8e06	6f7e1f03	Internacional	9	3	home	Estádio José Pinheiro Borba, Porto Alegre	15,724	11	3	10	684	22	11	23	16	1	10	15	68	46%	506	421	14	7	2	1	0
+167	9a5c8e06	157b7fee	Bahia	9	1	away	Estádio José Pinheiro Borba, Porto Alegre	15,724	7	3	16	777	12	6	23	12	0	7	24	52	54%	593	513	19	2	2	1	0
+168	a3c95649	83f55dbe	Vasco da Gama	9	1	home	Estádio Club de Regatas Vasco da Gama, Rio de Janeiro, RJ	19,584	14	5	15	677	15	17	19	8	2	5	23	58	53%	484	400	18	11	1	0	0
+169	a3c95649	2f335e17	Ceará	9	0	away	Estádio Club de Regatas Vasco da Gama, Rio de Janeiro, RJ	19,584	15	1	13	628	16	13	21	16	3	6	19	40	47%	426	341	8	1	1	2	0
+170	1d500651	78c617cc	Goiás	9	2	home	Estádio de Hailé Pinheiro, Goiás	10,468	13	3	9	472	16	9	12	29	1	13	21	76	32%	284	205	17	5	6	1	0
+171	1d500651	2091c619	Atlético Paranaense	9	1	away	Estádio de Hailé Pinheiro, Goiás	10,468	8	7	31	805	13	8	11	12	2	13	25	47	68%	612	535	18	6	6	3	0
+172	38634bbb	baa296ad	Chapecoense	9	1	home	Arena Condá, Chapecó	6,257	12	5	16	456	15	11	13	13	1	7	13	54	36%	296	232	15	4	3	2	0
+173	38634bbb	84d9701c	Fluminense	9	1	away	Arena Condá, Chapecó	6,257	21	3	15	702	11	6	12	10	1	11	13	35	65%	549	492	10	3	3	7	1
+174	0984faa6	422bb734	Atlético Mineiro	9	1	home	Estádio Raimundo Sampaio, Belo Horizonte	19,761	13	12	20	929	22	9	20	17	1	4	26	59	69%	721	630	20	8	3	2	0
+175	0984faa6	5f232eb1	São Paulo	9	1	away	Estádio Raimundo Sampaio, Belo Horizonte	19,761	17	5	16	516	15	10	9	20	0	14	15	37	31%	318	240	9	3	3	4	0
+176	4bbd0da7	abdce579	Palmeiras	9	2	home	Allianz Parque, São Paulo, SP	31,946	13	9	17	629	22	6	33	17	1	8	26	60	53%	421	329	14	6	2	1	0
+177	4bbd0da7	f205258a	Avaí	9	0	away	Allianz Parque, São Paulo, SP	31,946	18	1	15	600	23	16	13	25	1	6	28	42	47%	379	307	8	2	2	1	0
+178	3923739a	a9d0ab0e	Fortaleza	10	2	home	Estádio Castelão, Fortaleza, CE	24,864	15	5	11	561	18	9	22	34	0	9	20	47	41%	361	303	14	6	5	2	0
+179	3923739a	f205258a	Avaí	10	0	away	Estádio Castelão, Fortaleza, CE	24,864	12	13	28	718	15	8	8	11	1	6	26	41	59%	510	442	15	5	5	2	0
+180	d28731b0	d5ae3703	Grêmio	10	2	home	Arena do Grêmio, Porto Alegre	9,701	18	4	19	819	15	9	16	17	2	3	24	51	71%	622	553	11	6	5	2	0
+181	d28731b0	83f55dbe	Vasco da Gama	10	1	away	Arena do Grêmio, Porto Alegre	9,701	12	6	12	439	20	11	13	25	1	8	22	49	29%	255	182	10	5	5	4	0
+182	fd95e79a	157b7fee	Bahia	10	0	home	Itaipava Arena Fonte Nova, Salvador, BA	18,465	14	5	17	480	10	5	19	26	1	14	21	65	38%	318	237	11	2	7	2	0
+183	fd95e79a	712c528f	Santos	10	1	away	Itaipava Arena Fonte Nova, Salvador, BA	18,465	11	7	15	707	9	13	33	14	1	4	21	56	62%	525	443	17	7	7	3	0
+184	5e705244	5f232eb1	São Paulo	10	1	home	Estádio do Morumbi, São Paulo, SP	38,267	19	8	14	541	13	9	24	22	0	6	16	45	45%	337	257	14	10	5	3	0
+185	5e705244	abdce579	Palmeiras	10	1	away	Estádio do Morumbi, São Paulo, SP	38,267	18	5	19	600	19	7	19	9	4	4	24	55	55%	407	326	15	5	5	3	0
+186	ae1bbd09	639950ae	Flamengo	10	6	home	Estadio Jornalista Mário Filho, Rio de Janeiro, RJ	65,154	8	11	26	730	18	7	21	5	0	7	13	21	73%	558	502	29	16	2	1	0
+187	ae1bbd09	78c617cc	Goiás	10	1	away	Estadio Jornalista Mário Filho, Rio de Janeiro, RJ	65,154	9	1	7	364	21	13	11	17	3	13	17	54	27%	203	143	7	2	2	2	0
+188	823fd82e	bf4acd28	Corinthians	10	1	home	Arena Corinthians, São Paulo, SP	33,952	2	16	43	764	11	7	21	10	1	3	22	34	66%	550	484	27	8	1	2	0
+189	823fd82e	05aff519	CSA	10	0	away	Arena Corinthians, São Paulo, SP	33,952	18	1	3	468	17	11	21	35	0	11	15	58	34%	297	223	4	1	1	6	0
+190	8495b286	2091c619	Atlético Paranaense	10	1	home	Estádio Joaquim Américo Guimarães, Curitiba, PR	12,700	15	6	22	641	7	8	10	9	2	9	20	60	60%	456	389	17	6	4	3	0
+191	8495b286	6f7e1f03	Internacional	10	0	away	Estádio Joaquim Américo Guimarães, Curitiba, PR	12,700	16	2	14	490	15	13	24	35	3	11	20	53	40%	300	240	12	4	4	3	0
+192	a3c45116	03ff5eeb	Cruzeiro	10	0	home	Estádio Governador Magalhães Pinto, Belo Horizonte	18,012	11	5	27	608	7	17	9	12	3	9	13	33	43%	454	398	7	1	1	0	0
+193	a3c45116	d9fdd9d9	Botafogo (RJ)	10	0	away	Estádio Governador Magalhães Pinto, Belo Horizonte	18,012	8	3	11	779	13	8	9	24	0	9	9	55	58%	637	568	8	1	1	0	0
+194	d711edcd	baa296ad	Chapecoense	10	1	home	Arena Condá, Chapecó	2,600	20	5	18	471	14	8	23	22	2	16	25	66	38%	264	184	15	3	7	3	0
+195	d711edcd	422bb734	Atlético Mineiro	10	2	away	Arena Condá, Chapecó	2,600	16	10	22	640	13	6	23	13	2	11	18	48	62%	437	351	21	7	7	5	0
+196	51ea387e	84d9701c	Fluminense	10	1	home	Estadio Jornalista Mário Filho, Rio de Janeiro, RJ	23,484	11	14	36	842	17	7	22	8	1	3	15	25	70%	629	552	23	7	5	2	0
+197	51ea387e	2f335e17	Ceará	10	1	away	Estadio Jornalista Mário Filho, Rio de Janeiro, RJ	23,484	15	5	12	470	18	14	13	33	2	11	13	48	30%	267	194	9	5	5	2	0
+198	3e87e205	83f55dbe	Vasco da Gama	11	2	home	Estádio Club de Regatas Vasco da Gama, Rio de Janeiro, RJ	20,904	25	3	13	560	14	9	12	14	4	4	17	45	44%	391	328	16	5	2	4	0
+199	3e87e205	84d9701c	Fluminense	11	1	away	Estádio Club de Regatas Vasco da Gama, Rio de Janeiro, RJ	20,904	22	2	10	655	16	8	16	7	1	9	13	36	56%	499	428	5	2	2	4	2
+200	90afddd6	157b7fee	Bahia	11	0	home	Itaipava Arena Fonte Nova, Salvador, BA	24,864	17	5	28	696	17	3	29	14	1	4	17	45	58%	517	450	12	1	4	3	1
+201	90afddd6	03ff5eeb	Cruzeiro	11	0	away	Itaipava Arena Fonte Nova, Salvador, BA	24,864	8	5	19	570	12	10	11	19	2	13	18	51	43%	383	309	12	4	4	1	0
+202	99757b94	6f7e1f03	Internacional	11	1	home	Estádio José Pinheiro Borba, Porto Alegre	35,103	14	1	14	582	18	8	19	12	0	9	13	62	43%	415	334	11	4	3	3	0
+203	99757b94	d5ae3703	Grêmio	11	1	away	Estádio José Pinheiro Borba, Porto Alegre	35,103	14	2	5	737	20	5	24	17	0	7	16	62	57%	563	467	10	3	3	2	0
+204	a46c60a9	05aff519	CSA	11	0	home	Estádio Rei Pelé, Maceió	7,845	12	3	23	561	12	16	12	14	3	6	28	63	51%	370	296	10	1	9	2	0
+205	a46c60a9	2091c619	Atlético Paranaense	11	4	away	Estádio Rei Pelé, Maceió	7,845	28	6	12	514	12	9	17	20	0	10	12	51	49%	365	286	14	9	9	1	0
+206	ff8f6689	2f335e17	Ceará	11	2	home	Estádio Castelão, Fortaleza, CE	32,287	26	3	11	467	13	5	17	30	1	11	12	55	43%	286	221	9	4	6	3	0
+207	ff8f6689	abdce579	Palmeiras	11	0	away	Estádio Castelão, Fortaleza, CE	32,287	13	9	28	578	19	8	22	14	1	4	20	51	57%	367	308	21	6	6	2	0
+208	702e7ee6	d9fdd9d9	Botafogo (RJ)	11	0	home	Estádio Nilton Santos, Rio de Janeiro, RJ	16,248	12	9	31	598	11	6	14	18	1	8	15	40	51%	437	378	9	1	4	3	1
+209	702e7ee6	712c528f	Santos	11	1	away	Estádio Nilton Santos, Rio de Janeiro, RJ	16,248	14	2	13	599	12	10	14	20	1	5	14	45	50%	443	378	13	4	4	4	1
+210	cf42e854	422bb734	Atlético Mineiro	11	2	home	Estádio Raimundo Sampaio, Belo Horizonte	16,043	15	3	16	579	14	7	20	12	0	4	15	46	52%	412	347	19	7	4	1	0
+211	cf42e854	a9d0ab0e	Fortaleza	11	2	away	Estádio Raimundo Sampaio, Belo Horizonte	16,043	12	2	19	535	8	7	12	15	0	16	16	48	48%	382	309	11	4	4	4	0
+212	ebf3844a	bf4acd28	Corinthians	11	1	home	Arena Corinthians, São Paulo, SP	34,737	20	2	18	497	11	5	20	20	1	9	26	42	44%	316	254	13	2	3	1	0
+213	ebf3844a	639950ae	Flamengo	11	1	away	Arena Corinthians, São Paulo, SP	34,737	17	5	14	568	17	5	22	18	1	15	17	36	56%	411	332	6	3	3	5	1
+214	12b2c5c3	f205258a	Avaí	11	0	home	Estádio Aderbal Ramos da Silva, Florianópolis	5,497	16	5	20	661	6	12	23	13	1	9	17	51	62%	487	398	15	3	4	4	0
+215	12b2c5c3	78c617cc	Goiás	11	0	away	Estádio Aderbal Ramos da Silva, Florianópolis	5,497	19	3	11	478	17	17	13	19	1	9	22	58	38%	302	209	11	4	4	2	0
+216	86ecbfc0	5f232eb1	São Paulo	11	4	home	Estádio do Morumbi, São Paulo, SP	35,558	29	5	13	570	31	8	11	9	1	5	15	46	49%	395	319	19	6	2	1	0
+217	86ecbfc0	baa296ad	Chapecoense	11	0	away	Estádio do Morumbi, São Paulo, SP	35,558	19	3	13	607	13	6	14	13	3	9	14	50	51%	403	336	8	2	2	3	0
+218	b1d19eb3	abdce579	Palmeiras	12	1	home	Allianz Parque, São Paulo, SP	37,754	22	3	20	545	13	3	22	12	1	6	18	43	55%	387	329	15	4	1	1	0
+219	b1d19eb3	83f55dbe	Vasco da Gama	12	1	away	Allianz Parque, São Paulo, SP	37,754	22	4	12	496	14	6	16	20	0	14	23	52	45%	317	248	5	1	1	4	0
+220	952b6d2f	84d9701c	Fluminense	12	1	home	Estadio Jornalista Mário Filho, Rio de Janeiro, RJ	21,741	20	4	16	806	16	9	11	5	0	7	13	27	71%	660	592	14	4	5	1	0
+221	952b6d2f	5f232eb1	São Paulo	12	2	away	Estadio Jornalista Mário Filho, Rio de Janeiro, RJ	21,741	14	2	8	444	14	7	10	35	0	7	17	30	29%	264	208	13	5	5	3	0
+222	06dc9737	6f7e1f03	Internacional	12	1	home	Estádio José Pinheiro Borba, Porto Alegre	11,033	11	6	22	716	21	7	24	19	1	5	24	64	55%	494	405	11	5	2	3	0
+223	06dc9737	2f335e17	Ceará	12	0	away	Estádio José Pinheiro Borba, Porto Alegre	11,033	12	6	20	628	16	12	14	16	0	5	29	56	46%	409	308	9	2	2	3	0
+224	2d2a14bf	03ff5eeb	Cruzeiro	12	0	home	Estádio Governador Magalhães Pinto, Belo Horizonte	20,689	11	1	18	521	11	11	13	9	2	13	22	50	40%	367	291	8	1	6	1	0
+225	2d2a14bf	2091c619	Atlético Paranaense	12	2	away	Estádio Governador Magalhães Pinto, Belo Horizonte	20,689	11	5	14	725	14	13	13	16	0	8	16	69	60%	552	488	20	6	6	0	0
+226	160290f0	baa296ad	Chapecoense	12	0	home	Arena Condá, Chapecó	12,787	16	10	33	590	18	13	17	12	0	8	30	66	48%	358	270	16	4	7	1	0
+227	160290f0	157b7fee	Bahia	12	0	away	Arena Condá, Chapecó	12,787	15	5	18	629	23	12	18	27	1	9	24	63	52%	404	301	16	7	7	1	0
+228	0dd2063c	712c528f	Santos	12	3	home	Estádio Urbano Caldeira, Santos, SP	12,787	9	15	30	675	25	13	10	18	4	6	25	49	60%	436	359	18	10	4	2	0
+229	0dd2063c	f205258a	Avaí	12	1	away	Estádio Urbano Caldeira, Santos, SP	12,787	13	4	13	529	22	13	14	36	0	10	14	48	41%	306	227	11	4	4	2	0
+230	6b29065c	639950ae	Flamengo	12	3	home	Estadio Jornalista Mário Filho, Rio de Janeiro, RJ	45,622	23	5	18	663	17	11	18	18	0	9	14	58	62%	489	426	15	5	3	5	0
+231	6b29065c	d9fdd9d9	Botafogo (RJ)	12	2	away	Estadio Jornalista Mário Filho, Rio de Janeiro, RJ	45,622	16	4	14	483	12	10	16	17	3	11	26	41	38%	292	225	12	3	3	2	0
+232	a7a9ee9d	78c617cc	Goiás	12	0	home	Estádio de Hailé Pinheiro, Goiás	10,439	14	7	23	554	16	12	12	20	1	6	12	46	46%	397	340	16	2	0	1	0
+233	a7a9ee9d	422bb734	Atlético Mineiro	12	0	away	Estádio de Hailé Pinheiro, Goiás	10,439	9	4	10	658	6	5	9	19	3	11	20	51	54%	489	427	11	0	0	0	0
+234	53a6d906	a9d0ab0e	Fortaleza	12	1	home	Estádio Castelão, Fortaleza, CE	41,546	18	1	19	549	9	3	16	11	2	12	14	57	48%	407	355	14	4	5	2	0
+235	53a6d906	bf4acd28	Corinthians	12	3	away	Estádio Castelão, Fortaleza, CE	41,546	16	1	15	599	10	6	12	17	1	9	16	51	52%	448	394	13	5	5	1	0
+236	78282e68	05aff519	CSA	12	0	home	Estádio Rei Pelé, Maceió	11,918	13	2	11	521	22	4	20	24	0	9	18	54	40%	348	288	10	2	0	4	0
+237	78282e68	d5ae3703	Grêmio	12	0	away	Estádio Rei Pelé, Maceió	11,918	13	6	16	710	17	1	16	13	2	6	18	58	60%	528	454	15	0	0	2	0
+238	c69241b9	84d9701c	Fluminense	13	2	home	Estadio Jornalista Mário Filho, Rio de Janeiro, RJ	16,485	8	8	19	838	19	10	18	17	0	4	15	32	61%	638	566	22	6	4	1	0
+239	c69241b9	6f7e1f03	Internacional	13	1	away	Estadio Jornalista Mário Filho, Rio de Janeiro, RJ	16,485	12	5	13	584	12	14	15	21	0	13	9	49	39%	412	344	15	4	4	2	0
+240	8cb7691d	2f335e17	Ceará	13	2	home	Estádio Castelão, Fortaleza, CE	38,421	13	8	15	399	25	8	18	21	3	7	21	52	35%	226	140	12	4	4	3	0
+241	8cb7691d	a9d0ab0e	Fortaleza	13	1	away	Estádio Castelão, Fortaleza, CE	38,421	16	4	17	619	12	4	18	12	2	6	29	63	65%	426	351	11	4	4	2	1
+242	6d1ae26a	712c528f	Santos	13	6	home	Estádio Urbano Caldeira, Santos, SP	13,462	15	6	15	672	18	6	14	16	4	11	15	42	61%	501	423	19	10	2	3	0
+243	6d1ae26a	78c617cc	Goiás	13	1	away	Estádio Urbano Caldeira, Santos, SP	13,462	8	6	20	507	13	19	9	20	1	5	19	43	39%	310	244	19	2	2	4	0
+244	745c6d8d	157b7fee	Bahia	13	3	home	Itaipava Arena Fonte Nova, Salvador, BA	43,099	18	4	6	469	24	16	20	20	4	9	21	58	32%	271	179	10	7	1	1	1
+245	745c6d8d	639950ae	Flamengo	13	0	away	Itaipava Arena Fonte Nova, Salvador, BA	43,099	14	7	23	775	15	3	26	10	2	3	26	46	69%	583	486	13	1	1	1	0
+246	4b2896f1	f205258a	Avaí	13	0	home	Estádio Aderbal Ramos da Silva, Florianópolis	7,140	12	16	48	736	18	7	19	6	3	4	26	44	60%	507	435	30	4	5	2	1
+247	4b2896f1	d9fdd9d9	Botafogo (RJ)	13	2	away	Estádio Aderbal Ramos da Silva, Florianópolis	7,140	11	1	5	571	19	10	28	44	0	11	12	59	40%	364	289	9	5	5	1	0
+248	c322a6ad	bf4acd28	Corinthians	13	1	home	Arena Corinthians, São Paulo, SP	42,675	11	3	22	586	18	9	17	19	1	5	28	45	50%	371	296	9	7	6	1	0
+249	c322a6ad	abdce579	Palmeiras	13	1	away	Arena Corinthians, São Paulo, SP	42,675	24	5	14	561	16	15	20	22	3	3	18	59	50%	372	292	8	6	6	3	0
+250	deeff447	422bb734	Atlético Mineiro	13	2	home	Estádio Raimundo Sampaio, Belo Horizonte	13,181	19	6	19	546	18	10	12	20	0	4	10	41	38%	362	297	15	6	4	2	0
+251	deeff447	03ff5eeb	Cruzeiro	13	0	away	Estádio Raimundo Sampaio, Belo Horizonte	13,181	13	6	24	805	10	16	11	14	2	5	18	31	62%	598	528	13	4	4	3	0
+252	c9b5cec2	83f55dbe	Vasco da Gama	13	0	home	Estádio Club de Regatas Vasco da Gama, Rio de Janeiro, RJ	9,631	12	8	35	730	12	8	24	17	0	6	16	51	57%	513	432	18	2	2	4	0
+253	c9b5cec2	05aff519	CSA	13	0	away	Estádio Club de Regatas Vasco da Gama, Rio de Janeiro, RJ	9,631	15	5	16	570	20	7	22	31	1	15	14	66	43%	394	285	11	2	2	1	0
+254	3e8a5f98	d5ae3703	Grêmio	13	3	home	Arena do Grêmio, Porto Alegre	13,418	17	11	31	785	18	17	14	7	3	1	17	39	69%	585	520	24	9	4	4	0
+255	3e8a5f98	baa296ad	Chapecoense	13	3	away	Arena do Grêmio, Porto Alegre	13,418	16	3	13	464	9	11	13	29	0	5	19	52	31%	267	189	9	4	4	3	0
+256	8fbe81a7	bf4acd28	Corinthians	7	2	home	Arena Corinthians, São Paulo, SP	34,595	13	6	22	745	12	2	17	17	0	6	21	40	64%	574	513	19	6	3	1	0
+257	8fbe81a7	78c617cc	Goiás	7	0	away	Arena Corinthians, São Paulo, SP	34,595	11	5	14	489	11	11	19	23	4	11	13	59	36%	312	250	11	3	3	2	1
+258	86423290	5f232eb1	São Paulo	14	3	home	Estádio do Morumbi, São Paulo, SP	47,277	21	5	16	456	12	14	16	13	1	9	19	68	43%	264	189	20	7	3	6	0
+259	86423290	712c528f	Santos	14	2	away	Estádio do Morumbi, São Paulo, SP	47,277	15	2	9	548	18	10	28	24	1	13	22	54	57%	359	279	14	3	3	1	0
+260	6ab42705	2f335e17	Ceará	14	4	home	Estádio Castelão, Fortaleza, CE	21,428	20	2	14	484	22	7	16	18	4	15	20	43	40%	294	235	8	5	3	3	0
+261	6ab42705	baa296ad	Chapecoense	14	1	away	Estádio Castelão, Fortaleza, CE	21,428	11	4	16	655	19	11	17	19	1	9	15	68	61%	457	384	14	3	3	2	0
+262	86d74024	639950ae	Flamengo	14	3	home	Estadio Jornalista Mário Filho, Rio de Janeiro, RJ	57,644	14	4	19	693	20	7	20	8	0	4	25	43	58%	507	438	18	5	2	4	0
+263	86d74024	d5ae3703	Grêmio	14	1	away	Estadio Jornalista Mário Filho, Rio de Janeiro, RJ	57,644	15	3	9	549	23	10	15	22	1	8	18	40	43%	379	312	7	2	2	2	0
+264	a65bb271	422bb734	Atlético Mineiro	14	2	home	Estádio Raimundo Sampaio, Belo Horizonte	19,081	14	3	8	539	20	13	9	16	4	13	13	66	41%	371	296	19	9	6	4	0
+265	a65bb271	84d9701c	Fluminense	14	1	away	Estádio Raimundo Sampaio, Belo Horizonte	19,081	13	5	21	718	8	14	16	6	2	10	27	32	59%	531	461	20	6	6	4	1
+266	c1e02e62	6f7e1f03	Internacional	14	0	home	Estádio José Pinheiro Borba, Porto Alegre	32,049	16	9	25	750	22	12	21	12	3	9	20	55	56%	550	463	7	1	1	3	0
+267	c1e02e62	bf4acd28	Corinthians	14	0	away	Estádio José Pinheiro Borba, Porto Alegre	32,049	8	3	14	655	24	18	22	29	0	13	18	59	44%	447	352	8	1	1	2	0
+268	f4559440	f205258a	Avaí	14	2	home	Estádio Aderbal Ramos da Silva, Florianópolis	4,921	15	5	27	554	9	17	22	15	3	6	21	44	49%	359	275	13	3	6	3	1
+269	f4559440	03ff5eeb	Cruzeiro	14	2	away	Estádio Aderbal Ramos da Silva, Florianópolis	4,921	15	1	10	565	14	9	26	19	2	5	17	41	51%	384	299	14	6	6	3	1
+270	985f12bb	d9fdd9d9	Botafogo (RJ)	14	2	home	Estádio Nilton Santos, Rio de Janeiro, RJ	7,992	11	7	22	566	7	8	17	23	1	8	28	54	47%	373	294	11	6	8	3	0
+271	985f12bb	2091c619	Atlético Paranaense	14	1	away	Estádio Nilton Santos, Rio de Janeiro, RJ	7,992	12	7	20	595	22	7	20	17	0	2	17	41	53%	418	338	18	8	8	1	0
+272	493be396	abdce579	Palmeiras	14	2	home	Allianz Parque, São Paulo, SP	34,275	15	8	26	454	17	11	21	11	1	3	16	51	41%	286	224	17	9	4	6	1
+273	493be396	157b7fee	Bahia	14	2	away	Allianz Parque, São Paulo, SP	34,275	19	3	15	589	10	9	15	19	1	7	12	45	59%	430	364	7	4	4	5	1
+274	9338a1e9	78c617cc	Goiás	14	0	home	Estádio de Hailé Pinheiro, Goiás	14,529	14	3	22	643	17	6	23	30	2	4	19	50	55%	422	351	20	5	5	4	0
+275	9338a1e9	83f55dbe	Vasco da Gama	14	1	away	Estádio de Hailé Pinheiro, Goiás	14,529	22	4	11	552	13	5	24	28	1	7	27	57	45%	353	266	12	5	5	5	1
+276	d0daee28	05aff519	CSA	14	0	home	Estádio Rei Pelé, Maceió	9,924	19	2	18	666	18	11	14	15	3	4	32	34	51%	463	407	16	5	3	3	0
+277	d0daee28	a9d0ab0e	Fortaleza	14	2	away	Estádio Rei Pelé, Maceió	9,924	13	3	12	636	19	7	15	23	4	13	22	75	49%	446	378	7	3	3	1	0
+278	db7a6f87	bf4acd28	Corinthians	15	2	home	Arena Corinthians, São Paulo, SP	38,882	17	7	23	550	14	3	6	11	2	4	18	41	43%	392	344	18	9	3	2	0
+279	db7a6f87	d9fdd9d9	Botafogo (RJ)	15	0	away	Arena Corinthians, São Paulo, SP	38,882	13	2	8	700	7	2	16	22	2	8	16	44	57%	544	488	8	3	3	3	0
+280	0ff3805e	a9d0ab0e	Fortaleza	15	0	home	Estádio Castelão, Fortaleza, CE	38,519	14	7	26	635	8	9	15	3	0	5	15	57	55%	486	426	15	4	2	3	1
+281	0ff3805e	6f7e1f03	Internacional	15	1	away	Estádio Castelão, Fortaleza, CE	38,519	14	0	8	549	13	12	8	19	4	11	10	67	45%	411	349	7	2	2	2	0
+282	8e623e1a	83f55dbe	Vasco da Gama	15	1	home	Estádio Club de Regatas Vasco da Gama, Rio de Janeiro, RJ	65,418	12	7	19	530	16	9	15	16	0	8	19	43	42%	344	286	11	6	9	0	0
+283	8e623e1a	639950ae	Flamengo	15	4	away	Estádio Club de Regatas Vasco da Gama, Rio de Janeiro, RJ	65,418	18	7	14	673	24	6	12	21	0	4	18	37	58%	490	431	16	9	9	2	0
+284	7127865d	2091c619	Atlético Paranaense	15	1	home	Estádio Joaquim Américo Guimarães, Curitiba, PR	13,148				1												1	1	0	3	0
+285	7127865d	422bb734	Atlético Mineiro	15	0	away	Estádio Joaquim Américo Guimarães, Curitiba, PR	13,148				0												0	0	0	1	0
+286	d9e6d63d	d5ae3703	Grêmio	15	1	home	Arena do Grêmio, Porto Alegre	12,897	13	3	11	808	10	5	16	16	0	5	24	30	67%	631	564	14	3	7	0	0
+287	d9e6d63d	abdce579	Palmeiras	15	1	away	Arena do Grêmio, Porto Alegre	12,897	14	2	9	459	14	15	20	11	1	8	10	52	33%	306	243	15	7	7	0	0
+288	ed165fa2	5f232eb1	São Paulo	15	1	home	Estádio do Morumbi, São Paulo, SP	47,705	12	5	12	676	22	11	17	32	4	3	24	46	58%	459	382	12	6	5	3	0
+289	ed165fa2	2f335e17	Ceará	15	0	away	Estádio do Morumbi, São Paulo, SP	47,705	16	11	23	506	17	9	17	13	0	7	26	55	42%	321	231	10	5	5	2	0
+290	a4b81efe	157b7fee	Bahia	15	1	home	Itaipava Arena Fonte Nova, Salvador, BA	28,866	7	6	18	634	19	10	22	27	1	10	21	67	48%	436	358	16	3	4	2	1
+291	a4b81efe	78c617cc	Goiás	15	1	away	Itaipava Arena Fonte Nova, Salvador, BA	28,866	13	6	28	671	20	7	12	29	1	10	17	64	52%	469	383	11	4	4	3	0
+292	b130af6a	84d9701c	Fluminense	15	0	home	Estadio Jornalista Mário Filho, Rio de Janeiro, RJ	25,049	7	7	37	919	13	14	19	7	1	3	22	22	67%	688	629	33	12	3	1	0
+293	b130af6a	05aff519	CSA	15	1	away	Estadio Jornalista Mário Filho, Rio de Janeiro, RJ	25,049	16	1	8	535	24	9	10	36	1	14	13	82	33%	347	253	5	3	3	2	0
+294	667f0ae0	03ff5eeb	Cruzeiro	15	2	home	Estádio Governador Magalhães Pinto, Belo Horizonte	43,604	16	8	22	730	13	11	12	9	1	6	15	43	66%	575	534	21	10	2	2	0
+295	667f0ae0	712c528f	Santos	15	0	away	Estádio Governador Magalhães Pinto, Belo Horizonte	43,604	7	4	12	446	8	7	14	23	1	8	21	38	34%	296	249	3	2	2	0	1
+296	1b578765	baa296ad	Chapecoense	15	1	home	Arena Condá, Chapecó	7,027	25	5	19	536	20	24	18	11	2	12	31	57	42%	317	219	12	2	0	1	0
+297	1b578765	f205258a	Avaí	15	0	away	Arena Condá, Chapecó	7,027	15	3	15	660	14	17	27	11	2	11	23	50	58%	446	347	5	0	0	0	0
+298	871384eb	2091c619	Atlético Paranaense	13	0	home	Estádio Joaquim Américo Guimarães, Curitiba, PR	20,047			0	0									0%			0	0	1	3	0
+299	871384eb	5f232eb1	São Paulo	13	1	away	Estádio Joaquim Américo Guimarães, Curitiba, PR	20,047			1	2									100%			1	1	1	2	0
+300	cc905fbf	422bb734	Atlético Mineiro	16	0	home	Estádio Raimundo Sampaio, Belo Horizonte	22,401	17	6	25	689	11	8	18	9	1	3	22	52	57%	503	413	20	7	5	0	0
+301	cc905fbf	157b7fee	Bahia	16	1	away	Estádio Raimundo Sampaio, Belo Horizonte	22,401	16	3	9	573	12	12	23	31	0	11	19	74	43%	389	294	6	5	5	2	0
+302	a5780d2c	d5ae3703	Grêmio	16	2	home	Arena do Grêmio, Porto Alegre	12,748			1	5									67%	1	1	3	3	1	3	0
+303	a5780d2c	2091c619	Atlético Paranaense	16	1	away	Arena do Grêmio, Porto Alegre	12,748			0	3									33%	1	1	1	1	1	1	0
+304	8f8de7bf	83f55dbe	Vasco da Gama	16	2	home	Estádio Club de Regatas Vasco da Gama, Rio de Janeiro, RJ	20,404	19	2	12	654	15	13	14	8	0	1	24	49	52%	476	410	15	7	1	4	0
+305	8f8de7bf	5f232eb1	São Paulo	16	0	away	Estádio Club de Regatas Vasco da Gama, Rio de Janeiro, RJ	20,404	16	1	8	597	14	9	10	11	2	13	8	39	48%	448	374	3	1	1	3	1
+306	b5e08c22	78c617cc	Goiás	16	2	home	Estádio de Hailé Pinheiro, Goiás	8,634	9	5	22	376	7	10	7	12	0	8	25	65	26%	203	141	7	4	5	2	1
+307	b5e08c22	6f7e1f03	Internacional	16	1	away	Estádio de Hailé Pinheiro, Goiás	8,634	14	5	27	783	18	8	15	15	3	7	17	60	74%	602	536	11	5	5	2	0
+308	65ad228c	712c528f	Santos	16	3	home	Estádio Urbano Caldeira, Santos, SP	12,515	14	3	11	663	15	14	13	13	1	4	14	46	60%	485	418	17	10	5	3	0
+309	65ad228c	a9d0ab0e	Fortaleza	16	3	away	Estádio Urbano Caldeira, Santos, SP	12,515	22	5	15	475	16	12	17	14	0	10	10	44	40%	312	241	9	5	5	3	0
+310	942b4dc9	2f335e17	Ceará	16	0	home	Estádio Castelão, Fortaleza, CE	49,986	11	9	24	605	12	14	15	8	4	8	17	48	51%	413	340	16	4	5	3	0
+311	942b4dc9	639950ae	Flamengo	16	3	away	Estádio Castelão, Fortaleza, CE	49,986	14	2	10	597	27	12	21	29	3	11	20	68	49%	407	325	10	5	5	0	0
+312	e02c53aa	05aff519	CSA	16	1	home	Estádio Rei Pelé, Maceió	8,715	17	6	23	602	13	8	16	14	3	7	12	36	47%	435	377	18	3	6	3	0
+313	e02c53aa	03ff5eeb	Cruzeiro	16	1	away	Estádio Rei Pelé, Maceió	8,715	14	4	13	672	11	6	13	26	1	11	12	63	53%	498	432	13	6	6	3	0
+314	389de6d3	f205258a	Avaí	16	1	home	Estádio Aderbal Ramos da Silva, Florianópolis	9,753	19	4	17	568	15	11	11	17	2	5	19	57	49%	392	312	13	2	4	0	1
+315	389de6d3	bf4acd28	Corinthians	16	1	away	Estádio Aderbal Ramos da Silva, Florianópolis	9,753	15	2	14	589	11	10	23	22	2	13	26	41	51%	414	333	9	4	4	1	1
+316	664ee75d	d9fdd9d9	Botafogo (RJ)	16	0	home	Estádio Nilton Santos, Rio de Janeiro, RJ	8,241	13	5	20	653	11	10	23	26	0	7	26	48	61%	447	378	15	2	5	2	0
+317	664ee75d	baa296ad	Chapecoense	16	0	away	Estádio Nilton Santos, Rio de Janeiro, RJ	8,241	16	4	20	480	18	14	20	21	2	17	18	63	39%	283	200	15	5	5	1	0
+318	a455efe9	5f232eb1	São Paulo	17	0	home	Estádio do Morumbi, São Paulo, SP	46,997	10	5	18	673	21	11	20	7	0	4	18	33	54%	498	409	18	4	3	2	1
+319	a455efe9	d5ae3703	Grêmio	17	0	away	Estádio do Morumbi, São Paulo, SP	46,997	9	5	9	605	18	11	13	17	0	17	16	62	46%	430	342	7	3	3	1	0
+320	cdb5654f	157b7fee	Bahia	17	1	home	Itaipava Arena Fonte Nova, Salvador, BA	32,483	15	8	27	722	12	5	20	6	0	5	28	41	66%	534	456	15	7	2	1	0
+321	cdb5654f	05aff519	CSA	17	0	away	Itaipava Arena Fonte Nova, Salvador, BA	32,483	17	2	5	454	15	8	22	30	3	9	13	68	34%	287	199	8	2	2	1	0
+322	49c17965	baa296ad	Chapecoense	17	0	home	Arena Condá, Chapecó	9,052	17	5	34	603	19	5	17	16	1	9	22	53	52%	395	329	8	5	4	2	0
+323	49c17965	712c528f	Santos	17	1	away	Arena Condá, Chapecó	9,052	19	5	12	585	23	10	16	23	3	7	26	56	48%	384	312	12	4	4	4	0
+324	792ccab2	2091c619	Atlético Paranaense	17	1	home	Estádio Joaquim Américo Guimarães, Curitiba, PR	10,075	14	10	39	743	5	8	30	11	0	10	33	74	69%	533	440	11	4	5	1	0
+325	792ccab2	2f335e17	Ceará	17	0	away	Estádio Joaquim Américo Guimarães, Curitiba, PR	10,075	15	4	14	441	14	17	20	32	2	12	26	62	31%	241	150	9	5	5	3	0
+326	df819a2c	6f7e1f03	Internacional	17	3	home	Estádio José Pinheiro Borba, Porto Alegre	8,534	10	8	24	671	20	15	19	9	0	8	18	54	50%	484	406	16	9	7	4	0
+327	df819a2c	d9fdd9d9	Botafogo (RJ)	17	2	away	Estádio José Pinheiro Borba, Porto Alegre	8,534	6	1	12	683	16	14	22	20	1	9	15	41	50%	498	425	17	7	7	4	0
+328	f72d82f6	639950ae	Flamengo	17	3	home	Estadio Jornalista Mário Filho, Rio de Janeiro, RJ	65,969	15	1	9	798	13	11	11	4	0	7	15	50	66%	655	589	12	4	1	2	0
+329	f72d82f6	abdce579	Palmeiras	17	0	away	Estadio Jornalista Mário Filho, Rio de Janeiro, RJ	65,969	17	1	5	470	24	10	11	16	2	7	7	47	34%	342	271	2	1	1	2	1
+330	64823490	a9d0ab0e	Fortaleza	17	2	home	Estádio Castelão, Fortaleza, CE	34,343	21	5	16	535	16	17	12	7	0	8	15	54	52%	387	317	11	3	1	3	0
+331	64823490	78c617cc	Goiás	17	0	away	Estádio Castelão, Fortaleza, CE	34,343	14	3	13	530	12	11	7	10	4	7	26	57	48%	361	291	6	1	1	3	1
+332	33c38631	03ff5eeb	Cruzeiro	17	1	home	Estádio Governador Magalhães Pinto, Belo Horizonte	26,052	14	3	12	665	13	8	13	19	2	6	11	31	57%	500	446	11	3	2	3	0
+333	33c38631	83f55dbe	Vasco da Gama	17	0	away	Estádio Governador Magalhães Pinto, Belo Horizonte	26,052	15	11	30	523	15	6	9	16	1	8	19	54	43%	363	304	12	2	2	4	0
+334	7ede2749	bf4acd28	Corinthians	17	1	home	Arena Corinthians, São Paulo, SP	31,961	9	10	33	658	10	11	10	17	0	7	15	36	45%	476	414	14	5	5	0	0
+335	7ede2749	422bb734	Atlético Mineiro	17	0	away	Arena Corinthians, São Paulo, SP	31,961	14	4	15	761	15	12	5	27	1	10	7	59	55%	605	527	11	5	5	1	0
+336	4bab3be9	84d9701c	Fluminense	17	0	home	Estadio Jornalista Mário Filho, Rio de Janeiro, RJ	16,811	14	12	33	722	17	8	18	10	0	6	19	35	60%	509	451	26	10	2	3	0
+337	4bab3be9	f205258a	Avaí	17	1	away	Estadio Jornalista Mário Filho, Rio de Janeiro, RJ	16,811	15	2	11	546	15	13	11	34	0	10	29	44	40%	344	270	7	2	2	1	0
+338	ab626f5d	83f55dbe	Vasco da Gama	18	0	home	Estádio Club de Regatas Vasco da Gama, Rio de Janeiro, RJ	20,282	15	4	24	651	11	6	17	12	2	3	26	54	56%	444	373	21	4	3	3	0
+339	ab626f5d	157b7fee	Bahia	18	2	away	Estádio Club de Regatas Vasco da Gama, Rio de Janeiro, RJ	20,282	19	3	9	509	15	5	25	15	1	19	17	73	44%	362	258	9	3	3	1	0
+340	f573a6e6	bf4acd28	Corinthians	18	2	home	Arena Corinthians, São Paulo, SP	43,230	9	5	18	687	17	5	16	20	2	8	26	71	61%	507	438	12	2	6	1	0
+341	f573a6e6	2f335e17	Ceará	18	2	away	Arena Corinthians, São Paulo, SP	43,230	10	8	18	498	12	7	18	24	2	9	22	49	39%	319	263	12	6	6	1	0
+342	2bb6a66b	f205258a	Avaí	18	0	home	Estádio Aderbal Ramos da Silva, Florianópolis	47,575	15	4	11	548	15	18	5	11	1	11	15	45	41%	379	311	8	2	5	1	1
+343	2bb6a66b	639950ae	Flamengo	18	3	away	Estádio Aderbal Ramos da Silva, Florianópolis	47,575	9	8	13	720	20	15	6	9	1	5	23	45	59%	542	469	9	5	5	2	0
+344	0db86db3	a9d0ab0e	Fortaleza	18	0	home	Estádio Castelão, Fortaleza, CE	35,474	13	5	19	578	15	7	13	23	2	8	18	41	47%	413	356	18	8	4	1	0
+345	0db86db3	84d9701c	Fluminense	18	1	away	Estádio Castelão, Fortaleza, CE	35,474	15	5	17	639	10	4	11	24	4	5	19	41	53%	471	409	10	4	4	2	0
+346	b57fe874	6f7e1f03	Internacional	18	1	home	Estádio José Pinheiro Borba, Porto Alegre	14,302	14	9	22	683	22	14	22	20	3	5	23	53	51%	445	360	13	4	4	1	0
+347	b57fe874	5f232eb1	São Paulo	18	0	away	Estádio José Pinheiro Borba, Porto Alegre	14,302	16	2	12	648	24	9	27	19	1	5	23	52	49%	443	344	9	4	4	5	0
+348	923b0256	78c617cc	Goiás	18	1	home	Estádio de Hailé Pinheiro, Goiás	17,115	11	3	11	462	11	22	13	30	1	9	10	51	34%	272	204	9	2	9	5	0
+349	923b0256	abdce579	Palmeiras	18	2	away	Estádio de Hailé Pinheiro, Goiás	17,115	21	7	30	699	11	12	14	9	2	4	27	57	66%	519	431	18	9	9	2	1
+350	59bbecf6	03ff5eeb	Cruzeiro	18	1	home	Estádio Governador Magalhães Pinto, Belo Horizonte	14,208	11	7	18	714	11	6	7	12	0	3	8	26	52%	571	522	19	8	4	2	0
+351	59bbecf6	d5ae3703	Grêmio	18	4	away	Estádio Governador Magalhães Pinto, Belo Horizonte	14,208	10	2	13	686	12	6	5	17	0	7	10	28	48%	533	490	12	4	4	1	0
+352	b36fbe74	712c528f	Santos	18	1	home	Estádio Urbano Caldeira, Santos, SP	12,589	8	11	32	636	21	13	22	11	1	5	29	81	61%	425	326	22	11	4	3	0
+353	b36fbe74	2091c619	Atlético Paranaense	18	1	away	Estádio Urbano Caldeira, Santos, SP	12,589	15	3	7	505	14	10	28	41	1	12	25	51	39%	286	194	9	4	4	6	0
+354	55b66365	d9fdd9d9	Botafogo (RJ)	18	2	home	Estádio Nilton Santos, Rio de Janeiro, RJ	12,098	14	2	10	565	6	13	11	20	2	10	11	49	47%	436	370	11	6	6	4	0
+355	55b66365	422bb734	Atlético Mineiro	18	1	away	Estádio Nilton Santos, Rio de Janeiro, RJ	12,098	14	8	18	618	8	8	14	9	4	6	14	43	53%	480	424	18	6	6	4	1
+356	742a1d99	05aff519	CSA	18	2	home	Estádio Rei Pelé, Maceió	9,311	22	3	14	504	21	16	22	21	3	10	18	64	49%	311	236	10	4	3	3	0
+357	742a1d99	baa296ad	Chapecoense	18	0	away	Estádio Rei Pelé, Maceió	9,311	14	7	22	530	16	14	23	14	0	6	25	48	51%	317	230	15	3	3	3	2
+358	b5e178a5	abdce579	Palmeiras	16	3	home	Allianz Parque, São Paulo, SP	27,956	12	3	14	584	22	14	16	15	0	10	22	47	47%	407	345	15	8	1	0	0
+359	b5e178a5	84d9701c	Fluminense	16	0	away	Allianz Parque, São Paulo, SP	27,956	11	7	17	642	17	14	13	10	2	5	11	20	53%	463	406	12	1	1	2	0
+360	7ab189ed	639950ae	Flamengo	19	1	home	Estadio Jornalista Mário Filho, Rio de Janeiro, RJ	68,243	19	3	10	568	24	5	16	11	1	8	23	56	52%	377	267	12	2	0	2	0
+361	7ab189ed	712c528f	Santos	19	0	away	Estadio Jornalista Mário Filho, Rio de Janeiro, RJ	68,243	24	1	10	566	17	21	15	17	3	10	26	49	48%	347	257	6	0	0	5	0
+362	c7cb481e	baa296ad	Chapecoense	19	1	home	Arena Condá, Chapecó	8,808	14	7	36	648	13	13	31	27	0	7	35	47	56%	399	321	19	7	8	2	0
+363	c7cb481e	83f55dbe	Vasco da Gama	19	2	away	Arena Condá, Chapecó	8,808	22	5	18	555	17	11	21	31	1	6	23	57	44%	331	256	15	8	8	5	0
+364	60c131b6	abdce579	Palmeiras	19	1	home	Allianz Parque, São Paulo, SP	35,578	20	4	23	644	10	15	23	12	1	9	30	47	58%	464	399	13	3	3	2	0
+365	60c131b6	03ff5eeb	Cruzeiro	19	0	away	Allianz Parque, São Paulo, SP	35,578	19	4	12	510	8	13	14	19	0	6	24	48	42%	340	266	8	3	3	3	0
+366	93ab75a8	2f335e17	Ceará	19	0	home	Estádio Castelão, Fortaleza, CE	20,906	11	18	34	512	8	11	14	6	5	3	25	34	40%	344	270	23	6	1	1	0
+367	93ab75a8	d9fdd9d9	Botafogo (RJ)	19	0	away	Estádio Castelão, Fortaleza, CE	20,906	5	0	9	739	8	12	16	38	0	10	13	74	60%	571	499	3	1	1	1	0
+368	bdbf02b0	2091c619	Atlético Paranaense	19	0	home	Estádio Joaquim Américo Guimarães, Curitiba, PR	13,784				0												0	0	1	1	0
+369	bdbf02b0	f205258a	Avaí	19	1	away	Estádio Joaquim Américo Guimarães, Curitiba, PR	13,784				1												1	1	1	0	0
+370	c5781217	422bb734	Atlético Mineiro	19	1	home	Estádio Raimundo Sampaio, Belo Horizonte	18,966	6	10	33	878	14	6	21	13	0	8	29	37	61%	654	582	25	11	9	0	0
+371	c5781217	6f7e1f03	Internacional	19	3	away	Estádio Raimundo Sampaio, Belo Horizonte	18,966	14	0	7	644	19	8	9	40	1	8	21	56	39%	435	365	15	9	9	1	0
+372	91758abc	d5ae3703	Grêmio	19	3	home	Arena do Grêmio, Porto Alegre	35,584	10	15	31	840	23	11	10	17	1	9	16	44	63%	629	558	22	10	4	0	0
+373	91758abc	78c617cc	Goiás	19	0	away	Arena do Grêmio, Porto Alegre	35,584	10	4	20	573	18	16	13	22	0	5	19	32	37%	363	308	12	4	4	1	0
+374	a86fc767	157b7fee	Bahia	19	1	home	Itaipava Arena Fonte Nova, Salvador, BA	38,977	16	5	15	534	11	11	21	15	5	10	15	40	53%	383	315	11	3	1	1	0
+375	a86fc767	a9d0ab0e	Fortaleza	19	1	away	Itaipava Arena Fonte Nova, Salvador, BA	38,977	11	7	14	490	16	8	15	10	0	10	22	58	47%	337	263	9	1	1	1	0
+376	4959ce7a	84d9701c	Fluminense	19	1	home	Estadio Jornalista Mário Filho, Rio de Janeiro, RJ	15,733	19	3	7	604	23	4	20	21	2	9	12	43	49%	430	363	12	2	3	4	0
+377	4959ce7a	bf4acd28	Corinthians	19	0	away	Estadio Jornalista Mário Filho, Rio de Janeiro, RJ	15,733	12	6	23	632	17	12	18	7	1	10	19	37	51%	438	386	13	3	3	1	0
+378	59de79be	5f232eb1	São Paulo	19	1	home	Estádio do Morumbi, São Paulo, SP	29,779	14	11	24	726	12	9	23	9	3	6	30	43	71%	522	451	33	6	2	1	0
+379	59de79be	05aff519	CSA	19	1	away	Estádio do Morumbi, São Paulo, SP	29,779	16	3	8	373	14	8	19	28	1	18	16	74	29%	210	119	7	2	2	3	0
+380	187abdf9	d9fdd9d9	Botafogo (RJ)	20	1	home	Estádio Nilton Santos, Rio de Janeiro, RJ	18,471	15	1	19	637	21	11	22	21	2	10	15	64	53%	438	359	14	5	7	3	0
+381	187abdf9	5f232eb1	São Paulo	20	2	away	Estádio Nilton Santos, Rio de Janeiro, RJ	18,471	22	11	19	582	16	6	21	17	2	10	28	41	47%	382	294	17	7	7	1	0
+382	db4c58a0	03ff5eeb	Cruzeiro	20	1	home	Estádio Governador Magalhães Pinto, Belo Horizonte	40,333	9	1	7	512	11	6	17	14	3	9	23	43	42%	354	280	9	3	5	2	0
+383	db4c58a0	639950ae	Flamengo	20	2	away	Estádio Governador Magalhães Pinto, Belo Horizonte	40,333	14	4	13	654	19	10	9	11	0	6	20	45	58%	487	417	13	5	5	2	0
+384	d7d040d8	bf4acd28	Corinthians	20	2	home	Arena Corinthians, São Paulo, SP	29,569	12	4	23	564	14	6	16	14	2	9	24	50	49%	396	332	15	3	3	2	0
+385	d7d040d8	157b7fee	Bahia	20	1	away	Arena Corinthians, São Paulo, SP	29,569	15	3	10	572	15	6	10	23	1	7	12	56	51%	423	354	9	3	3	4	0
+386	822316f5	712c528f	Santos	20	0	home	Estádio Urbano Caldeira, Santos, SP	10,898	13	9	25	666	14	10	20	11	0	5	14	45	58%	468	388	18	5	6	1	0
+387	822316f5	d5ae3703	Grêmio	20	3	away	Estádio Urbano Caldeira, Santos, SP	10,898	15	2	11	562	22	11	26	33	0	13	18	58	42%	346	259	12	6	6	4	0
+388	c8e7b971	6f7e1f03	Internacional	20	1	home	Estádio José Pinheiro Borba, Porto Alegre	21,349	12	8	28	719	19	11	22	10	3	4	15	45	64%	529	448	14	3	2	0	0
+389	c8e7b971	baa296ad	Chapecoense	20	0	away	Estádio José Pinheiro Borba, Porto Alegre	21,349	19	3	7	467	13	12	16	24	0	14	15	55	36%	300	219	8	2	2	4	0
+390	25245454	05aff519	CSA	20	1	home	Estádio Rei Pelé, Maceió	10,566	20	6	17	522	26	10	19	25	4	8	25	64	45%	320	242	12	5	9	2	0
+391	25245454	2f335e17	Ceará	20	0	away	Estádio Rei Pelé, Maceió	10,566	9	11	15	605	16	8	22	16	1	8	17	42	55%	399	319	23	9	9	2	0
+392	0817652b	a9d0ab0e	Fortaleza	20	0	home	Estádio Castelão, Fortaleza, CE	34,514	16	5	22	523	9	10	21	23	1	7	15	46	44%	347	271	12	1	3	4	0
+393	0817652b	abdce579	Palmeiras	20	1	away	Estádio Castelão, Fortaleza, CE	34,514	11	5	21	639	20	11	13	22	4	12	18	64	56%	457	380	14	3	3	1	0
+394	e61d739f	83f55dbe	Vasco da Gama	20	1	home	Estádio Club de Regatas Vasco da Gama, Rio de Janeiro, RJ	17,427				1									0%	0	0	1	1	1	3	0
+395	e61d739f	2091c619	Atlético Paranaense	20	1	away	Estádio Club de Regatas Vasco da Gama, Rio de Janeiro, RJ	17,427				2									100%	1	1	1	1	1	3	0
+396	c1b7bd45	78c617cc	Goiás	20	3	home	Estádio de Hailé Pinheiro, Goiás	6,806	16	4	11	402	14	16	15	24	1	9	16	58	29%	232	181	11	5	2	4	1
+397	c1b7bd45	84d9701c	Fluminense	20	0	away	Estádio de Hailé Pinheiro, Goiás	6,806	10	8	24	738	14	4	13	10	1	4	23	37	71%	568	500	8	2	2	0	0
+398	73613313	f205258a	Avaí	20	1	home	Estádio Aderbal Ramos da Silva, Florianópolis	7,463	11	4	15	563	14	19	28	46	2	11	25	54	36%	323	228	11	7	4	3	0
+399	73613313	422bb734	Atlético Mineiro	20	0	away	Estádio Aderbal Ramos da Silva, Florianópolis	7,463	14	10	30	786	22	14	17	11	1	6	31	48	64%	560	463	14	4	4	1	0
+400	054dd3d2	2f335e17	Ceará	21	0	home	Estádio Castelão, Fortaleza, CE	18,595	18	8	19	589	9	6	20	18	1	9	17	52	46%	404	306	19	8	3	2	0
+401	054dd3d2	03ff5eeb	Cruzeiro	21	0	away	Estádio Castelão, Fortaleza, CE	18,595	17	3	22	648	12	12	22	13	2	11	11	70	54%	466	365	14	3	3	3	0
+402	d2f603ea	157b7fee	Bahia	21	2	home	Itaipava Arena Fonte Nova, Salvador, BA	19,656	17	5	24	650	8	5	21	15	0	5	16	37	58%	508	440	19	3	1	1	0
+403	d2f603ea	d9fdd9d9	Botafogo (RJ)	21	0	away	Itaipava Arena Fonte Nova, Salvador, BA	19,656	9	1	6	528	9	7	18	29	1	15	18	62	42%	378	306	3	1	1	0	1
+404	317e8a60	5f232eb1	São Paulo	21	0	home	Estádio do Morumbi, São Paulo, SP	12,505	21	10	38	767	13	2	25	8	4	2	30	27	73%	542	458	13	4	3	2	0
+405	317e8a60	78c617cc	Goiás	21	1	away	Estádio do Morumbi, São Paulo, SP	12,505	24	0	4	416	26	12	27	43	0	10	19	69	27%	210	131	3	3	3	4	0
+406	366de6b1	639950ae	Flamengo	21	3	home	Estadio Jornalista Mário Filho, Rio de Janeiro, RJ	64,548	16	6	21	758	23	4	16	2	1	0	21	50	72%	595	527	21	7	2	1	0
+407	366de6b1	6f7e1f03	Internacional	21	1	away	Estadio Jornalista Mário Filho, Rio de Janeiro, RJ	64,548	6	1	4	399	17	9	12	27	3	12	17	48	28%	230	170	3	2	2	1	2
+408	a8dd0d06	abdce579	Palmeiras	21	6	home	Allianz Parque, São Paulo, SP	21,537	13	5	11	815	10	6	13	14	0	8	8	38	70%	687	628	17	11	4	0	0
+409	a8dd0d06	05aff519	CSA	21	2	away	Allianz Parque, São Paulo, SP	21,537	13	2	17	436	11	8	11	11	0	7	21	44	31%	291	238	11	4	4	1	0
+410	5e0216fd	84d9701c	Fluminense	21	1	home	Estadio Jornalista Mário Filho, Rio de Janeiro, RJ	11,032	12	1	16	630	17	18	16	17	2	12	20	55	48%	421	344	13	3	7	2	2
+411	5e0216fd	712c528f	Santos	21	1	away	Estadio Jornalista Mário Filho, Rio de Janeiro, RJ	11,032	15	5	14	667	21	13	15	19	1	7	25	51	52%	467	392	19	7	7	4	1
+412	77ddbb5d	d5ae3703	Grêmio	21	6	home	Arena do Grêmio, Porto Alegre	14,861	18	6	10	750	20	12	7	12	0	7	14	40	52%	583	522	11	8	4	1	0
+413	77ddbb5d	f205258a	Avaí	21	1	away	Arena do Grêmio, Porto Alegre	14,861	9	2	15	698	16	9	12	11	0	4	9	38	48%	539	481	11	4	4	1	0
+414	3f1c130f	2091c619	Atlético Paranaense	21	4	home	Estádio Joaquim Américo Guimarães, Curitiba, PR	12,080	11	11	25	784	7	9	15	8	0	8	19	48	65%	604	542	20	9	3	3	0
+415	3f1c130f	a9d0ab0e	Fortaleza	21	1	away	Estádio Joaquim Américo Guimarães, Curitiba, PR	12,080	8	7	16	500	23	14	10	22	1	13	15	61	35%	319	254	11	3	3	0	0
+416	9bcd9f48	639950ae	Flamengo	22	0	home	Estadio Jornalista Mário Filho, Rio de Janeiro, RJ	67,051	20	9	27	744	19	19	21	8	2	8	29	45	61%	529	449	18	9	1	3	0
+417	9bcd9f48	5f232eb1	São Paulo	22	0	away	Estadio Jornalista Mário Filho, Rio de Janeiro, RJ	67,051	27	2	8	562	22	18	14	30	3	9	20	45	39%	337	247	8	1	1	4	0
+418	adf0b751	bf4acd28	Corinthians	22	1	home	Arena Corinthians, São Paulo, SP	37,091	16	5	19	628	10	7	17	21	2	13	20	51	54%	445	362	10	7	2	3	0
+419	adf0b751	83f55dbe	Vasco da Gama	22	0	away	Arena Corinthians, São Paulo, SP	37,091	23	2	14	558	14	6	16	26	4	3	18	46	46%	379	299	15	2	2	5	0
+420	e81b21a8	712c528f	Santos	22	2	home	Estádio Urbano Caldeira, Santos, SP	6,615	13	10	20	742	14	13	23	13	1	6	12	44	62%	572	502	12	5	2	2	1
+421	e81b21a8	05aff519	CSA	22	0	away	Estádio Urbano Caldeira, Santos, SP	6,615	12	4	21	513	14	9	16	19	2	10	19	45	38%	338	261	9	2	2	2	0
+422	8a598bed	84d9701c	Fluminense	22	2	home	Estadio Jornalista Mário Filho, Rio de Janeiro, RJ	17,791	16	2	13	663	19	13	14	14	0	10	12	37	48%	481	413	12	5	4	1	0
+423	8a598bed	d5ae3703	Grêmio	22	1	away	Estadio Jornalista Mário Filho, Rio de Janeiro, RJ	17,791	9	6	16	722	18	8	20	16	1	8	19	37	52%	531	468	15	4	4	4	0
+424	8977c059	6f7e1f03	Internacional	22	1	home	Estádio José Pinheiro Borba, Porto Alegre	20,813	28	3	25	624	9	10	14	8	0	5	13	55	53%	456	392	18	6	5	3	0
+425	8977c059	abdce579	Palmeiras	22	1	away	Estádio José Pinheiro Borba, Porto Alegre	20,813	17	3	16	570	19	3	17	15	1	11	13	51	47%	402	331	12	5	5	2	0
+426	25f27b0a	422bb734	Atlético Mineiro	22	2	home	Estádio Raimundo Sampaio, Belo Horizonte	6,131	13	5	35	726	14	11	16	12	0	10	22	68	62%	517	444	24	6	1	0	0
+427	25f27b0a	2f335e17	Ceará	22	1	away	Estádio Raimundo Sampaio, Belo Horizonte	6,131	12	8	22	502	15	7	15	32	1	14	14	55	38%	312	232	8	1	1	2	0
+428	0e4d33f3	2091c619	Atlético Paranaense	22	1	home	Estádio Joaquim Américo Guimarães, Curitiba, PR	13,669				1									0%	0	0	1	1	1	0	0
+429	0e4d33f3	baa296ad	Chapecoense	22	1	away	Estádio Joaquim Américo Guimarães, Curitiba, PR	13,669				2									100%	1	1	1	1	1	1	0
+430	bc1cfea8	78c617cc	Goiás	22	1	home	Estádio de Hailé Pinheiro, Goiás	24,142	20	0	14	444	22	11	21	28	0	13	25	60	34%	252	167	8	2	1	0	0
+431	bc1cfea8	03ff5eeb	Cruzeiro	22	0	away	Estádio de Hailé Pinheiro, Goiás	24,142	19	9	27	694	10	7	23	13	2	11	20	56	67%	505	419	11	1	1	3	0
+432	aca96827	f205258a	Avaí	22	0	home	Estádio Aderbal Ramos da Silva, Florianópolis	7,052	16	7	28	704	17	23	12	9	4	5	35	48	56%	479	398	14	4	2	1	0
+433	aca96827	157b7fee	Bahia	22	2	away	Estádio Aderbal Ramos da Silva, Florianópolis	7,052	16	5	7	576	19	8	15	27	1	15	22	73	44%	391	306	7	2	2	1	0
+434	822e685b	a9d0ab0e	Fortaleza	22	1	home	Estádio Castelão, Fortaleza, CE	20,884	15	5	28	587	7	6	17	24	1	5	20	56	46%	405	347	16	3	2	3	0
+435	822e685b	d9fdd9d9	Botafogo (RJ)	22	0	away	Estádio Castelão, Fortaleza, CE	20,884	12	1	16	647	17	8	23	23	1	13	14	52	54%	498	423	5	2	2	2	0
+436	a33e9759	baa296ad	Chapecoense	21	0	home	Arena Condá, Chapecó	5,036	19	9	33	590	19	6	25	15	1	8	26	68	55%	395	315	14	4	2	3	0
+437	a33e9759	bf4acd28	Corinthians	21	1	away	Arena Condá, Chapecó	5,036	15	7	19	543	12	12	23	28	2	13	32	55	46%	337	255	12	2	2	2	0
+438	8a6629b6	422bb734	Atlético Mineiro	21	1	home	Estádio Raimundo Sampaio, Belo Horizonte	10,485	18	5	17	605	22	6	24	25	1	6	11	38	54%	402	324	14	3	5	3	0
+439	8a6629b6	83f55dbe	Vasco da Gama	21	2	away	Estádio Raimundo Sampaio, Belo Horizonte	10,485	22	7	23	549	20	8	19	21	2	10	22	59	46%	335	264	16	5	5	2	0
+440	8e3f199d	83f55dbe	Vasco da Gama	23	0	home	Estádio Club de Regatas Vasco da Gama, Rio de Janeiro, RJ	17,083	15	8	29	472	14	14	18	10	1	8	29	52	42%	283	209	16	2	4	4	0
+441	8e3f199d	712c528f	Santos	23	1	away	Estádio Club de Regatas Vasco da Gama, Rio de Janeiro, RJ	17,083	17	2	12	591	6	5	24	25	1	14	20	59	58%	423	344	8	4	4	2	1
+442	7ed12106	5f232eb1	São Paulo	23	2	home	Estádio do Morumbi, São Paulo, SP	34,962	15	9	30	655	15	7	12	18	0	6	18	25	62%	477	427	19	8	2	3	0
+443	7ed12106	a9d0ab0e	Fortaleza	23	1	away	Estádio do Morumbi, São Paulo, SP	34,962	14	3	15	464	11	4	13	23	0	11	18	43	38%	298	238	7	2	2	2	0
+444	61966337	157b7fee	Bahia	23	1	home	Itaipava Arena Fonte Nova, Salvador, BA	38,096	9	4	25	591	12	6	17	12	1	8	22	59	46%	409	341	13	4	5	2	0
+445	61966337	2091c619	Atlético Paranaense	23	2	away	Itaipava Arena Fonte Nova, Salvador, BA	38,096	14	4	23	671	22	8	19	21	1	6	17	62	54%	495	412	13	5	5	3	0
+446	3d8f7362	d5ae3703	Grêmio	23	0	home	Arena do Grêmio, Porto Alegre	14,596	12	10	26	777	12	9	14	11	3	7	15	51	64%	609	537	18	4	2	3	0
+447	3d8f7362	bf4acd28	Corinthians	23	0	away	Arena do Grêmio, Porto Alegre	14,596	12	5	15	528	12	14	22	21	0	11	13	57	36%	338	274	13	2	2	2	0
+448	5a47c059	03ff5eeb	Cruzeiro	23	1	home	Estádio Governador Magalhães Pinto, Belo Horizonte	22,561	18	3	33	655	13	11	15	11	0	10	18	53	53%	467	382	15	5	2	5	0
+449	5a47c059	6f7e1f03	Internacional	23	1	away	Estádio Governador Magalhães Pinto, Belo Horizonte	22,561	14	3	12	634	19	13	13	30	1	7	14	53	47%	433	360	12	2	2	3	0
+450	3177e460	baa296ad	Chapecoense	23	0	home	Arena Condá, Chapecó	12,152	16	1	8	508	17	21	15	30	3	15	17	68	36%	298	195	5	1	5	1	0
+451	3177e460	639950ae	Flamengo	23	1	away	Arena Condá, Chapecó	12,152	20	8	25	744	23	13	24	6	2	3	34	40	64%	520	429	24	5	5	0	0
+452	0f825c1d	abdce579	Palmeiras	23	1	home	Allianz Parque, São Paulo, SP	32,659	12	17	45	723	16	8	28	12	2	8	22	32	67%	507	449	19	7	5	3	0
+453	0f825c1d	422bb734	Atlético Mineiro	23	1	away	Allianz Parque, São Paulo, SP	32,659	20	2	12	442	14	4	14	41	1	11	13	55	33%	259	184	11	5	5	4	0
+454	4bafa7bf	d9fdd9d9	Botafogo (RJ)	23	0	home	Estádio Nilton Santos, Rio de Janeiro, RJ	12,404	20	5	17	549	15	4	22	8	3	12	14	54	46%	408	324	11	5	5	4	0
+455	4bafa7bf	84d9701c	Fluminense	23	1	away	Estádio Nilton Santos, Rio de Janeiro, RJ	12,404	20	2	11	648	8	11	19	18	3	9	9	38	54%	482	415	12	5	5	1	0
+456	0e2e210b	2f335e17	Ceará	23	0	home	Estádio Castelão, Fortaleza, CE	19,071	7	15	41	623	12	10	26	19	2	4	20	35	58%	411	355	23	5	3	1	0
+457	0e2e210b	78c617cc	Goiás	23	1	away	Estádio Castelão, Fortaleza, CE	19,071	12	9	19	514	16	5	18	39	1	11	19	70	42%	314	230	9	3	3	0	0
+458	795494f0	05aff519	CSA	23	3	home	Estádio Rei Pelé, Maceió	8,346	10	4	15	447	19	16	9	19	1	14	27	59	30%	249	178	14	6	1	3	0
+459	795494f0	f205258a	Avaí	23	1	away	Estádio Rei Pelé, Maceió	8,346	11	8	29	789	17	4	11	12	1	8	22	49	70%	592	527	16	1	1	3	0
+460	d9a7b41c	d9fdd9d9	Botafogo (RJ)	24	3	home	Estádio Nilton Santos, Rio de Janeiro, RJ	5,574	29	5	19	535	15	8	20	24	2	12	15	52	44%	346	272	12	7	4	4	0
+461	d9a7b41c	78c617cc	Goiás	24	1	away	Estádio Nilton Santos, Rio de Janeiro, RJ	5,574	18	5	34	632	11	7	14	14	1	7	19	50	56%	442	371	18	4	4	2	0
+462	8ca20050	05aff519	CSA	24	1	home	Estádio Rei Pelé, Maceió	9,927	16	3	16	441	22	14	23	41	0	7	14	55	30%	256	185	13	4	2	2	0
+463	8ca20050	6f7e1f03	Internacional	24	0	away	Estádio Rei Pelé, Maceió	9,927	9	11	31	784	8	7	13	7	4	9	25	51	70%	590	523	14	2	2	2	0
+464	35f85203	a9d0ab0e	Fortaleza	24	2	home	Estádio Castelão, Fortaleza, CE	25,425	18	2	15	635	20	9	17	20	4	4	16	37	53%	446	374	11	5	5	4	0
+465	35f85203	baa296ad	Chapecoense	24	0	away	Estádio Castelão, Fortaleza, CE	25,425	17	6	18	589	11	18	21	18	1	2	9	50	47%	398	330	15	5	5	2	0
+466	90f77d4a	157b7fee	Bahia	24	0	home	Itaipava Arena Fonte Nova, Salvador, BA	31,726	10	3	17	528	11	10	15	17	3	3	18	52	40%	375	308	15	6	2	2	0
+467	90f77d4a	5f232eb1	São Paulo	24	0	away	Itaipava Arena Fonte Nova, Salvador, BA	31,726	15	5	17	705	5	6	15	13	2	6	11	55	60%	565	489	9	2	2	1	0
+468	f3798bd8	d5ae3703	Grêmio	24	2	home	Arena do Grêmio, Porto Alegre	6,078	11	4	17	801	8	13	10	12	1	3	19	50	69%	641	578	11	4	5	0	0
+469	f3798bd8	2f335e17	Ceará	24	1	away	Arena do Grêmio, Porto Alegre	6,078	19	4	12	434	15	15	9	12	1	9	20	40	31%	288	223	10	5	5	3	0
+470	5e82cc67	712c528f	Santos	24	2	home	Estádio Urbano Caldeira, Santos, SP	11,408	16	2	10	652	22	13	10	23	3	5	11	40	56%	473	421	15	6	3	1	0
+471	5e82cc67	abdce579	Palmeiras	24	0	away	Estádio Urbano Caldeira, Santos, SP	11,408	13	3	18	533	12	4	10	9	0	9	27	30	44%	363	305	13	3	3	2	1
+472	fb49b657	03ff5eeb	Cruzeiro	24	0	home	Estádio Governador Magalhães Pinto, Belo Horizonte	38,113	17	2	23	653	23	20	24	10	2	10	20	42	50%	458	358	17	8	0	4	0
+473	fb49b657	84d9701c	Fluminense	24	0	away	Estádio Governador Magalhães Pinto, Belo Horizonte	38,113	18	5	12	686	11	21	12	39	0	6	14	52	50%	460	372	9	0	0	3	0
+474	013902dc	f205258a	Avaí	24	0	home	Estádio Aderbal Ramos da Silva, Florianópolis	7,401	18	7	24	720	18	29	12	18	0	12	19	48	55%	500	422	16	2	4	1	0
+475	013902dc	83f55dbe	Vasco da Gama	24	0	away	Estádio Aderbal Ramos da Silva, Florianópolis	7,401	11	6	12	615	20	11	22	12	1	11	21	66	45%	418	329	12	4	4	1	0
+476	b7e3f02b	bf4acd28	Corinthians	24	2	home	Arena Corinthians, São Paulo, SP	22,964				4									67%	2	2	2	2	2	2	0
+477	b7e3f02b	2091c619	Atlético Paranaense	24	2	away	Arena Corinthians, São Paulo, SP	22,964				3									33%	1	1	2	2	2	2	0
+478	5fa67089	639950ae	Flamengo	24	3	home	Estadio Jornalista Mário Filho, Rio de Janeiro, RJ	58,788	10	9	26	826	11	11	16	12	0	5	23	54	67%	629	566	19	6	2	0	0
+479	5fa67089	422bb734	Atlético Mineiro	24	1	away	Estadio Jornalista Mário Filho, Rio de Janeiro, RJ	58,788	9	2	12	489	18	13	15	30	1	11	20	63	34%	315	229	5	2	2	3	0
+480	56195f69	78c617cc	Goiás	25	1	home	Estádio de Hailé Pinheiro, Goiás	8,826	17	4	22	529	11	4	19	9	2	4	19	49	49%	364	286	14	3	2	2	0
+481	56195f69	05aff519	CSA	25	0	away	Estádio de Hailé Pinheiro, Goiás	8,826	21	2	16	553	12	14	18	17	1	13	17	65	51%	374	294	8	2	2	3	0
+482	34b3cefe	84d9701c	Fluminense	25	2	home	Estadio Jornalista Mário Filho, Rio de Janeiro, RJ	17,637	11	4	16	638	18	18	24	15	1	15	17	53	49%	440	366	13	3	6	0	0
+483	34b3cefe	157b7fee	Bahia	25	0	away	Estadio Jornalista Mário Filho, Rio de Janeiro, RJ	17,637	15	7	17	633	25	6	11	13	0	10	14	51	51%	449	378	17	6	6	1	0
+484	838e837e	abdce579	Palmeiras	25	1	home	Allianz Parque, São Paulo, SP	21,010	22	7	16	580	16	15	17	10	2	12	12	51	49%	410	333	19	7	0	2	0
+485	838e837e	d9fdd9d9	Botafogo (RJ)	25	0	away	Allianz Parque, São Paulo, SP	21,010	13	2	15	611	14	14	10	19	0	12	20	46	51%	424	348	6	0	0	2	0
+486	069c9e79	83f55dbe	Vasco da Gama	25	1	home	Estádio Club de Regatas Vasco da Gama, Rio de Janeiro, RJ	12,285	14	10	26	573	12	6	16	11	1	4	19	56	58%	403	329	16	5	2	2	0
+487	069c9e79	a9d0ab0e	Fortaleza	25	0	away	Estádio Club de Regatas Vasco da Gama, Rio de Janeiro, RJ	12,285	19	3	13	461	12	4	24	29	1	11	15	55	42%	301	238	7	2	2	5	1
+488	e3a95d8d	2091c619	Atlético Paranaense	25	0	home	Estádio Joaquim Américo Guimarães, Curitiba, PR	25,473				0									0%	0	0	0	0	2	3	0
+489	e3a95d8d	639950ae	Flamengo	25	2	away	Estádio Joaquim Américo Guimarães, Curitiba, PR	25,473				3									100%	1	1	2	2	2	5	0
+490	6f7f9fbd	2f335e17	Ceará	25	1	home	Estádio Castelão, Fortaleza, CE	16,892	16	11	38	641	14	11	19	6	2	9	22	47	57%	444	363	25	6	5	1	0
+491	6f7f9fbd	f205258a	Avaí	25	0	away	Estádio Castelão, Fortaleza, CE	16,892	16	0	6	565	17	22	17	28	3	13	20	66	43%	366	280	13	5	5	3	0
+492	fc9b4569	6f7e1f03	Internacional	25	0	home	Estádio José Pinheiro Borba, Porto Alegre	12,035	16	9	19	606	16	7	14	13	7	8	23	57	47%	418	346	13	1	3	2	0
+493	fc9b4569	712c528f	Santos	25	0	away	Estádio José Pinheiro Borba, Porto Alegre	12,035	18	3	9	667	17	12	14	23	2	8	10	53	53%	490	405	11	3	3	3	0
+494	ed7aae7a	5f232eb1	São Paulo	25	1	home	Estádio do Morumbi, São Paulo, SP	37,561	9	2	13	731	30	5	15	9	2	3	16	43	55%	567	503	17	3	2	0	0
+495	ed7aae7a	bf4acd28	Corinthians	25	0	away	Estádio do Morumbi, São Paulo, SP	37,561	10	1	9	615	14	5	9	8	1	16	24	51	45%	467	400	3	2	2	1	0
+496	b85938bd	422bb734	Atlético Mineiro	25	1	home	Estádio Raimundo Sampaio, Belo Horizonte	12,974	17	4	16	586	21	8	12	14	0	9	31	41	43%	394	311	21	4	5	4	1
+497	b85938bd	d5ae3703	Grêmio	25	4	away	Estádio Raimundo Sampaio, Belo Horizonte	12,974	8	4	14	728	15	14	10	13	2	12	22	70	57%	528	450	13	5	5	1	0
+498	266d5a08	baa296ad	Chapecoense	25	1	home	Arena Condá, Chapecó	4,399	12	9	30	688	20	7	21	15	0	7	29	56	60%	472	397	19	7	6	1	0
+499	266d5a08	03ff5eeb	Cruzeiro	25	1	away	Arena Condá, Chapecó	4,399	13	7	17	522	19	10	24	32	0	11	19	52	40%	322	255	17	6	6	1	0
+500	8768c192	05aff519	CSA	26	2	home	Estádio Rei Pelé, Maceió	13,075	18	1	14	536	14	11	14	29	2	11	10	48	42%	358	298	10	5	7	3	0
+501	8768c192	422bb734	Atlético Mineiro	26	2	away	Estádio Rei Pelé, Maceió	13,075	13	7	23	659	14	6	20	6	0	4	16	41	58%	499	424	20	7	7	4	1
+502	6ea63d88	d5ae3703	Grêmio	26	0	home	Arena do Grêmio, Porto Alegre	11,757	13	10	34	751	9	15	12	7	1	4	15	42	63%	553	500	17	6	6	3	0
+503	6ea63d88	157b7fee	Bahia	26	1	away	Arena do Grêmio, Porto Alegre	11,757	15	6	8	538	24	11	14	45	0	8	6	36	37%	334	273	13	6	6	2	0
+504	5aef7415	a9d0ab0e	Fortaleza	26	1	home	Estádio Castelão, Fortaleza, CE	50,101	8	4	11	364	7	5	15	41	2	6	20	48	31%	203	141	6	3	4	1	0
+505	5aef7415	639950ae	Flamengo	26	2	away	Estádio Castelão, Fortaleza, CE	50,101	16	12	29	607	4	12	18	6	2	5	22	42	69%	460	403	11	4	4	3	0
+506	bfa4371a	03ff5eeb	Cruzeiro	26	1	home	Estádio Governador Magalhães Pinto, Belo Horizonte	30,969	18	4	22	566	24	12	12	11	3	4	23	53	40%	365	290	11	2	2	2	0
+507	bfa4371a	5f232eb1	São Paulo	26	0	away	Estádio Governador Magalhães Pinto, Belo Horizonte	30,969	16	2	13	754	23	6	11	26	1	7	23	51	60%	557	471	7	2	2	2	0
+508	5b5b2d25	abdce579	Palmeiras	26	1	home	Allianz Parque, São Paulo, SP	22,738	15	12	40	745	11	6	21	8	5	7	20	42	72%	549	475	30	8	2	1	0
+509	5b5b2d25	baa296ad	Chapecoense	26	0	away	Allianz Parque, São Paulo, SP	22,738	14	4	11	373	8	5	20	33	0	19	18	77	28%	223	131	7	2	2	3	1
+510	3dd68023	83f55dbe	Vasco da Gama	26	2	home	Estádio Club de Regatas Vasco da Gama, Rio de Janeiro, RJ	16,604	15	3	15	451	12	11	21	33	1	9	25	46	36%	272	203	16	8	3	1	0
+511	3dd68023	d9fdd9d9	Botafogo (RJ)	26	1	away	Estádio Club de Regatas Vasco da Gama, Rio de Janeiro, RJ	16,604	12	7	18	660	13	6	31	20	1	4	25	59	64%	488	404	10	3	3	0	0
+512	d171daf8	78c617cc	Goiás	26	2	home	Estádio de Hailé Pinheiro, Goiás	17,577	10	5	27	501	14	10	22	26	2	8	23	56	44%	306	234	20	4	5	4	2
+513	d171daf8	bf4acd28	Corinthians	26	2	away	Estádio de Hailé Pinheiro, Goiás	17,577	16	5	16	586	7	8	27	26	0	10	17	53	56%	411	346	17	5	5	4	0
+514	d6ad1869	f205258a	Avaí	26	0	home	Estádio Aderbal Ramos da Silva, Florianópolis	6,377	7	6	20	463	4	17	13	26	0	13	24	47	30%	275	206	17	6	10	1	1
+515	d6ad1869	6f7e1f03	Internacional	26	2	away	Estádio Aderbal Ramos da Silva, Florianópolis	6,377	16	8	23	854	13	14	11	16	2	4	17	61	70%	672	606	26	10	10	3	0
+516	bfcdf86b	712c528f	Santos	26	2	home	Estádio Urbano Caldeira, Santos, SP	7,804	15	5	28	693	21	6	21	19	3	4	28	43	67%	495	417	16	4	3	3	0
+517	bfcdf86b	2f335e17	Ceará	26	1	away	Estádio Urbano Caldeira, Santos, SP	7,804	11	7	21	448	17	17	16	31	2	11	21	46	33%	230	158	11	3	3	4	0
+518	af6efa5e	84d9701c	Fluminense	26	1	home	Estadio Jornalista Mário Filho, Rio de Janeiro, RJ	16,109	18	3	23	633	19	6	14	12	3	8	10	51	51%	445	375	14	4	4	0	0
+519	af6efa5e	2091c619	Atlético Paranaense	26	2	away	Estadio Jornalista Mário Filho, Rio de Janeiro, RJ	16,109	13	4	13	615	14	11	11	13	2	7	21	41	49%	435	363	14	4	4	1	0
+520	e3c2b315	a9d0ab0e	Fortaleza	27	2	home	Estádio Castelão, Fortaleza, CE	26,801	13	1	15	488	12	4	15	20	0	8	16	56	40%	342	276	10	5	4	4	0
+521	e3c2b315	d5ae3703	Grêmio	27	1	away	Estádio Castelão, Fortaleza, CE	26,801	17	8	27	677	6	11	12	14	0	4	24	37	60%	504	446	13	4	4	3	1
+522	045ac9e8	bf4acd28	Corinthians	27	1	home	Arena Corinthians, São Paulo, SP	31,631	15	4	21	661	12	10	14	15	0	6	20	46	54%	460	396	13	4	5	3	0
+523	045ac9e8	03ff5eeb	Cruzeiro	27	2	away	Arena Corinthians, São Paulo, SP	31,631	18	4	15	553	17	10	15	15	0	9	22	64	46%	396	303	14	5	5	1	0
+524	f93be9f5	422bb734	Atlético Mineiro	27	2	home	Estádio Raimundo Sampaio, Belo Horizonte	21,771	24	3	9	397	23	9	19	23	1	10	18	59	31%	223	153	9	4	1	3	0
+525	f93be9f5	712c528f	Santos	27	0	away	Estádio Raimundo Sampaio, Belo Horizonte	21,771	14	7	19	697	13	10	18	14	1	7	27	45	69%	504	421	12	1	1	4	0
+526	f30621e0	5f232eb1	São Paulo	27	1	home	Estádio do Morumbi, São Paulo, SP	20,763	23	13	34	845	8	6	25	3	2	6	18	33	77%	680	609	22	7	1	4	0
+527	f30621e0	f205258a	Avaí	27	0	away	Estádio do Morumbi, São Paulo, SP	20,763	11	0	0	398	21	18	15	46	1	17	8	60	23%	206	129	6	1	1	1	1
+528	9d6fb9f2	6f7e1f03	Internacional	27	0	home	Estádio José Pinheiro Borba, Porto Alegre	24,435	14	12	42	818	23	7	18	12	2	4	20	52	71%	605	537	19	7	3	3	0
+529	9d6fb9f2	83f55dbe	Vasco da Gama	27	1	away	Estádio José Pinheiro Borba, Porto Alegre	24,435	12	3	11	463	12	7	18	37	0	16	10	49	29%	252	188	9	3	3	1	0
+530	4f782c08	baa296ad	Chapecoense	27	2	home	Arena Condá, Chapecó	4,042	23	6	25	512	15	9	22	30	1	10	20	49	50%	311	256	12	4	8	2	0
+531	4f782c08	78c617cc	Goiás	27	2	away	Arena Condá, Chapecó	4,042	14	9	27	508	14	4	9	12	2	7	20	40	50%	313	259	21	8	8	5	0
+532	047a6f93	639950ae	Flamengo	27	2	home	Estadio Jornalista Mário Filho, Rio de Janeiro, RJ	52,279	23	10	14	551	18	8	16	14	0	6	20	49	47%	363	297	16	7	4	3	0
+533	047a6f93	84d9701c	Fluminense	27	0	away	Estadio Jornalista Mário Filho, Rio de Janeiro, RJ	52,279	13	7	19	606	16	5	11	15	1	10	19	41	53%	409	351	10	4	4	5	0
+534	49cd89e1	2091c619	Atlético Paranaense	27	1	home	Estádio Joaquim Américo Guimarães, Curitiba, PR	18,732	23	2	25	615	18	7	24	9	0	6	22	52	52%	431	344	14	6	2	1	0
+535	49cd89e1	abdce579	Palmeiras	27	1	away	Estádio Joaquim Américo Guimarães, Curitiba, PR	18,732	11	1	10	619	18	12	26	27	4	12	13	60	48%	411	327	8	2	2	2	0
+536	61d80119	157b7fee	Bahia	27	1	home	Itaipava Arena Fonte Nova, Salvador, BA	28,415	14	6	20	584	22	9	29	27	4	5	11	52	48%	380	296	12	4	6	2	0
+537	61d80119	2f335e17	Ceará	27	2	away	Itaipava Arena Fonte Nova, Salvador, BA	28,415	11	17	31	598	16	15	16	11	1	6	28	53	52%	402	313	13	6	6	3	0
+538	f9be2d20	d9fdd9d9	Botafogo (RJ)	27	2	home	Estádio Nilton Santos, Rio de Janeiro, RJ	18,199	18	4	21	552	15	10	26	29	2	4	10	48	44%	390	346	17	5	3	2	0
+539	f9be2d20	05aff519	CSA	27	1	away	Estádio Nilton Santos, Rio de Janeiro, RJ	18,199	16	3	20	660	5	5	17	11	2	10	14	51	56%	507	445	8	3	3	3	1
+540	638045c3	2f335e17	Ceará	28	1	home	Estádio Castelão, Fortaleza, CE	35,178	11	11	28	743	17	11	28	9	3	7	24	37	64%	545	462	17	4	3	3	0
+541	638045c3	83f55dbe	Vasco da Gama	28	1	away	Estádio Castelão, Fortaleza, CE	35,178	14	3	9	529	13	15	18	43	0	13	21	57	36%	316	243	8	3	3	3	0
+542	07cb9155	bf4acd28	Corinthians	28	0	home	Arena Corinthians, São Paulo, SP	32,142	20	4	17	470	11	14	14	19	0	16	25	53	37%	283	203	14	5	3	3	0
+543	07cb9155	712c528f	Santos	28	0	away	Arena Corinthians, São Paulo, SP	32,142	12	3	17	684	20	7	19	14	5	6	17	57	63%	500	417	19	3	3	1	0
+544	664bde89	157b7fee	Bahia	28	2	home	Itaipava Arena Fonte Nova, Salvador, BA	27,542	16	6	28	670	13	12	21	9	1	7	22	40	56%	469	367	13	5	6	1	0
+545	664bde89	6f7e1f03	Internacional	28	3	away	Itaipava Arena Fonte Nova, Salvador, BA	27,542	11	4	8	586	14	17	21	29	2	7	23	58	44%	387	310	17	6	6	5	0
+546	2064f126	84d9701c	Fluminense	28	1	home	Estadio Jornalista Mário Filho, Rio de Janeiro, RJ	18,751	11	5	25	781	15	9	20	10	0	6	23	25	68%	558	487	26	8	5	1	0
+547	2064f126	baa296ad	Chapecoense	28	1	away	Estadio Jornalista Mário Filho, Rio de Janeiro, RJ	18,751	14	5	18	472	30	13	18	31	0	15	12	62	32%	257	183	13	5	5	4	0
+548	4c7d2cce	03ff5eeb	Cruzeiro	28	1	home	Estádio Governador Magalhães Pinto, Belo Horizonte	32,268	13	7	50	750	19	11	25	6	0	4	23	56	67%	555	493	19	5	1	3	0
+549	4c7d2cce	a9d0ab0e	Fortaleza	28	1	away	Estádio Governador Magalhães Pinto, Belo Horizonte	32,268	9	2	12	455	15	8	15	45	0	11	7	55	33%	280	216	7	1	1	1	0
+550	93ad2b23	5f232eb1	São Paulo	28	2	home	Estádio do Morumbi, São Paulo, SP	18,815	9	6	16	718	19	10	14	16	3	6	21	48	60%	545	467	16	6	3	0	0
+551	93ad2b23	422bb734	Atlético Mineiro	28	0	away	Estádio do Morumbi, São Paulo, SP	18,815	11	6	14	520	14	11	12	15	4	10	24	50	40%	352	279	9	3	3	0	0
+552	e0e30827	d5ae3703	Grêmio	28	3	home	Arena do Grêmio, Porto Alegre	7,608	13	5	11	653	17	11	17	25	1	7	15	40	52%	497	433	21	10	2	3	0
+553	e0e30827	d9fdd9d9	Botafogo (RJ)	28	0	away	Arena do Grêmio, Porto Alegre	7,608	9	7	27	605	8	10	11	14	0	11	16	35	48%	440	380	9	2	2	2	0
+554	328b16d7	2091c619	Atlético Paranaense	28	4	home	Estádio Joaquim Américo Guimarães, Curitiba, PR	10,778	18	19	37	692	13	11	13	9	1	7	28	57	68%	494	427	24	16	2	1	0
+555	328b16d7	78c617cc	Goiás	28	1	away	Estádio Joaquim Américo Guimarães, Curitiba, PR	10,778	9	3	10	432	15	13	16	27	0	9	17	66	32%	242	164	7	2	2	1	0
+556	c80e22be	f205258a	Avaí	28	1	home	Estádio Aderbal Ramos da Silva, Florianópolis	8,815	18	6	22	440	14	10	11	19	0	11	20	47	37%	262	174	11	6	4	3	0
+557	c80e22be	abdce579	Palmeiras	28	2	away	Estádio Aderbal Ramos da Silva, Florianópolis	8,815	17	5	16	661	10	8	25	23	2	4	20	67	63%	465	386	15	4	4	2	0
+558	3c837bb4	639950ae	Flamengo	28	1	home	Estadio Jornalista Mário Filho, Rio de Janeiro, RJ	69,846	20	6	19	760	12	10	8	6	1	2	10	36	63%	603	549	18	7	4	1	0
+559	3c837bb4	05aff519	CSA	28	0	away	Estadio Jornalista Mário Filho, Rio de Janeiro, RJ	69,846	13	2	9	513	14	14	15	14	5	14	17	60	37%	354	289	7	4	4	2	0
+560	0e579f75	422bb734	Atlético Mineiro	29	0	home	Estádio Raimundo Sampaio, Belo Horizonte	19,058	15	18	41	678	18	11	23	6	2	5	30	38	71%	475	389	20	1	3	3	0
+561	0e579f75	baa296ad	Chapecoense	29	2	away	Estádio Raimundo Sampaio, Belo Horizonte	19,058	10	2	5	406	15	10	18	38	0	17	18	59	29%	208	128	10	3	3	3	0
+562	d2c25a7f	f205258a	Avaí	29	1	home	Estádio Aderbal Ramos da Silva, Florianópolis	2,949	20	3	29	607	7	8	13	9	0	8	28	48	50%	428	357	11	3	6	4	1
+563	d2c25a7f	a9d0ab0e	Fortaleza	29	3	away	Estádio Aderbal Ramos da Silva, Florianópolis	2,949	10	4	10	613	13	4	16	26	0	12	14	66	50%	447	367	11	6	6	1	0
+564	46e28187	abdce579	Palmeiras	29	3	home	Allianz Parque, São Paulo, SP	29,481	12	6	7	479	15	13	20	22	1	10	22	55	32%	268	203	19	8	4	0	0
+565	46e28187	5f232eb1	São Paulo	29	0	away	Allianz Parque, São Paulo, SP	29,481	14	3	20	763	22	3	18	10	0	9	16	30	68%	582	508	14	4	4	0	0
+566	9302ca8a	2f335e17	Ceará	29	2	home	Estádio Castelão, Fortaleza, CE	19,660	12	4	10	485	12	15	17	34	1	15	12	52	29%	276	217	10	5	4	1	0
+567	9302ca8a	84d9701c	Fluminense	29	0	away	Estádio Castelão, Fortaleza, CE	19,660	8	10	29	865	21	6	15	9	2	4	12	31	71%	685	599	21	4	4	1	0
+568	869117c1	83f55dbe	Vasco da Gama	29	1	home	Estádio Club de Regatas Vasco da Gama, Rio de Janeiro, RJ	15,708	9	10	27	547	12	8	12	12	0	5	18	45	43%	361	294	16	1	4	2	0
+569	869117c1	d5ae3703	Grêmio	29	3	away	Estádio Club de Regatas Vasco da Gama, Rio de Janeiro, RJ	15,708	13	4	13	669	15	11	18	24	0	10	23	52	57%	494	416	9	4	4	2	0
+570	b1f7237e	05aff519	CSA	29	2	home	Estádio Rei Pelé, Maceió	15,428	17	5	18	530	17	5	20	21	1	9	15	64	45%	372	304	11	5	2	6	0
+571	b1f7237e	bf4acd28	Corinthians	29	1	away	Estádio Rei Pelé, Maceió	15,428	10	3	18	638	9	6	10	12	2	8	27	56	55%	468	400	12	2	2	2	0
+572	7801fa7c	78c617cc	Goiás	29	2	home	Estádio de Hailé Pinheiro, Goiás	35,170	18	3	16	433	24	16	11	16	4	12	25	54	37%	227	159	18	4	6	4	0
+573	7801fa7c	639950ae	Flamengo	29	2	away	Estádio de Hailé Pinheiro, Goiás	35,170	15	9	16	588	12	6	23	17	0	11	30	49	63%	387	316	12	6	6	3	1
+574	226f87cb	712c528f	Santos	29	1	home	Estádio Urbano Caldeira, Santos, SP	5,634	17	4	17	635	18	11	25	5	3	3	21	53	61%	448	377	19	5	1	5	0
+575	226f87cb	157b7fee	Bahia	29	0	away	Estádio Urbano Caldeira, Santos, SP	5,634	26	0	4	429	18	5	9	11	1	17	16	54	39%	291	205	3	1	1	3	0
+576	4c21cc3e	6f7e1f03	Internacional	29	1	home	Estádio José Pinheiro Borba, Porto Alegre	18,767	14	3	15	681	22	12	16	12	1	8	27	64	54%	484	394	14	4	3	3	0
+577	4c21cc3e	2091c619	Atlético Paranaense	29	1	away	Estádio José Pinheiro Borba, Porto Alegre	18,767	22	5	17	588	16	9	21	17	0	10	17	75	46%	405	318	9	3	3	2	0
+578	59491932	d9fdd9d9	Botafogo (RJ)	29	0	home	Estádio Nilton Santos, Rio de Janeiro, RJ	20,690	15	12	34	579	13	14	30	9	1	8	16	49	56%	403	329	20	4	3	1	0
+579	59491932	03ff5eeb	Cruzeiro	29	2	away	Estádio Nilton Santos, Rio de Janeiro, RJ	20,690	15	4	11	498	14	5	33	32	1	20	16	74	44%	327	227	5	3	3	3	0
+580	18ceb1d7	a9d0ab0e	Fortaleza	30	2	home	Estádio Castelão, Fortaleza, CE	31,503	18	7	15	593	14	12	14	20	1	7	13	60	59%	434	371	18	6	6	3	0
+581	18ceb1d7	422bb734	Atlético Mineiro	30	2	away	Estádio Castelão, Fortaleza, CE	31,503	19	7	24	454	8	5	18	15	2	7	19	46	41%	290	227	16	6	6	4	1
+582	ebd5bbd5	abdce579	Palmeiras	30	1	home	Allianz Parque, São Paulo, SP	29,019	14	7	17	672	15	10	17	12	2	7	23	42	55%	494	433	9	2	5	2	0
+583	ebd5bbd5	2f335e17	Ceará	30	0	away	Allianz Parque, São Paulo, SP	29,019	19	5	13	563	16	5	14	13	2	6	16	38	45%	394	343	13	5	5	2	0
+584	17fcdb16	84d9701c	Fluminense	30	0	home	Estadio Jornalista Mário Filho, Rio de Janeiro, RJ	16,056	7	8	31	789	16	5	20	13	2	7	17	40	67%	610	534	20	4	2	2	0
+585	17fcdb16	83f55dbe	Vasco da Gama	30	0	away	Estadio Jornalista Mário Filho, Rio de Janeiro, RJ	16,056	12	3	12	493	10	14	21	32	1	11	17	45	34%	309	236	12	2	2	3	0
+586	7c4055e3	baa296ad	Chapecoense	30	0	home	Arena Condá, Chapecó	14,206	19	6	28	483	12	8	9	8	0	7	18	25	39%	309	264	27	9	6	2	0
+587	7c4055e3	5f232eb1	São Paulo	30	3	away	Arena Condá, Chapecó	14,206	11	2	11	709	20	9	15	19	2	11	14	36	61%	528	475	12	6	6	2	0
+588	f96b3586	639950ae	Flamengo	30	4	home	Estadio Jornalista Mário Filho, Rio de Janeiro, RJ	64,985	12	8	23	821	17	4	27	9	1	1	18	53	69%	638	561	16	5	4	0	0
+589	f96b3586	bf4acd28	Corinthians	30	1	away	Estadio Jornalista Mário Filho, Rio de Janeiro, RJ	64,985	10	2	9	467	14	6	18	25	2	14	22	67	31%	293	213	7	4	4	1	0
+590	8d3de448	d5ae3703	Grêmio	30	2	home	Arena do Grêmio, Porto Alegre	40,618	16	5	12	687	11	18	16	17	1	4	19	46	59%	521	455	21	9	0	2	0
+591	8d3de448	6f7e1f03	Internacional	30	0	away	Arena do Grêmio, Porto Alegre	40,618	16	3	11	506	10	11	15	21	0	6	10	45	41%	359	292	5	0	0	2	1
+592	2b0b8bb3	2091c619	Atlético Paranaense	30	1	home	Estádio Joaquim Américo Guimarães, Curitiba, PR	10,681				2									100%	1	1	1	1	0	3	0
+593	2b0b8bb3	05aff519	CSA	30	0	away	Estádio Joaquim Américo Guimarães, Curitiba, PR	10,681				0									0%	0	0	0	0	0	4	0
+594	47375a24	712c528f	Santos	30	4	home	Estádio Urbano Caldeira, Santos, SP	7,524	16	9	19	638	6	7	26	14	1	8	19	49	63%	481	402	23	12	6	1	0
+595	47375a24	d9fdd9d9	Botafogo (RJ)	30	1	away	Estádio Urbano Caldeira, Santos, SP	7,524	8	8	16	432	14	7	19	18	0	11	11	54	37%	278	192	13	6	6	0	0
+596	f08b36b7	03ff5eeb	Cruzeiro	30	1	home	Estádio Governador Magalhães Pinto, Belo Horizonte	21,933	16	3	24	670	10	7	13	19	4	10	15	54	64%	487	434	17	5	3	4	1
+597	f08b36b7	157b7fee	Bahia	30	1	away	Estádio Governador Magalhães Pinto, Belo Horizonte	21,933	11	5	22	429	12	7	24	17	3	10	16	42	36%	266	204	13	3	3	0	0
+598	3f76124d	78c617cc	Goiás	30	2	home	Estádio de Hailé Pinheiro, Goiás	8,914	19	4	30	537	8	12	25	7	0	10	20	61	48%	356	289	23	6	4	1	0
+599	3f76124d	f205258a	Avaí	30	0	away	Estádio de Hailé Pinheiro, Goiás	8,914	19	3	15	584	12	14	16	23	0	14	25	54	52%	402	324	12	4	4	3	0
+600	356b8bcf	422bb734	Atlético Mineiro	31	2	home	Estádio Raimundo Sampaio, Belo Horizonte	38,937	15	10	23	605	15	8	15	28	4	4	24	39	52%	378	304	26	11	3	0	0
+601	356b8bcf	78c617cc	Goiás	31	0	away	Estádio Raimundo Sampaio, Belo Horizonte	38,937	16	8	26	553	13	12	15	24	1	13	24	63	48%	347	271	7	3	3	2	0
+602	73afddb6	bf4acd28	Corinthians	31	3	home	Arena Corinthians, São Paulo, SP	22,453	18	2	18	726	19	4	11	16	1	6	20	60	59%	560	493	15	6	8	2	0
+603	73afddb6	a9d0ab0e	Fortaleza	31	2	away	Arena Corinthians, São Paulo, SP	22,453	9	6	22	558	17	7	15	13	1	8	12	58	41%	388	330	13	8	8	3	0
+604	5d41ac04	f205258a	Avaí	31	1	home	Estádio Aderbal Ramos da Silva, Florianópolis	4,820	19	8	26	543	20	14	15	11	0	8	17	60	48%	360	275	13	4	3	6	1
+605	5d41ac04	712c528f	Santos	31	2	away	Estádio Aderbal Ramos da Silva, Florianópolis	4,820	11	6	12	603	12	14	23	23	2	6	22	65	53%	411	324	9	3	3	2	1
+606	267c9132	157b7fee	Bahia	31	1	home	Itaipava Arena Fonte Nova, Salvador, BA	16,836	20	6	42	700	24	4	26	9	3	5	25	35	67%	482	401	23	7	2	1	0
+607	267c9132	baa296ad	Chapecoense	31	1	away	Itaipava Arena Fonte Nova, Salvador, BA	16,836	16	4	15	463	13	11	18	47	1	10	20	76	33%	245	167	7	2	2	3	0
+608	39a17e8d	83f55dbe	Vasco da Gama	31	1	home	Estádio Club de Regatas Vasco da Gama, Rio de Janeiro, RJ	8,492	17	3	14	487	16	13	23	11	1	9	20	39	46%	310	225	8	3	6	7	1
+609	39a17e8d	abdce579	Palmeiras	31	2	away	Estádio Club de Regatas Vasco da Gama, Rio de Janeiro, RJ	8,492	27	6	15	565	12	1	23	17	1	4	27	60	55%	373	294	20	6	6	4	0
+610	efc9d522	2f335e17	Ceará	31	2	home	Estádio Castelão, Fortaleza, CE	19,966	8	6	10	605	13	8	9	34	3	12	14	52	41%	412	332	9	4	3	2	0
+611	efc9d522	6f7e1f03	Internacional	31	0	away	Estádio Castelão, Fortaleza, CE	19,966	11	4	26	788	22	16	16	13	1	4	19	34	59%	592	517	16	3	3	2	0
+612	0fecbf77	d9fdd9d9	Botafogo (RJ)	31	0	home	Estádio Nilton Santos, Rio de Janeiro, RJ	20,958	16	1	5	361	25	8	17	18	0	15	21	70	29%	210	120	5	2	3	6	1
+613	0fecbf77	639950ae	Flamengo	31	1	away	Estádio Nilton Santos, Rio de Janeiro, RJ	20,958	14	10	21	690	10	4	12	11	0	3	25	31	71%	498	433	18	3	3	2	0
+614	edf448ad	5f232eb1	São Paulo	31	0	home	Estádio do Morumbi, São Paulo, SP	17,650	6	2	25	803	25	4	10	3	0	2	18	29	57%	609	546	21	4	4	2	0
+615	edf448ad	84d9701c	Fluminense	31	2	away	Estádio do Morumbi, São Paulo, SP	17,650	16	2	12	667	13	16	17	24	1	13	14	59	44%	473	408	5	4	4	1	0
+616	04044e9b	d5ae3703	Grêmio	31	2	home	Arena do Grêmio, Porto Alegre	11,334	15	11	20	805	10	4	7	8	0	4	11	36	65%	646	595	19	3	3	3	0
+617	04044e9b	05aff519	CSA	31	1	away	Arena do Grêmio, Porto Alegre	11,334	16	3	9	515	16	19	10	24	1	12	7	42	35%	356	307	9	3	3	2	0
+618	38368036	78c617cc	Goiás	32	0	home	Estádio de Hailé Pinheiro, Goiás	13,226	19	5	13	531	15	9	15	16	2	3	22	35	44%	344	274	9	2	11	4	0
+619	38368036	712c528f	Santos	32	3	away	Estádio de Hailé Pinheiro, Goiás	13,226	16	4	13	628	19	9	8	14	3	9	23	70	56%	446	370	17	11	11	2	0
+620	ce7e5a07	abdce579	Palmeiras	32	1	home	Allianz Parque, São Paulo, SP	36,290	12	9	33	540	15	10	19	13	3	3	29	42	47%	325	252	21	7	2	2	0
+621	ce7e5a07	bf4acd28	Corinthians	32	1	away	Allianz Parque, São Paulo, SP	36,290	18	2	12	581	16	12	18	31	0	18	16	44	53%	393	313	7	2	2	1	0
+622	84f15dca	03ff5eeb	Cruzeiro	32	0	home	Estádio Governador Magalhães Pinto, Belo Horizonte	43,205	9	4	23	609	19	3	27	20	1	11	21	68	59%	428	340	16	2	0	1	0
+623	84f15dca	422bb734	Atlético Mineiro	32	0	away	Estádio Governador Magalhães Pinto, Belo Horizonte	43,205	12	8	14	488	9	3	24	23	0	12	24	54	41%	300	231	17	0	0	1	0
+624	94d1c203	6f7e1f03	Internacional	32	2	home	Estádio José Pinheiro Borba, Porto Alegre	11,781	16	4	9	594	20	19	16	22	1	7	14	58	40%	408	330	15	5	5	3	0
+625	94d1c203	84d9701c	Fluminense	32	1	away	Estádio José Pinheiro Borba, Porto Alegre	11,781	9	3	16	786	13	17	6	5	0	4	18	54	60%	620	539	14	5	5	2	0
+626	b3c564d8	5f232eb1	São Paulo	32	0	home	Estádio do Morumbi, São Paulo, SP	13,795				0									0%	0	0	0	0	1	2	0
+627	b3c564d8	2091c619	Atlético Paranaense	32	1	away	Estádio do Morumbi, São Paulo, SP	13,795				2									100%	1	1	1	1	1	2	0
+628	8a072e02	639950ae	Flamengo	32	3	home	Estadio Jornalista Mário Filho, Rio de Janeiro, RJ	65,930	10	11	34	726	17	10	17	7	3	7	25	45	66%	524	449	21	8	2	1	0
+629	8a072e02	157b7fee	Bahia	32	1	away	Estadio Jornalista Mário Filho, Rio de Janeiro, RJ	65,930	11	2	3	458	16	12	16	32	0	10	16	61	34%	281	197	9	2	2	0	0
+630	01d38819	a9d0ab0e	Fortaleza	32	1	home	Estádio Castelão, Fortaleza, CE	46,093	13	3	12	454	10	7	13	36	0	17	15	60	37%	282	211	9	2	3	4	0
+631	01d38819	2f335e17	Ceará	32	0	away	Estádio Castelão, Fortaleza, CE	46,093	17	8	21	652	12	8	18	13	0	6	24	46	63%	483	404	15	3	3	4	0
+632	96245521	05aff519	CSA	32	0	home	Estádio Rei Pelé, Maceió	14,690	17	5	19	623	9	11	19	5	4	6	16	29	58%	469	405	20	5	6	3	1
+633	96245521	83f55dbe	Vasco da Gama	32	3	away	Estádio Rei Pelé, Maceió	14,690	18	3	9	485	9	9	14	28	0	13	10	53	42%	338	278	8	6	6	2	0
+634	45cc59a3	baa296ad	Chapecoense	32	0	home	Arena Condá, Chapecó	13,335	10	5	26	608	16	13	8	10	0	8	23	38	48%	425	379	17	2	2	2	0
+635	45cc59a3	d5ae3703	Grêmio	32	1	away	Arena Condá, Chapecó	13,335	13	2	12	630	14	4	13	23	0	10	19	54	52%	475	417	7	2	2	2	0
+636	73e0cf2c	d9fdd9d9	Botafogo (RJ)	32	2	home	Estádio Nilton Santos, Rio de Janeiro, RJ	19,075	19	4	13	474	17	12	22	18	1	10	19	43	37%	296	231	17	4	5	4	0
+637	73e0cf2c	f205258a	Avaí	32	0	away	Estádio Nilton Santos, Rio de Janeiro, RJ	19,075	16	4	17	684	13	4	21	8	1	10	19	35	63%	501	432	17	5	5	4	1
+638	0bdf40a0	639950ae	Flamengo	34	4	home	Estadio Jornalista Mário Filho, Rio de Janeiro, RJ	52,757	23	5	20	696	15	4	20	17	0	5	11	30	67%	512	432	11	4	6	6	0
+639	0bdf40a0	83f55dbe	Vasco da Gama	34	4	away	Estadio Jornalista Mário Filho, Rio de Janeiro, RJ	52,757	25	4	12	434	18	9	16	30	1	7	17	61	33%	245	173	9	6	6	5	0
+640	16295fc5	712c528f	Santos	33	1	home	Estádio Urbano Caldeira, Santos, SP	14,062	14	3	14	526	19	11	14	21	0	5	20	55	41%	319	247	16	3	4	0	0
+641	16295fc5	5f232eb1	São Paulo	33	1	away	Estádio Urbano Caldeira, Santos, SP	14,062	25	4	14	653	17	13	13	19	4	14	20	47	59%	458	377	15	4	4	3	0
+642	e8ef28d2	84d9701c	Fluminense	33	1	home	Estadio Jornalista Mário Filho, Rio de Janeiro, RJ	24,405	15	1	14	702	15	15	21	24	0	4	24	58	54%	503	414	15	4	5	2	0
+643	e8ef28d2	422bb734	Atlético Mineiro	33	1	away	Estadio Jornalista Mário Filho, Rio de Janeiro, RJ	24,405	15	2	20	621	12	15	15	21	3	5	21	44	46%	418	346	13	5	5	3	0
+644	bc5dc325	157b7fee	Bahia	33	1	home	Itaipava Arena Fonte Nova, Salvador, BA	23,194	17	2	17	581	15	7	17	24	1	16	11	46	46%	405	342	15	5	5	2	0
+645	bc5dc325	abdce579	Palmeiras	33	1	away	Itaipava Arena Fonte Nova, Salvador, BA	23,194	16	4	19	663	11	8	10	19	0	6	14	48	54%	485	423	22	5	5	0	0
+646	0835a0d9	d5ae3703	Grêmio	33	0	home	Arena do Grêmio, Porto Alegre	28,541	9	10	32	759	14	7	17	4	3	4	23	61	69%	560	475	22	5	5	1	0
+647	0835a0d9	639950ae	Flamengo	33	1	away	Arena do Grêmio, Porto Alegre	28,541	15	0	2	433	21	4	17	32	0	10	13	61	32%	271	184	9	5	5	4	1
+648	86cde0bd	2091c619	Atlético Paranaense	33	1	home	Estádio Joaquim Américo Guimarães, Curitiba, PR	17,027				3									100%	1	1	2	1	0	4	0
+649	86cde0bd	d9fdd9d9	Botafogo (RJ)	33	0	away	Estádio Joaquim Américo Guimarães, Curitiba, PR	17,027				0									0%	0	0	0	0	0	1	0
+650	70c39dda	baa296ad	Chapecoense	33	1	home	Arena Condá, Chapecó	3,431	13	6	22	515	14	15	18	20	0	11	19	51	40%	323	258	12	5	6	2	0
+651	70c39dda	2f335e17	Ceará	33	0	away	Arena Condá, Chapecó	3,431	15	5	20	696	16	7	17	18	2	6	29	55	60%	504	430	15	6	6	1	0
+652	88b365f0	bf4acd28	Corinthians	33	0	home	Arena Corinthians, São Paulo, SP	29,159	9	5	22	637	16	12	29	22	2	12	26	60	50%	413	317	14	3	2	0	0
+653	88b365f0	6f7e1f03	Internacional	33	0	away	Arena Corinthians, São Paulo, SP	29,159	19	3	14	624	26	8	21	21	0	14	31	64	50%	424	321	13	2	2	2	0
+654	f633035c	a9d0ab0e	Fortaleza	33	3	home	Estádio Castelão, Fortaleza, CE	34,231	10	4	18	645	7	4	15	8	0	5	17	58	64%	518	461	15	6	2	0	0
+655	f633035c	05aff519	CSA	33	0	away	Estádio Castelão, Fortaleza, CE	34,231	20	3	8	406	8	11	15	13	1	8	12	47	36%	294	239	8	2	2	1	0
+656	07a43a92	83f55dbe	Vasco da Gama	33	1	home	Estádio Club de Regatas Vasco da Gama, Rio de Janeiro, RJ	18,620	22	3	25	559	13	10	20	28	3	8	25	62	48%	356	282	9	3	5	2	0
+657	07a43a92	78c617cc	Goiás	33	1	away	Estádio Club de Regatas Vasco da Gama, Rio de Janeiro, RJ	18,620	16	16	32	587	14	7	25	23	1	8	13	49	52%	375	295	22	5	5	2	0
+658	b93f40f3	03ff5eeb	Cruzeiro	33	0	home	"<span style=""display:inline-block"">Diego Pombo Lopez (Referee)</span>"	Estádio Governador Magalhães Pinto, Belo Horizonte	14	17	52	791	9	9	27	12	0	7	25	42	73%	572	499	16	3	4	2	0
+659	b93f40f3	f205258a	Avaí	33	0	away	"<span style=""display:inline-block"">Diego Pombo Lopez (Referee)</span>"	Estádio Governador Magalhães Pinto, Belo Horizonte	20	2	17	437	17	13	20	53	0	11	19	50	27%	215	147	10	4	4	2	0
+660	95da0fa4	712c528f	Santos	34	4	home	"<span style=""display:inline-block"">Leandro Pedro Vuaden (Referee)</span>"	Estádio Urbano Caldeira, Santos, SP	16	10	20	640	13	13	11	17	4	6	12	54	56%	453	378	25	11	2	2	0
+661	95da0fa4	03ff5eeb	Cruzeiro	34	1	away	"<span style=""display:inline-block"">Leandro Pedro Vuaden (Referee)</span>"	Estádio Urbano Caldeira, Santos, SP	19	4	15	535	16	10	20	12	1	13	13	55	44%	355	281	9	2	2	2	0
+662	3a8ecdb3	78c617cc	Goiás	34	4	home	"<span style=""display:inline-block"">Ricardo Marques Ribeiro (Referee)</span>"	Estádio de Hailé Pinheiro, Goiás	14	4	23	562	13	10	15	17	2	5	18	63	47%	367	301	13	5	3	2	0
+663	3a8ecdb3	157b7fee	Bahia	34	3	away	"<span style=""display:inline-block"">Ricardo Marques Ribeiro (Referee)</span>"	Estádio de Hailé Pinheiro, Goiás	23	5	19	584	15	7	7	12	1	5	23	54	53%	415	326	10	3	3	2	0
+664	90ecfb39	abdce579	Palmeiras	34	1	home	"<span style=""display:inline-block"">Wilton Sampaio (Referee)</span>"	Allianz Parque, São Paulo, SP	14	4	21	564	21	9	16	13	1	0	23	37	39%	374	294	17	6	3	2	0
+665	90ecfb39	d5ae3703	Grêmio	34	2	away	"<span style=""display:inline-block"">Wilton Sampaio (Referee)</span>"	Allianz Parque, São Paulo, SP	14	4	9	791	19	8	12	15	1	12	16	83	61%	607	518	7	3	3	3	0
+666	944ff349	422bb734	Atlético Mineiro	34	0	home	"<span style=""display:inline-block"">Edina Alves Batista (Referee)</span>"	Estádio Raimundo Sampaio, Belo Horizonte				0												0	0	1	3	0
+667	944ff349	2091c619	Atlético Paranaense	34	1	away	"<span style=""display:inline-block"">Edina Alves Batista (Referee)</span>"	Estádio Raimundo Sampaio, Belo Horizonte				1												1	1	1	2	0
+668	7a77b774	d9fdd9d9	Botafogo (RJ)	34	1	home	"<span style=""display:inline-block"">André Luiz de Freitas Castro (Referee)</span>"	Estádio Nilton Santos, Rio de Janeiro, RJ	11	2	16	436	19	13	28	41	2	13	16	69	29%	241	155	8	5	5	4	0
+669	7a77b774	bf4acd28	Corinthians	34	0	away	"<span style=""display:inline-block"">André Luiz de Freitas Castro (Referee)</span>"	Estádio Nilton Santos, Rio de Janeiro, RJ	19	8	40	808	11	7	30	11	2	5	24	37	71%	597	527	25	5	5	2	0
+670	0a310e3e	2f335e17	Ceará	34	1	home	"<span style=""display:inline-block"">Rafael Traci (Referee)</span>"	Estádio Castelão, Fortaleza, CE	12	13	33	639	16	11	22	7	1	3	21	53	49%	437	356	17	6	2	3	0
+671	0a310e3e	5f232eb1	São Paulo	34	1	away	"<span style=""display:inline-block"">Rafael Traci (Referee)</span>"	Estádio Castelão, Fortaleza, CE	16	5	7	684	15	10	14	46	0	13	23	36	51%	478	398	6	2	2	1	0
+672	e41b29fd	f205258a	Avaí	34	0	home	"<span style=""display:inline-block"">Raphael Claus (Referee)</span>"	Estádio Aderbal Ramos da Silva, Florianópolis	11	4	12	694	20	23	18	11	0	7	22	45	57%	491	409	13	2	2	0	1
+673	e41b29fd	baa296ad	Chapecoense	34	1	away	"<span style=""display:inline-block"">Raphael Claus (Referee)</span>"	Estádio Aderbal Ramos da Silva, Florianópolis	15	4	12	574	19	14	20	15	0	10	31	52	43%	360	273	15	2	2	1	1
+674	ca3cb6d1	6f7e1f03	Internacional	34	2	home	"<span style=""display:inline-block"">Jose Mendonca da Silva Junior (Referee)</span>"	Estádio José Pinheiro Borba, Porto Alegre	16	9	41	723	14	8	20	12	0	6	19	40	60%	538	465	23	6	3	4	0
+675	ca3cb6d1	a9d0ab0e	Fortaleza	34	2	away	"<span style=""display:inline-block"">Jose Mendonca da Silva Junior (Referee)</span>"	Estádio José Pinheiro Borba, Porto Alegre	13	3	13	545	12	7	10	32	2	12	10	82	40%	375	292	6	3	3	2	0

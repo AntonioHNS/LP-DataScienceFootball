@@ -21,7 +21,7 @@ def getCSV(ano):
 #     jogos.awayTeamId      = np.where(conditionHome, result, jogos.teamId)
 
 def GenerateGameTable():
-    listaAnos = ["2019"]
+    listaAnos = ["2016", "2017", "2018", "2019"]
     #listaAnos = ["2018"]
     listaCSV = list(map(getCSV,listaAnos))
     data = pd.concat(listaCSV)
@@ -100,9 +100,9 @@ def GetTrainTest():
     derrotaDf = jogos.loc[jogos['winner'] == 0]
     vitoriaDf = jogos.loc[jogos['winner'] == 2]
 
-    empatesDf = empatesDf.head(261)
-    derrotaDf = derrotaDf.head(261)
-    vitoriaDf = vitoriaDf.head(261)
+    empatesDf = empatesDf.head(341)
+    derrotaDf = derrotaDf.head(341)
+    vitoriaDf = vitoriaDf.head(341)
 
     jogos = pd.concat([empatesDf, derrotaDf, vitoriaDf], sort="True")
 
@@ -122,7 +122,6 @@ def GetTrainTest():
 
     colunas = data.columns
     
-    print(len(colunas))
     result = jogos["winner"]
     X_train, X_test, y_train, y_test = train_test_split(data, result, test_size = 0.20)
     sc = StandardScaler()
@@ -143,7 +142,7 @@ def getLastFiveRounds(dataSet, year, homeTeam, awayTeam, matchId, matchWeek):
     away = away.mean()
 
     matches = pd.DataFrame()
-    matches["MatchId"]            =  [matchId]
+    # matches["MatchId"]            =  [matchId]
     matches["matchWeek"]      	  =  [matchWeek]
     matches['homeTeamId']         =  [homeTeam]
     matches['homeShotsOnTarget']  =  home['homeShotsOnTarget']
@@ -191,7 +190,7 @@ def getLastFiveRounds(dataSet, year, homeTeam, awayTeam, matchId, matchWeek):
     matches['awayYellowCards']    =  away['awayYellowCards']
     matches['awayRedCards']       =  away['awayRedCards']
     return matches
-    
+
 def calc(lastRound):
     if(lastRound == 0):
         return 1

@@ -9,9 +9,9 @@ import webcrawlerteam as wb
 
 idCampeonato = [24]
 
-nomesDocumentos = ["2016-Match-serieA.csv"]
+nomesDocumentos = ["2019-Match-serieA.csv"]
 
-anos = ["/1495/schedule/2016-Serie-A-Fixtures"]
+anos = ["/schedule/Serie-A-Fixtures"]
 
 for indice in range(len(anos)):
     
