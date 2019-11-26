@@ -21,7 +21,7 @@ def getCSV(ano):
 #     jogos.awayTeamId      = np.where(conditionHome, result, jogos.teamId)
 
 def GenerateGameTable():
-    listaAnos = ["2016", "2017", "2018"]
+    listaAnos = ["2019"]
     #listaAnos = ["2018"]
     listaCSV = list(map(getCSV,listaAnos))
     data = pd.concat(listaCSV)
@@ -130,11 +130,67 @@ def GetTrainTest():
     X_test = sc.fit_transform(X_test)
     return X_train, X_test, y_train, y_test, data[colunas]
 
-def getLastFiveRounds(dataSet, year, team):
+def getLastFiveRounds(dataSet, year, homeTeam, awayTeam, matchId, matchWeek):
     table = dataSet[dataSet["year"] == year]
     data = table.drop(columns=["awayScore","homeScore",'MatchId', "year", "winner", "awayAttendance", "awayMatchWeek"])
-    data = data.groupby("homeTeamId").mean()
-    return data
+    
+    home = data[data.homeTeamId == homeTeam].tail(5)
+    home = home.drop(columns=["homeTeamId", "awayTeamId"])
+    home = home.mean()
+    
+    away = data[data.awayTeamId == awayTeam].tail(5)
+    away = away.drop(columns=["homeTeamId", "awayTeamId"])
+    away = away.mean()
+
+    matches = pd.DataFrame()
+    matches["MatchId"]            =  [matchId]
+    matches["matchWeek"]      	  =  [matchWeek]
+    matches['homeTeamId']         =  [homeTeam]
+    matches['homeShotsOnTarget']  =  home['homeShotsOnTarget']
+    matches['homeAttendance']     =  home['homeAttendance']
+    matches['homeFouls']          =  home['homeFouls']
+    matches['homeCorners']        =  home['homeCorners']
+    matches['homeCrosses']        =  home['homeCrosses']
+    matches['homeTouches']        =  home['homeTouches']
+    matches['homeTackles']        =  home['homeTackles']
+    matches['homeInterceptions']  =  home['homeInterceptions']
+    matches['homeAerialsWon']     =  home['homeAerialsWon']
+    matches['homeClearances']     =  home['homeClearances']
+    matches['homeOffsides']       =  home['homeOffsides']
+    matches['homeGoalsKicks']     =  home['homeGoalsKicks'] 
+    matches['homeThrowIns']       =  home['homeThrowIns'] 
+    matches['homeLongBalls']      =  home['homeLongBalls'] 
+    matches['homePossession']     =  home['homePossession']
+    matches['homeTotalPassing']   =  home['homeTotalPassing']
+    matches['homeCorrectPassing'] =  home['homeCorrectPassing']
+    matches['homeTotalShots']     =  home['homeTotalShots']
+    matches['homeShotsOnTarget']  =  home['homeShotsOnTarget']
+    matches['homeSaves']          =  home['homeSaves']
+    matches['homeYellowCards']    =  home['homeYellowCards']
+    matches['homeRedCards']       =  home['homeRedCards']
+    matches['awayTeamId']         =  [awayTeam]
+    matches['awayShotsOnTarget']  =  away['awayShotsOnTarget']
+    matches['awayFouls']          =  away['awayFouls']
+    matches['awayCorners']        =  away['awayCorners']
+    matches['awayCrosses']        =  away['awayCrosses']
+    matches['awayTouches']        =  away['awayTouches']
+    matches['awayTackles']        =  away['awayTackles']
+    matches['awayInterceptions']  =  away['awayInterceptions']
+    matches['awayAerialsWon']     =  away['awayAerialsWon']
+    matches['awayClearances']     =  away['awayClearances']
+    matches['awayOffsides']       =  away['awayOffsides']
+    matches['awayGoalsKicks']     =  away['awayGoalsKicks'] 
+    matches['awayThrowIns']       =  away['awayThrowIns'] 
+    matches['awayLongBalls']      =  away['awayLongBalls'] 
+    matches['awayPossession']     =  away['awayPossession']
+    matches['awayTotalPassing']   =  away['awayTotalPassing']
+    matches['awayCorrectPassing'] =  away['awayCorrectPassing']
+    matches['awayTotalShots']     =  away['awayTotalShots']
+    matches['awayShotsOnTarget']  =  away['awayShotsOnTarget']
+    matches['awaySaves']          =  away['awaySaves']
+    matches['awayYellowCards']    =  away['awayYellowCards']
+    matches['awayRedCards']       =  away['awayRedCards']
+    return matches
 
 def calc(lastRound):
     if(lastRound == 0):

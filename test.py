@@ -3,9 +3,10 @@ from lib.functions import GenerateGameTable, getLastFiveRounds
 
 jogos = GenerateGameTable()
 
-#639950ae = Flamengo
-#Testando com um time
-a = getLastFiveRounds(jogos, 2018, "639950ae")
+#Para pegar o id dos times e testar
+print(jogos.homeTeamId.unique())
 
-print(a)
+rodadaDataFrame = getLastFiveRounds(jogos, 2019, 1596141233, 95417625, 12, 35)
+
+print(rodadaDataFrame)
 
