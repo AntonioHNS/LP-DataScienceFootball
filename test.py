@@ -6,7 +6,7 @@ from sklearn.metrics import accuracy_score, confusion_matrix, classification_rep
 jogos = GenerateGameTable()
 
 #Para pegar o id dos times e testar
-# print(jogos.homeTeamId.unique())
+print(jogos.homeTeamId.unique())
 
 #Criando Rodada
 rodadaDataFrame = getLastFiveRounds(jogos, 2019, 1596141233, 95417625, 12, 35)
