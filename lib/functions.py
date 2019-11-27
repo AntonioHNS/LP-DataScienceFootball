@@ -25,6 +25,7 @@ def GenerateGameTable():
     #listaAnos = ["2018"]
     listaCSV = list(map(getCSV,listaAnos))
     data = pd.concat(listaCSV)
+
     # times = pd.read_csv(path_base+"Teams-Brasileirao.csv",encoding = 'UTF-8',sep="/t")
     # data = pd.merge(data,times,right_on='MatchId',left_on='hash')    
     
@@ -100,9 +101,9 @@ def GetTrainTest():
     derrotaDf = jogos.loc[jogos['winner'] == 0]
     vitoriaDf = jogos.loc[jogos['winner'] == 2]
 
-    empatesDf = empatesDf.head(341)
-    derrotaDf = derrotaDf.head(341)
-    vitoriaDf = vitoriaDf.head(341)
+    empatesDf = empatesDf.tail(341)
+    derrotaDf = derrotaDf.tail(341)
+    vitoriaDf = vitoriaDf.tail(341)
 
     jogos = pd.concat([empatesDf, derrotaDf, vitoriaDf], sort="True")
 
