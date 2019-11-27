@@ -146,11 +146,11 @@ def getLastFiveRounds(dataSet, year, homeTeam, awayTeam, matchId, matchWeek):
     
     home = data[data.homeTeamId == homeTeam].tail(5)
     home = home.drop(columns=["homeTeamId", "awayTeamId"])
-    home = home.mean()
+    home = home.median()
     
     away = data[data.awayTeamId == awayTeam].tail(5)
     away = away.drop(columns=["homeTeamId", "awayTeamId"])
-    away = away.mean()
+    away = away.median()
 
     matches = pd.DataFrame()
     # matches["MatchId"]            =  [matchId]
