@@ -7,19 +7,22 @@ import threading
 
 jogos = GenerateGameTable()
 
-#Para pegar o id dos times e testar
-print(jogos.homeTeamId.unique())
+#Treinando SVM
+attribute_train, attribute_test, result_train, result_test, columnsArray = GetTrainTest()
 
-#Criando Rodada
-rodadaDataFrame = getLastFiveRounds(jogos, 2019, 1596141233, 95417625, 12, 35)
+clfSvc = SVC(kernel="rbf", degree=10)
+clfSvc.fit(attribute_train, result_train)
 
 listToPredict = []
-def addRoundToListPredict(matches, year, homeId, awayId, matchId, matchweek):
+
+def addRoundToListPredict(matches, year, homeId, awayId, matchId, matchweek, clf):
     rodadaDataFrame = getLastFiveRounds(matches, year, homeId, awayId, matchId, matchweek)
     listToPredict.append(rodadaDataFrame.homeTeamId)
 
-x1 = threading.Thread(target=addRoundToListPredict, args=( jogos, 2019, 1596141233, 95417625, 12, 35), daemon=True )
-x2 = threading.Thread(target=addRoundToListPredict, args=( jogos, 2019, 95417625, 1596141233, 12, 35), daemon=True )
+#
+x1 = threading.Thread(target=addRoundToListPredict, args=( jogos, 2019, 3131217581, 3657292249, 12, 35), daemon=True )
+#
+x2 = threading.Thread(target=addRoundToListPredict, args=( jogos, 2019, 1870536451, 1596141233, 12, 35), daemon=True )
 x3 = threading.Thread(target=addRoundToListPredict, args=( jogos, 2019, 1596141233, 95417625, 12, 35), daemon=True )
 x4 = threading.Thread(target=addRoundToListPredict, args=( jogos, 2019, 95417625, 1596141233, 12, 35), daemon=True )
 x5 = threading.Thread(target=addRoundToListPredict, args=( jogos, 2019, 1596141233, 95417625, 12, 35), daemon=True )
@@ -39,18 +42,6 @@ x7.start()
 x8.start()
 x9.start()
 x10.start()
-
-#Treinando SVM
-attribute_train, attribute_test, result_train, result_test, columnsArray = GetTrainTest()
-
-clfSvc = SVC(kernel="rbf", degree=10)
-clfSvc.fit(attribute_train, result_train)
-# forecast1 = clfSvc.predict(attribute_test)
-forecastTest = clfSvc.predict(rodadaDataFrame)
-
-# classificationReport1 = classification_report(result_test, forecast1)
-
-print(forecastTest)
 
 
 print(listToPredict)
