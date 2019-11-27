@@ -13,6 +13,16 @@ def getCSV(ano):
     data['year'] = int(ano)
     return data
 
+def getTeamNames():
+    path_base = "dataset-brasileirao/"
+    data = pd.read_csv(path_base +"2019-Match-SerieA.csv",encoding = 'UTF-8', sep = ',')
+    data = data.rename(columns={"teamId": "hash"})
+    data['teamId'] = data['hash'].apply(int,base = 16)
+    data = pd.DataFrame(data,columns = ['teamId','nameTeam','hash'])
+    data = data.groupby(['nameTeam','hash']).mean()
+    data.to_csv('times.csv', sep=',', encoding='utf-8')
+    return data
+
 # def a(teamId, hashId):
 #     conditionHome = jogos.homeTeamId == hashId
 #     conditionAway = jogos.awayTeamId == hashId
@@ -225,6 +235,5 @@ def GetImportanceList(forecast, classificador):
 
 # teste.plot.barh(x="stats", y= "importancia")
 # plt.show()
-    
-    
+
     
