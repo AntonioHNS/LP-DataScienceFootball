@@ -120,16 +120,16 @@ def GetTrainTest():
     #jogos['winner'] = np.select([jogos.winner == 1,jogos.winner == -1],['vitoria mandante','vitoria visitante'],'empate')
     
     #Teste 1
-    data = jogos.drop(columns=["awayScore","homeScore",'MatchId', "year", "winner", "awayAttendance", "awayMatchWeek"])
+    #data = jogos.drop(columns=["awayScore","homeScore",'MatchId', "year", "winner", "awayAttendance", "awayMatchWeek"])
 
     #Teste 2
-    # data = jogos.drop(columns=["awayScore","homeScore",'MatchId', "year", "winner", "awayAttendance", "awayMatchWeek", "awayRedCards", "homeRedCards"])
+    #data = jogos.drop(columns=["awayScore","homeScore",'MatchId', "year", "winner", "awayAttendance", "awayMatchWeek", "awayRedCards", "homeRedCards"])
 
     #Teste 3
-    # data = jogos.drop(columns=["awayScore","homeScore",'MatchId', "year", "winner", "awayAttendance", "awayMatchWeek", "awayRedCards", "homeRedCards", "homeYellowCards", "awayYellowCards", "homeOffsides", "awayOffsides", "homeCorners", "awayCorners"])
+    #data = jogos.drop(columns=["awayScore","homeScore",'MatchId', "year", "winner", "awayAttendance", "awayMatchWeek", "awayRedCards", "homeRedCards", "homeYellowCards", "awayYellowCards", "homeOffsides", "awayOffsides", "homeCorners", "awayCorners"])
 
     #Teste 4
-    # data = jogos.drop(columns=["awayScore","homeScore",'MatchId', "year", "winner", "awayAttendance", "awayMatchWeek", "awayRedCards", "homeRedCards", "homeYellowCards", "awayYellowCards", "homeOffsides", "awayOffsides", "homeCorners", "awayCorners", "awayFouls", "awayTeamId", "awayTackles", "awayTotalShots", "homeGoalsKicks", "homeTotalShots", "homePossession"])
+    data = jogos.drop(columns=["awayScore","homeScore",'MatchId', "year", "winner", "awayAttendance", "awayMatchWeek", "awayRedCards", "homeRedCards", "homeYellowCards", "awayYellowCards", "homeOffsides", "awayOffsides", "homeCorners", "awayCorners", "awayFouls", "awayTeamId", "awayTackles", "awayTotalShots", "homeGoalsKicks", "homeTotalShots", "homePossession"])
 
     colunas = data.columns
     

@@ -44,35 +44,46 @@ clfMultiLayerPerceptron = MLPClassifier(
     hidden_layer_sizes=(30, 17, 9, 3), 
     solver="adam", learning_rate="adaptive", alpha=0.000015, learning_rate_init=0.001)
 
-meanDummy, medianDummy = getMeanMedianAccuracyPredict(0, recursoes, [], clfDummy, attribute_train, attribute_test, result_train, result_test)
-meanNaive, medianNaive = getMeanMedianAccuracyPredict(0, recursoes, [], clfNaiveBayes, attribute_train, attribute_test, result_train, result_test)
-meanAdaBoost, medianAdaBoost = getMeanMedianAccuracyPredict(0, recursoes, [], clfAdaBoost, attribute_train, attribute_test, result_train, result_test)
+#meanDummy, medianDummy = getMeanMedianAccuracyPredict(0, recursoes, [], clfDummy, attribute_train, attribute_test, result_train, result_test)
+#meanNaive, medianNaive = getMeanMedianAccuracyPredict(0, recursoes, [], clfNaiveBayes, attribute_train, attribute_test, result_train, result_test)
+#meanAdaBoost, medianAdaBoost = getMeanMedianAccuracyPredict(0, recursoes, [], clfAdaBoost, attribute_train, attribute_test, result_train, result_test)
 meanGradient, medianGradient = getMeanMedianAccuracyPredict(0, recursoes, [], clfGradient, attribute_train, attribute_test, result_train, result_test)
-meanDecisionTree, medianDecisionTree = getMeanMedianAccuracyPredict(0, recursoes, [], clfDecisionTree, attribute_train, attribute_test, result_train, result_test)
+#meanDecisionTree, medianDecisionTree = getMeanMedianAccuracyPredict(0, recursoes, [], clfDecisionTree, attribute_train, attribute_test, result_train, result_test)
 meanRandomForest, medianRandomForest = getMeanMedianAccuracyPredict(0, recursoes, [], clfRandomForest, attribute_train, attribute_test, result_train, result_test)
 meanSvc, medianSvc = getMeanMedianAccuracyPredict(0, recursoes, [], clfSvc, attribute_train, attribute_test, result_train, result_test)
 meanMultiLayer, medianMultiLayer = getMeanMedianAccuracyPredict(0, recursoes, [], clfMultiLayerPerceptron, attribute_train, attribute_test, result_train, result_test)
 
-means = [meanDummy, meanNaive, meanAdaBoost, meanGradient, meanDecisionTree, meanRandomForest, meanSvc, meanMultiLayer]
-medians = [medianDummy, medianNaive, medianAdaBoost, medianGradient, medianDecisionTree, medianRandomForest, medianSvc, medianMultiLayer]
-algorithms = ["DummyClassifier", "Naive Bayes", "AdaBoost", "GradientBoosting", "Decision Tree", "Random Forest", "SVM", "Multilayer Perceptron"]
+#means = [meanDummy, meanNaive, meanAdaBoost, meanGradient, meanDecisionTree, meanRandomForest, meanSvc, meanMultiLayer]
+means = [meanGradient, meanRandomForest, meanSvc, meanMultiLayer]
+#medians = [medianDummy, medianNaive, medianAdaBoost, medianGradient, medianDecisionTree, medianRandomForest, medianSvc, medianMultiLayer]
+algorithms = ["GradientBoosting", "Random Forest", "SVM", "Multilayer Perceptron"]
 
 print(means)
 
-print(medians)
+arq = open("medias.txt", "a")
 
-df = pd.DataFrame({'Medias': means, 'Medianas': medians}, index=algorithms)
+arq.write("Teste 4" + "\n")
 
-ax1 = df["Medias"].plot.bar(rot=0, color=['gray', 'black', 'green', 'red', 'brown', 'purple', 'cyan', 'blue'])
+arq.write("GradientBoosting " + str(means[0]) + "\n")
+arq.write("Random Forest " + str(means[1]) + "\n")
+arq.write("SVM " + str(means[2]) + "\n")
+arq.write("Multilayer Perceptron " + str(means[3]) + "\n")
+
+#print(medians)
+
+df = pd.DataFrame({'Medias': means}, index=algorithms)
+#df = pd.DataFrame({'Medias': means, 'Medianas': medians}, index=algorithms)
+
+ax1 = df["Medias"].plot.bar(rot=0, color=['purple', 'blue', 'green', 'red'])
 ax1.yaxis.label.set_color('blue')
 plt.ylim(0, 100)
 plt.ylabel("Acurácia Média")
 plt.title("Comparação dos Algoritmos em 150 testes")
 plt.show()
 
-ax2 = df["Medianas"].plot.bar(rot=0, color=['gray', 'black', 'green', 'red', 'brown', 'purple', 'cyan', 'blue'])
-ax2.yaxis.label.set_color('blue')
-plt.ylim(0, 100)
-plt.ylabel("Acurácia Mediana")
-plt.title("Comparação dos Algoritmos em 150 testes")
-plt.show()
+# ax2 = df["Medianas"].plot.bar(rot=0, color=['gray', 'black', 'green', 'red', 'brown', 'purple', 'cyan', 'blue'])
+# ax2.yaxis.label.set_color('blue')
+# plt.ylim(0, 100)
+# plt.ylabel("Acurácia Mediana")
+# plt.title("Comparação dos Algoritmos em 150 testes")
+# plt.show()
